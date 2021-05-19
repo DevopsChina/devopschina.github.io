@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>问卷 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E9%97%AE%E5%8D%B7/</link>
+    <description>Recent content in 问卷 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 07 May 2019 10:47:55 +0600</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E9%97%AE%E5%8D%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>中文版：2019年DevOps状态调查问卷</title>
+      <link>https://devopschina.org/blog/2019-state-devops-survey-chinese-version/</link>
+      <pubDate>Tue, 07 May 2019 10:47:55 +0600</pubDate>
+      
+      <guid>https://devopschina.org/blog/2019-state-devops-survey-chinese-version/</guid>
+      <description>本文是2019英文版加速度DevOps状态调查问卷的社区集体翻译成果，看看DevOps度量的科学方法。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service Meshes&#34; on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/service-meshes/</link>
+    <description>Recent content in Service Meshes&#34; on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 18 Feb 2020 14:19:51 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/service-meshes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019年DevOps的十大趋势——专业人士的预测</title>
+      <link>https://devopschina.org/blog/the-top-10-devops-trends-of-2019-the-professionals-prediction/</link>
+      <pubDate>Tue, 18 Feb 2020 14:19:51 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/the-top-10-devops-trends-of-2019-the-professionals-prediction/</guid>
+      <description>在2019年DevOps世界的混乱中值得注意的趋势。</description>
+    </item>
+    
+  </channel>
+</rss>

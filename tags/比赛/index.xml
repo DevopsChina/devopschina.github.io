@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>比赛 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E6%AF%94%E8%B5%9B/</link>
+    <description>Recent content in 比赛 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 06 Nov 2020 22:16:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E6%AF%94%E8%B5%9B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020年首届DevOps流水线大赛总结</title>
+      <link>https://devopschina.org/blog/recap-2020-pipeline-craft/</link>
+      <pubDate>Fri, 06 Nov 2020 22:16:53 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/recap-2020-pipeline-craft/</guid>
+      <description>首次近数近百人参与的DevOps流水线比赛胜利闭幕了，优秀代码和分享请大家细细品。</description>
+    </item>
+    
+  </channel>
+</rss>

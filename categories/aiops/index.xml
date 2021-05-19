@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AIOps on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/categories/aiops/</link>
+    <description>Recent content in AIOps on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 02 May 2019 10:47:55 +0600</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/categories/aiops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AIOps权威指南</title>
+      <link>https://devopschina.org/blog/aipos-definitive-guide/</link>
+      <pubDate>Thu, 02 May 2019 10:47:55 +0600</pubDate>
+      
+      <guid>https://devopschina.org/blog/aipos-definitive-guide/</guid>
+      <description>本文的英文原文是来自于SweetCode的《The Definitive Guide to AIOps》，这篇白皮书由CA公司赞助发布。社区组织翻译。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SLO on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/slo/</link>
+    <description>Recent content in SLO on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 09 Mar 2020 08:15:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/slo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>学习和传授服务水平/质量目标的技艺 ---- CRE课程</title>
+      <link>https://devopschina.org/blog/learn-how-to-set-slos-for-an-sre-or-cre-practice/</link>
+      <pubDate>Mon, 09 Mar 2020 08:15:40 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/learn-how-to-set-slos-for-an-sre-or-cre-practice/</guid>
+      <description>在理解 Art of SLO 的时候，我一直在考虑这里的art是理解为艺术么？带着这个问题，结合我自己的工作经验，开始在 cloud.google 网站中寻找答案。一般意义上，艺术往往带有很强的个人感悟能力，而对于做技术的IT人员来说，有故作玄虚之态，因此我理解这里的 Art 更多的是传递一种匠人的技艺精神，也就是可以通过不断的学习、思考、总结，达到更高的水平。这一篇文章应该算是抛砖引玉，希望能激发更多的IT人员，通过不断的学习、思考、总结，达到自己理想的水平和能力。</description>
+    </item>
+    
+  </channel>
+</rss>

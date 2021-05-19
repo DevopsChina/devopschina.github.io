@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ProdMgmt on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/prodmgmt/</link>
+    <description>Recent content in ProdMgmt on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 27 Apr 2021 22:46:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/prodmgmt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>产品经理和产品负责人如何能有效地合作</title>
+      <link>https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/</link>
+      <pubDate>Tue, 27 Apr 2021 22:46:34 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/</guid>
+      <description>产品负责人（PO）这一角色在实施敏捷（例如Scrum）的公司里存在各种挑战。如果按照Scrum字面的定义来诠释产品负责人的角色及职责，会遇到诸多实际问题。</description>
+    </item>
+    
+  </channel>
+</rss>

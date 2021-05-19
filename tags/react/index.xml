@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/react/</link>
+    <description>Recent content in React on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 18 Sep 2019 15:21:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020年及未来的软件编程趋势预测</title>
+      <link>https://devopschina.org/blog/2020-programming-trend-predictions/</link>
+      <pubDate>Wed, 18 Sep 2019 15:21:59 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/2020-programming-trend-predictions/</guid>
+      <description>如果您对未来可能给编程世界带来什么感到好奇，那么读这篇文章就对了。我也有可能错了，所以请不要盲目的相信我，但这就是我认为会发生的事情。我无法预测未来，但我可以做出有根据的猜测。</description>
+    </item>
+    
+  </channel>
+</rss>

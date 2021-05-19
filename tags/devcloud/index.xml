@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevCloud on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/devcloud/</link>
+    <description>Recent content in DevCloud on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 21 Nov 2019 00:40:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/devcloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>华为云 DevCloud 在大规模团队 Git 协作的探索</title>
+      <link>https://devopschina.org/blog/huawei-cloud-devcloud-explores-large-scale-team-git-collaboration/</link>
+      <pubDate>Thu, 21 Nov 2019 00:40:28 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/huawei-cloud-devcloud-explores-large-scale-team-git-collaboration/</guid>
+      <description>华为在大规模团队的Git协作上的一些探索。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta charset="utf-8" />
+  <title>什么是 DevOps？DevOps 终极指南 - 中国 DevOps 社区官方网站</title>
+  <meta name="description" content="中国 DevOps 社区官方网站" />
+  <meta property="og:title" content="什么是 DevOps？DevOps 终极指南" />
+  <meta name="twitter:title" content="什么是 DevOps？DevOps 终极指南" /> 
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="DevOps 继承自敏捷软件开发，DevOps 的出现是为了应对敏捷方法所带来的软件开发速度和生产力增长。敏捷文化和敏捷方法在最近十年的发展，呼唤一个更适合端到端软件交付生命周期的整体方法。"
+  />
+  
+  <meta name="author" content="中国 DevOps 社区" />
+   <meta name="generator" content="Hugo 0.73.0" /> 
+  <!-- plugins -->
+  <noscript>
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/bootstrap/bootstrap.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/slick/slick.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/fontawesome/font-awesome.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/animate/animate.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/venobox/venobox.css " />
+    
+  </noscript>
+
+  <!-- Main Stylesheet -->   
+  <link
+    rel="stylesheet"
+    href="https://devopschina.org/scss/style.min.29bbcd5accceea3cb5f9001b65e953f838644198a544e01bcb2c22e07e1671c7.css"
+    integrity="sha256-KbvNWszO6jy1&#43;QAbZelT&#43;DhkQZilROAbyywi4H4Wccc="
+    media="screen"
+  />
+
+  <!--Favicon--> 
+  
+  <link rel="shortcut icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon"> <link rel="icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon">
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-159133967-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-159133967-1");
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader"></div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="https://devopschina.org/"><img class="img-fluid pb-lg-3" src="https://devopschina.org/images/logo.png" alt="Bexar"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://devopschina.org/"> 首页 </a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event/index.html">活动</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/index.html">博客</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">团队</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about/index.html">关于</a>
+            </li>
+            
+            
+          </ul>
+          
+          
+          <!-- get start btn -->
+          <a href="https://www.hdb.com/u/bqaf3u.html" class="btn btn-primary hover-ripple">活动报名</a>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('https://devopschina.org/images/backgrounds/blog-bg.jpg'),url('https://devopschina.org/ALT-txt');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">什么是 DevOps？DevOps 终极指南</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="https://devopschina.org/">首页</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">什么是 DevOps？DevOps 终极指南</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="https://devopschina.org/images/blog/what-is-devops-000.jpg" alt="post thumb" class="img-fluid w-100">
+          <div class="card-type hover-ripple">翻译</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">崔龙波 郭颖 刘海燕 尚君领</strong>/ on <strong class="text-dark">21 Jul 2020</strong></div>
+        <h2>什么是 DevOps？DevOps 终极指南</h2>
+        <div class="content">
+          <blockquote>
+<p>社区译者：崔龙波 郭颖 刘海燕 尚君领<br>
+审校：张彪<br>
+原作者：CollabNet VersionOne &amp; Martin Fowler        <br>
+原文地址：<a href="https://resources.collab.net/devops-101/what-is-devops">https://resources.collab.net/devops-101/what-is-devops</a></p>
+</blockquote>
+<h3 id="1-devops-的起源">1. DevOps 的起源</h3>
+<p>DevOps 继承自敏捷软件开发，DevOps 的出现是为了应对敏捷方法所带来的软件开发速度和生产力增长。敏捷文化和敏捷方法在最近十年的发展，呼唤一个更适合端到端软件交付生命周期的整体方法。</p>
+<h5 id="什么是敏捷软件开发">什么是敏捷软件开发？</h5>
+<p>敏捷开发是许多迭代和增量软件开发方法的总和。最流行的敏捷方法包括Scrum、看板、规模化敏捷框架(SAFe®)、精益开发和极限编程 (XP)。</p>
+<p>虽然每种敏捷方法都有其独特方法，所有的敏捷方法都有共同的愿景和核心价值观（参见敏捷宣言），都吸纳了迭代和迭代带来的持续反馈，以连续的方式改进和交付软件系统。所有的敏捷方法都包含持续规划、持续测试、持续集成和其他形式对项目和软件本身的持续演进。与传统的瀑布式流程相比，敏捷方法是轻量级的，具有很强的适应性。更为重要的是，敏捷方法都强调给团队赋能，通过协作共同做出快速有效的决策。</p>
+<p>起初，敏捷团队主要由开发人员组成。随着这些敏捷团队在生产软件方面变得更加有效和高效，将质量保证（QA）和开发分为不同的团队显得非常低效。为了提高软件交付速度，敏捷发展到包含 QA，现在敏捷再次发展到包含交付和支持人员，敏捷扩展到从概念到交付的所有阶段。</p>
+<p>DevOps理想通过进一步简化软件变更在构建、验证、部署和交付阶段的移动，扩展了敏捷开发实践，同时授权跨职能团队拥有从设计到生产支持的软件应用程序的全部所有权。</p>
+<p>DevOps是一种IT思想，它鼓励软件开发人员和IT运营人员之间的通信、协作、集成和自动化，以提高交付软件的速度和质量。</p>
+<p>DevOps团队专注于标准化开发环境和自动化交付过程，以提高交付的可预测性、效率、安全性和可维护性。DevOps 的理念为开发人员提供了对生产环境的更多控制和对生产基础设施的更好理解。DevOps 鼓励给团队赋能，赋予团队构建、验证、交付和支持自己的应用的自主权。有了 DevOps, 没什么会扔到墙上。</p>
+<h3 id="2-devops-解决的挑战">2. DevOps 解决的挑战</h3>
+<p>在开发DevOps应用程序之前，团队需要优先收集业务需求然后再编写代码。代码开发完成后，开发以外的 QA 团队会在一个独立的开发环境中测试程序，如果需求已被实现，当前版本就会交付给运维人员去部署。部署团队进一步细分为网络和数据库这样的筒仓组。每当一个软件程序是“扔到墙上”式的方式交给一个另一个团队时，它就会增加一层障碍。这种模式的问题就在于，当团队分开工作时：</p>
+<ul>
+<li>开发常常意识不到QA和运维人员可能遇到的影响程序正确运行的障碍。</li>
+<li>QA和运维通常关注的是特性，却很少关注软件的业务目的和价值</li>
+<li>每个小组都有各自不同的目标，当出现问题时，这些不同的目标将有可能成为导致效率低下和互相指手画脚的原因。</li>
+</ul>
+<p>DevOps通过建立跨职能协作团队来应对这些挑战，这些团队共同负责维护运行软件的系统，并准备软件在该系统上运行，同时提高质量反馈和自动化问题。</p>
+<h4 id="常见的pre-devops场景">常见的Pre-DevOps场景</h4>
+<p>开发团队的目标是尽可能多的发布新功能，于是他们向QA扔出了一个新的版本。测试人员的目标是尽可能多地发现缺陷。当测试人员将他们的发现提交给开发时，开发人员会变得抵触，并将错误归咎于测试人员使用的测试环境，然而测试人员回复问题不在于他们的测试环境，而在于开发人员的代码。</p>
+<p>最终问题解决了，QA把经过调试的新版本“扔到墙上”式的方式扔给了运维人员。运维团队的目标是限制系统的更改，因为他们担心发布代码会导致系统崩溃。他们的选择就是一键恢复系统。</p>
+<p>运维人员说开发人员给他们提供的版本有问题，开发说在测试环境中一切正常。那么运维人员就开始调试系统直至达到生产稳定。开发人员和测试人员不管生产环境的运行情况，所以当运维人员在彻夜解决生产问题时候他们绝不插手。</p>
+<h3 id="3-devops-的目标">3. DevOps 的目标</h3>
+<p>要改善所有相关干系人之间的协作关系，从规划到交付，以及交付过程中的自动化，以便于:</p>
+<ul>
+<li>改善部署频率</li>
+<li>缩短产品上市时间</li>
+<li>降低新版本的缺陷率</li>
+<li>缩短缺陷修复的交付周期</li>
+<li>提高恢复服务的平均时间</li>
+</ul>
+<p>根据2015年DevOps报告, “高性能IT组织部署的频率提高了30倍，交付周期缩短了200倍; 与此同时，它们的故障减少了60倍，恢复速度提高了168倍.”</p>
+<p><strong>一个常见的Pre-DevOps场景</strong>：在新的软件项目开启之前，软件团队（包括开发人员、测试人员、运营和技术支持人员）组织会面。该团队筹划如何构建部署就绪的工作软件。</p>
+<p>开发人员完成开发后，每天都会部署新代码。而自动化测试可以确保代码的质量才可被部署。代码通过所有的自动化测试过程后，便会被部署给少量用户。部署后短期内会对新代码进行监控，以确保其稳定且没有不可预见的缺陷。一旦监控显示它是稳定的，新代码就会扩大范围迁移给其他用户。规划和开发后的大部分步骤无需人工干预即可完成。</p>
+<h3 id="4-你在-devops-坐标中的位置">4. 你在 DevOps 坐标中的位置</h3>
+<p>DevOps 坐标可以帮助我们以不同的角度审视 DevOps。底部的横轴表示人们认为应该最关注 DevOps 的哪一方面，有人坚定地认为 DevOps 应该更多地关注文化而不是工具，而另一些人则倾向于重视工具而非文化。</p>
+<p><img src="/images/blog/what-is-devops-001.webp" alt=""></p>
+<p>纵轴描绘了 DevOps 交付链的三个层级：持续集成、持续交付和持续部署。DevOps 社区将位于 DevOps 坐标右上角的组织称为粉色独角兽，因为极其罕见，这些独角兽以 Netflix、Etsy、Amazon、Pinterest、Flicker、IMVU 和 Google 等公司为代表。在最近的一次调查中，参与者对其所在组织所处的位置进行了投票：</p>
+<ul>
+<li>左下角: 55%</li>
+<li>右下角: 26%</li>
+<li>左上角: 14%</li>
+<li>右上角: 5%</li>
+</ul>
+<p>虽然思想领袖、敏捷教练和博主们经常在右上角描绘 DevOps 愿景，他们却通常会对 DevOps 文化或自动化工具有很强的倾向，并就 DevOps 文化或工具谁更重要进行深奥的辩论。但现实是，没有工具就无法拥有 DevOps；而没有强大的支持型文化，所有的工具也都将无用武之地。</p>
+<p>另一个重要的观点是，上移和右移需要时间，许多组织的第一步将是文化、工具和持续集成的融合，所以如果你读到描述什么是“没做DevOps”的文章，不要气馁，除非你已达成不需任何人为干预就可一路部署到生产环境。</p>
+<p>DevOps 可以是对您的组织有意义的文化、工具和成熟度的混合体，而有意义的事物很可能会随着时间的推移而发展。重要的是，通过改进协作和自动化，不断努力打破软件交付阶段之间的壁垒和瓶颈。在下面的章节中，我们将深入探讨DevOps 坐标的各个方面，以帮助你更好地理解自己适合的位置。</p>
+<h3 id="5-devops-的成熟阶段">5. DevOps 的成熟阶段</h3>
+<p>DevOps 的成熟度有几个关键阶段，以下是你需要了解的一些关键阶段。</p>
+<h4 id="瀑布式开发">瀑布式开发</h4>
+<p>在持续集成之前，开发团队将编写三到四个月的代码。然后，这些团队将合并他们的代码准备发布。不同版本的代码会有很大差异和更改，以至于实际的集成步骤可能要花费数月的时间。这种过程非常低效。</p>
+<h4 id="持续集成">持续集成</h4>
+<p>持续集成是一种将新开发的代码与要发布的主干代码快速集成的实践。在团队准备发布代码时，持续集成可以节省大量时间。</p>
+<p>DevOps 没有提出这个术语。持续集成是一种源于极限编程方法的敏捷工程实践。这些术语已经存在了一段时间，但是DevOps采用了这个术语是因为要成功地实施持续集成需要自动化。持续集成通常是走向 DevOps 成熟的第一步。</p>
+<p>从DevOps角度来看，持续集成过程包括检入代码，将其编译为可用代码（通常是二进制可执行文件）并运行一些基本的验证测试。</p>
+<h4 id="持续交付">持续交付</h4>
+<p>持续交付位于持续集成之上，是持续集成[DevOps阶段2]的扩展。在实施持续交付时，需要添加了额外的自动化和测试，这样才能做到不只是将代码与主干代码频繁合并，而且可以在几乎无需人工干预的情况下就可部署就绪。这是使代码库持续处于部署就绪状态的一种实践。</p>
+<h4 id="持续部署">持续部署</h4>
+<p>持续部署，不要与持续交付混淆[DevOps 涅槃]，是持续交付的最高演进。这是一种不需任何人为干预，直接实现生产环境部署的实践。</p>
+<p>实践持续交付的团队不会部署未经测试的代码；新创建的代码在推向生产之前需要先通过自动化测试的验证。代码发布通常先面向一小部分用户，然后有一个自动的反馈循环来监控质量和使用情况，最后才会进一步传播。</p>
+<p>只有极少数公司真正在实践持续部署，典型的公司有 Netflix、Etsy、Amazon、Pinterest、Flicker、IMVU和Google。</p>
+<p>大多数企业并不以 DevOps 涅盘为终极目标，而是专注于不断提升持续交付能力。</p>
+<h3 id="6-devops-的价值观">6. DevOps 的价值观</h3>
+<p>DevOps 非常重视建立合作文化，以及通过自动化的 DevOps 工具提升效率。虽然一些组织和人员认为其中一个比另一个更重要，但现实是要有文化和工具的结合，才会取得成功。对于 DevOps 这两项价值观，需要了解以下内容。</p>
+<h4 id="devops-文化">DevOps 文化</h4>
+<p>DevOps 文化的特点是增加协作、减少筒仓、分担责任、自治团队、提高质量、重视反馈和提升自动化。因为 DevOps 是敏捷的扩展，许多 DevOps 价值观就是敏捷价值观。</p>
+<p>敏捷方法是一种更整体的软件交付方式。敏捷开发团队通过工作软件来度量进度。产品负责人（PO）、开发人员、测试人员和用户体验（UX）人员为了相同的目标紧密合作。</p>
+<p>DevOps 在敏捷团队中增加了运营思维，或者有运营职责的团队成员。在 DevOps  之前，进度是以工作软件度量的；而 DevOps 则以交付给客户的可工作软件度量进度。</p>
+<p>为了实现这一点，开发人员和运营人员必须打破筒仓、相互协作，分担软件运行系统的维护责任，通过加强质量反馈和自动化交付准备在系统上运行的软件。</p>
+<h4 id="devops-工具">DevOps 工具</h4>
+<p>DevOps 工具包括配置管理、测试和构建系统、应用部署、版本控制和监控工具。持续集成、持续交付和持续部署需要不同的工具。虽然这三种实践可以使用相同的工具，但随着交付链的推进，会需要更多的工具。</p>
+<h3 id="7-devops-文化">7. DevOps 文化</h3>
+<p>敏捷软件开发已经打破了需求分析、测试和开发之间的一些筒仓，但是部署和运维等其他环节还是面临着与软件开发环节相脱节的情况。而DevOps运动旨在消除这些筒仓并且鼓励开发和运维之间的协作。</p>
+<p>DevOps可能由于结合了一些新的运维工具以及建立了敏捷的工程实践而变得很强大，但这并不足以实现DevOps应有的收益。<strong>如果你没有正确的文化，那么即使是使用最好的工具，DevOps也仅仅是另外一个时髦的名词而已。</strong></p>
+<p>DevOps文化的首要特征就是加强了开发和运维角色间的协作，为了支持这种协作，需要在团队中以及组织层面分别有一些重要的文化改变。</p>
+<p><img src="/images/blog/what-is-devops-002.webp" alt=""></p>
+<p><strong>责任共享</strong>，是DevOps文化中鼓励更加紧密协作的一个方面的具体体现。对于一个开发团队来说，如果一个系统（他们自己开发的）的操作维护被移交给另外一个团队，那么他们很容易就会对其不再关注。如果开发团队在系统的整个生命周期中分担维护该系统的任务，那么他们就能感受运维人员的痛点，并找出简化发布和维护的方法（比如自动部署和加强日志）。他们也可能从监控产品里的系统中获得到观察到的需求。当运维人员分担系统的商业目标责任的时候，他们也能够和开发人员更紧密的合作，以便更好的理解系统的操作需求并且帮助团队满足它。在实践中，协作常常始于开发人员运维意识的增长（比如部署和监控）和运维人员采用新的自动化工具及实践。</p>
+<p>为了支撑责任共享的文化，需要一些组织级的变革。<strong>在开发和运维之间不应该有筒仓</strong>。对于从开始就一起工作在一个解决方案上的工作方式来说，移交周期和文档不是很好的实践形式。对团队能够有所帮助的是调整资源结构，以使得运维人员更早的融入团队，让开发人员和运维人员坐在一起可以帮助他们一起工作。移交和签字会阻碍人们共享责任并且带来一种抱怨的文化。相反的，开发人员和运维人员应该共同为系统的成败负责。DevOps文化模糊了开发和运维角色之间的界线，并最终消除掉这种角色的区别。当为一个组织引入DevOps的时候，一个常见的反模式是给某个人分配一个“DevOps”角色或者称一个团队为“DevOps团队”，这么做会使得阻碍DevOps文化和实践在更大的组织中传播及采用的筒仓被固化，而这种筒仓本来是DevOps旨在要打破的。</p>
+<p><strong>组织的另外一个有价值的改变是自组织团队</strong>。为了让开发和运维人员之间的协作更有效率，需要他们可以不依赖于错综复杂的决策流程而能够自己做决定并实施变革。这需要信任团队，改变风险管理的方式并且创造一个不用害怕失败的安全环境。比如说：一个团队为了部署到测试环境而必须生成变更列表来签字，那么该团队很可能经常延迟。取代手动检查，可以依靠版本控制，因为版本控制也是可依赖并可审计的。可以将版本控制中的改变链接到团队项目管理工具中的表单上。没有了手工签字，团队可以自动化部署并加速他们的测试周期。</p>
+<p>DevOps文化的转变带来的一个效果，是新功能上线到生产环境中变得比以前更容易。这对于将来一些更深入的文化改变是非常必要的”。为确保产品中的改变是可靠的，团队需要重视“<strong>在开发过程中内建质量</strong>”的价值。这包括跨功能的考虑，比如性能和安全。持续交付，包括自测，就形成了允许我们周期性的、低风险的部署的基础。</p>
+<p>为了持续的改进开发人员和运维人员的协作方式以及改进系统自身，对于团队来说，还需要重视反馈。对于诊断问题和持续改进来说，生产环境监控是一个很有帮助的反馈回路。</p>
+<p><strong>自动化是DevOps运动的基石，促进协作</strong>。如测试、配置和部署发布等自动化方式，可以将人们解放出来，以聚焦在其他更有价值的活动上，并且减少人为的失误。自动化带来的一个有益的“副作用”是：自动化脚本和测试可以被用作对于系统来说有用的、并总是及时更新的文档。比如说，通过自动化的服务器配置可以消除跟雪花服务器（没有一台服务器配置是相同的）相关的猜测工作，这意味着开发和运维人员可以同样理解一个服务器的变更是如何配置的了。</p>
+<h3 id="8-devops-使用的工具">8. DevOps 使用的工具</h3>
+<p>前文简要论述了 DevOps 使用的一些工具，下面列出需要知晓的一些关键工具和实践。</p>
+<h4 id="源代码库">源代码库</h4>
+<p>开发人员使用源代码库签入和修改代码。源代码库管理签入的各个版本的代码，这样开发人员不会覆盖彼此的工作成果。</p>
+<p>源代码控制已有 40 年的历史，至今依然是持续集成的主要组件。流行的源代码管理工具有 Git、Subversion、Cloudforce、Bitbucket 和 TFS。</p>
+<h4 id="构建服务器">构建服务器</h4>
+<p>构建服务器是把源代码库中的代码编译为可执行代码的自动化工具。流行的工具有 Jenkins、SonarQube 和 Artifactory。</p>
+<h4 id="配置管理">配置管理</h4>
+<p>配置管理定义服务器或环境的配置。流行的配置管理工具有 Puppet 和 Chef。</p>
+<h4 id="虚拟基础设施">虚拟基础设施</h4>
+<p>亚马逊的 Web Services 和微软的 Azure 是典型的虚拟基础设施。虚拟基础设施由销售基础设施或平台即服务 (PaaS) 的云厂商提供。这些基础设施提供 API，以便使用 Puppet 和 Chef 这样的配置管理工具编程创建新机器。</p>
+<p>此外，还有 VMware 的 vCloud 这样的私有云。私有的虚拟基础设施使在自有数据中心的硬件上运行云成为可能。</p>
+<p>虚拟基础设施与自动化工具一起，给实践 DevOps 的组织赋能，配置服务器不再需要任何键盘操作。如果想要测试新开发的代码，可以自动把代码发到云基础设施、构建环境、运行所有测试，而无需人为干预。</p>
+<h4 id="自动化测试">自动化测试</h4>
+<p>自动化测试由来已久。DevOps 测试关注构建流水线中的自动化测试，以确保对可部署的构建有足够的信心。要做到持续部署，就要能相信在没有任何人工干预的情况下，代码是可部署的。而如果没有全面的自动化测试，就不可能达成持续部署。流行的工具有 Selenium 和 Watir。</p>
+<h4 id="流水线编排">流水线编排</h4>
+<p>流水线如同一条制造装配线，从开发人员提交完工的代码，一直到代码部署在生产环境，或后期的预生产环境。</p>
+<h4 id="一体化的企业级软件开发和交付">一体化的企业级软件开发和交付</h4>
+<p>VersionOne VS 整合敏捷应用生命周期管理和 DevOps，在一个平台上提供了整个软件交付流水线的全貌。VersionOne® Continuum™ For DevOps 是企业级的持续交付解决方案，支撑整个软件交付周期变更流程的编排、自动化和可视化。</p>
+<h3 id="9-devops-的历史">9. DevOps 的历史</h3>
+<h4 id="2007">2007</h4>
+<p>Patrick Debois 是一名软件开发顾问，他的一个目标是研究 IT 的各个方面。为此，Patrick 在 15 年中历任开发人员、网络专家、系统管理员、测试人员和项目经理等许多不同 IT 职位，以体验一个 IT 组织中的每个角色，获得对 IT 的整体理解。</p>
+<p>Patrick  曾在一个大型数据中心迁移项目中做咨询工作。在这个项目中，他负责测试，所以要与开发人员和运营人员共事很长时间。Patrick  一直为 Dev 和 Ops 的不同工作方式感到困扰，在这次数据中心迁移中，面对管理跨越开发团队和运营团队工作的挑战，他尤为沮丧。</p>
+<p>持续集成在敏捷社区中越来越受欢迎，并使开发人员更接近部署，但是仍然没有任何东西可以完全跨越开发团队和运营团队的鸿沟。Patrick 相信一定会有更好的方式让这两个团队协同工作。</p>
+<h4 id="2008">2008</h4>
+<p>Andrew Shafer 在敏捷 2008 大会上提交了一个“敏捷基础设施”的临时话题。Patrick Debois 看到这个话题就去参会，然而只有他自己出席。对这个临时话题感兴趣的人少到话题发起人 Andrew 本人都未现身。</p>
+<p>幸运的是，看到有其他人也有兴趣解决开发团队和运营团队协作的挑战，Patrick 热情高涨，找到了 Andrew 安德鲁，俩人决定建立一个名为敏捷系统管理的谷歌讨论组。</p>
+<h4 id="2009">2009</h4>
+<p>在圣约瑟的 O&rsquo;Reilly Velocity 大会上，Flickr 技术运营高级副总裁 John Allspaw 和 Flickr 工程总监 Paul Hammond 作了著名的演讲，“每天 10 次部署 - Flickr 的开发团队和运营团队协作”。这一演讲为开发团队和运营团队如何有效协作以改善软件部署奠定了基础。</p>
+<p>Patrick Debois 通过视频直播观看了这个在比利时的演讲，并受到启发，在比利时的根特市发起了他自己的会议，DevOpsDays。这次会议聚集了一群积极进取、有前瞻性、努力改善软件部署的精英。可能更重要的是，这群人在推特上用 #DevOpsDays 标签继续讨论。为了节省推特讨论的字符，大家去掉了标签中的 Days，标签就成了 #DevOps。</p>
+<h4 id="2010">2010</h4>
+<p>第二年，DevOpsDays 在澳大利亚和美国举行。随着时间的推移，越来越多的 DevOpsDays 在世界各地的不同国家和城市举行。面对面的会议激发了越来越多的人对 DevOps 充满热情，直到它成为一场全面的草根运动。</p>
+<h4 id="2011">2011</h4>
+<p>直到 2011 年，DevOps 运动一直由个人和开源工具推动，很少有分析师或供应商关注。但在 2011 年，这项运动开始成为主流，吸引了 Gartner  公司的 Cameron Haight 和 451 Research 公司的 Jay Lyman 等分析师的注意。大的供应商开始热捧 DevOps。</p>
+<h4 id="2012">2012</h4>
+<p>到 2012 年，DevOps 很快成了一个流行语，DevOpsDays 继续增长。</p>
+<h4 id="2013">2013</h4>
+<p>公众对 DevOps 信息的渴望给了几位作者就此主题撰写书籍的灵感。最引入注目的书籍有 Gene Kim, Kevin Behr 和 George Spafford 的《凤凰项目》，Mary Poppendiek 和 Tom Poppendiek 的《精益软件开发》。</p>
+<h4 id="2014">2014</h4>
+<p>诸如 Target、Nordstrom 和乐高这样的大公司成为第一批引进 DevOps 的公司。</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/devops">DevOps</a>,</li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/p01l7z3c.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/">
+          <h5 class="mt-0">产品经理和产品负责人如何能有效地合作</h5>
+        </a>
+        27 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/user_interface_futuristic_digital_transformation_thinkstock_826567492-100740667-large.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/">
+          <h5 class="mt-0">成功实施数字化转型的7个秘诀</h5>
+        </a>
+        23 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/top-8-trends-shaping-digital-transformation-in-2021-000.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/">
+          <h5 class="mt-0">2021年塑造数字化转型的8大趋势</h5>
+        </a>
+        10 Apr 2021
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/aiops" class="text-color d-block pb-3 mt-3 text-decoration-none">Aiops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/devops" class="text-color d-block pb-3 mt-3 text-decoration-none">Devops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%96%87%e6%a1%a3" class="text-color d-block pb-3 mt-3 text-decoration-none">文档</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%bc%94%e8%ae%b2" class="text-color d-block pb-3 mt-3 text-decoration-none">演讲</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%a4%be%e5%8c%ba" class="text-color d-block pb-3 mt-3 text-decoration-none">社区</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%bf%bb%e8%af%91" class="text-color d-block pb-3 mt-3 text-decoration-none">翻译</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e8%b0%83%e6%9f%a5" class="text-color d-block pb-3 mt-3 text-decoration-none">调查</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">TAGS</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agile">Agile</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agril">Agril</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aiops">Aiops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analysis">Analysis</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/containers">Containers</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cre">Cre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devcloud">Devcloud</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops">Devops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops-trend">Devops trend</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devsecops">Devsecops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/digital-transformation">Digital transformation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/docker">Docker</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/git">Git</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/google">Google</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ha">Ha</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/hack">Hack</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/infrastructure">Infrastructure</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interview">Interview</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-leadership">It leadership</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-strategy">It strategy</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e6%88%98%e7%95%a5">It 战略</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e9%a2%86%e5%af%bc%e5%8a%9b">It 领导力</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/prodmgmt">Prodmgmt</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/react">React</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rust">Rust</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/security">Security</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/service-meshes">Service meshes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/slo">Slo</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/software-development">Software development</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sre">Sre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tips">Tips</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ui">Ui</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ux">Ux</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86">产品管理</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bc%80%e5%8f%91">开发</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%be%ae%e6%9c%8d%e5%8a%a1">微服务</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bf%97%e6%84%bf%e8%80%85">志愿者</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%88%90%e9%95%bf">成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%8f%e6%8d%b7">敏捷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e5%ad%97%e5%8c%96%e8%bd%ac%e5%9e%8b">数字化转型</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8">数据驱动</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%96%87%e5%8c%96">文化</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a0%87%e5%87%86%e8%ae%a4%e8%af%81">标准认证</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a8%a1%e6%9d%bf">模板</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%af%94%e8%b5%9b">比赛</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%b5%81%e9%87%8f%e6%9f%93%e8%89%b2">流量染色</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e7%81%b0%e5%ba%a6%e5%8f%91%e5%b8%83">灰度发布</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%81%8c%e4%b8%9a%e6%88%90%e9%95%bf">职业成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b0%83%e6%9f%a5">调查</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b4%a1%e7%8c%ae">贡献</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%97%ae%e5%8d%b7">问卷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%9d%a2%e8%af%95">面试</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <h4 class="text-white mb-4">中国DevOps社区</h4>
+          <p class="text-light mb-5">中国 DevOps 社区在全国的18个城市定期举办 Meetup 活动，社区年会举办年度峰会，每个月举办两次线上技术分享交流活动。我们致力于通过打造最优的线下交流社区，推动 DevOps 运动在国内的发展。</p>
+          <h4 class="text-white mb-4">关注我们</h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://weibo.cn/awsfaq/"><i class="fa fa-weibo"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/devopscn"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/devops-china/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.meetup.com/china-devops/"><i class="fa fa-meetup"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://gitlab.com/devopschina/"><i class="fa fa-gitlab"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">导航</h4>
+              <ul class="list-styled">
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/index.html">首页</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/about/index.html">关于</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/blog/index.html">博客</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="http://pipeline.devopsmeetup.com">Pipeline Craft</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://space.bilibili.com/370989874">社区B站</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">联系信息</h4>
+              <ul class="list-unstyled">
+                
+                <li class="text-light mb-3">微信订阅号: DevOpsMeetup</li>
+                
+                <li class="text-light mb-3">微信服务号: DevOpsChina</li>
+                
+                <li class="text-light mb-3">邮件：info@devopsChina.org</li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white"><span class="text-primary">Copyright</span> &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 中国 DevOps 社区  | 京ICP备20023228号-1</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+<script type="text/javascript">
+  
+  
+  
+  var css1 = document.createElement('link');
+  css1.rel = 'stylesheet';
+  css1.href = 'https://devopschina.org/plugins/bootstrap/bootstrap.min.css';
+  css1.type = 'text/css';
+  var fastCSS1 = document.getElementsByTagName('link')[0];
+  fastCSS1.parentNode.insertBefore(css1, fastCSS1);
+  
+  
+  var css2 = document.createElement('link');
+  css2.rel = 'stylesheet';
+  css2.href = 'https://devopschina.org/plugins/slick/slick.css';
+  css2.type = 'text/css';
+  var fastCSS2 = document.getElementsByTagName('link')[0];
+  fastCSS2.parentNode.insertBefore(css2, fastCSS2);
+  
+  
+  var css3 = document.createElement('link');
+  css3.rel = 'stylesheet';
+  css3.href = 'https://devopschina.org/plugins/fontawesome/font-awesome.min.css';
+  css3.type = 'text/css';
+  var fastCSS3 = document.getElementsByTagName('link')[0];
+  fastCSS3.parentNode.insertBefore(css3, fastCSS3);
+  
+  
+  var css4 = document.createElement('link');
+  css4.rel = 'stylesheet';
+  css4.href = 'https://devopschina.org/plugins/animate/animate.css';
+  css4.type = 'text/css';
+  var fastCSS4 = document.getElementsByTagName('link')[0];
+  fastCSS4.parentNode.insertBefore(css4, fastCSS4);
+  
+  
+  var css5 = document.createElement('link');
+  css5.rel = 'stylesheet';
+  css5.href = 'https://devopschina.org/plugins/venobox/venobox.css';
+  css5.type = 'text/css';
+  var fastCSS5 = document.getElementsByTagName('link')[0];
+  fastCSS5.parentNode.insertBefore(css5, fastCSS5);
+  
+</script>
+
+  
+
+<!-- JS Plugins -->
+
+<script src="https://devopschina.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://devopschina.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://devopschina.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://devopschina.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://devopschina.org/plugins/modernizer/modernizr.min.js"></script>
+
+<script src="https://devopschina.org/plugins/mixitup/mixitup.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/mark.js"></script>
+
+<script src="https://devopschina.org/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://devopschina.org/js/script.min.js"></script>
+</body>
+</html>

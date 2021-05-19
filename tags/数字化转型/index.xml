@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数字化转型 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B/</link>
+    <description>Recent content in 数字化转型 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 23 Apr 2021 22:46:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>成功实施数字化转型的7个秘诀</title>
+      <link>https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/</guid>
+      <description>技术优先的数字化转型策略奠定了失败的根基，首先要让你的组织时刻牢记以客户为中心的目标。</description>
+    </item>
+    
+    <item>
+      <title>2021年塑造数字化转型的8大趋势</title>
+      <link>https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/</link>
+      <pubDate>Sat, 10 Apr 2021 11:10:58 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/</guid>
+      <description>在本报告中，我们将重点介绍CIO、IT领导者和组织在数字化转型过程中面临的一些大趋势</description>
+    </item>
+    
+    <item>
+      <title>DevOps 帮助数字化转型的10个最佳实践</title>
+      <link>https://devopschina.org/blog/devops-role-digital-transformation/</link>
+      <pubDate>Thu, 14 Nov 2019 01:22:14 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/devops-role-digital-transformation/</guid>
+      <description>DevOps 的威力越来越大，影响范围也越来越广。想了解 DevOps 影响数字化转型的方式都有哪些吗？赶紧阅读本文获取最佳实践吧！</description>
+    </item>
+    
+  </channel>
+</rss>

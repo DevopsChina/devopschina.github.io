@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta charset="utf-8" />
+  <title>如何提高Kubernetes的弹性 - 中国 DevOps 社区官方网站</title>
+  <meta name="description" content="中国 DevOps 社区官方网站" />
+  <meta property="og:title" content="如何提高Kubernetes的弹性" />
+  <meta name="twitter:title" content="如何提高Kubernetes的弹性" /> 
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="Kubernetes 系统的优点是高可用性和弹性，但是在实际使用过程中，由于海量的日志信息给迅速找到 Kubernetes 的故障点造成了困难，从而造成了故障恢复的延误，无法充分发挥 Kubernetes 的优点。本文作者提供了一种容易实现和已经验证了的方法让读者能迅速掌握，从而充分体现和发挥出Kubernetes真正的高可恢复性的能力。"
+  />
+  
+  <meta name="author" content="中国 DevOps 社区" />
+   <meta name="generator" content="Hugo 0.73.0" /> 
+  <!-- plugins -->
+  <noscript>
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/bootstrap/bootstrap.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/slick/slick.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/fontawesome/font-awesome.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/animate/animate.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/venobox/venobox.css " />
+    
+  </noscript>
+
+  <!-- Main Stylesheet -->   
+  <link
+    rel="stylesheet"
+    href="https://devopschina.org/scss/style.min.29bbcd5accceea3cb5f9001b65e953f838644198a544e01bcb2c22e07e1671c7.css"
+    integrity="sha256-KbvNWszO6jy1&#43;QAbZelT&#43;DhkQZilROAbyywi4H4Wccc="
+    media="screen"
+  />
+
+  <!--Favicon--> 
+  
+  <link rel="shortcut icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon"> <link rel="icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon">
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-159133967-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-159133967-1");
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader"></div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="https://devopschina.org/"><img class="img-fluid pb-lg-3" src="https://devopschina.org/images/logo.png" alt="Bexar"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://devopschina.org/"> 首页 </a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event/index.html">活动</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/index.html">博客</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">团队</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about/index.html">关于</a>
+            </li>
+            
+            
+          </ul>
+          
+          
+          <!-- get start btn -->
+          <a href="https://www.hdb.com/u/bqaf3u.html" class="btn btn-primary hover-ripple">活动报名</a>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('https://devopschina.org/images/backgrounds/blog-bg.jpg'),url('https://devopschina.org/ALT-txt');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">如何提高Kubernetes的弹性</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="https://devopschina.org/">首页</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">如何提高Kubernetes的弹性</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="https://devopschina.org/images/blog/0_Oue3X_Y3apY-n2gM.jpg" alt="post thumb" class="img-fluid w-100">
+          <div class="card-type hover-ripple">翻译</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">付文新</strong>/ on <strong class="text-dark">27 Aug 2019</strong></div>
+        <h2>如何提高Kubernetes的弹性</h2>
+        <div class="content">
+          <blockquote>
+<p>社区译者：付文新</p>
+</blockquote>
+<blockquote>
+<p>审校：韦世滴</p>
+</blockquote>
+<blockquote>
+<p>原文地址(原作者：Tim Little)：<a href="https://medium.com/kudos-engineering/increasing-resilience-in-Kubernetes-b6ddc9fecf80">https://medium.com/kudos-engineering/increasing-resilience-in-Kubernetes-b6ddc9fecf80 </a></p>
+</blockquote>
+<p>Kubernetes 有两大关键特性：高可用性和弹性。但是当 Kubernetes 集群出现不稳定的时候，我们能做什么呢？眼睁睁看着自己的巨轮沉入深海？</p>
+<h4 id="kubernetes-节点问题">Kubernetes 节点问题</h4>
+<p>我们在使用谷歌 Kubernetes 引擎集群（GKE）时常会遇见这个问题：集群中的 Kubernetes 节点经常性的宕机。</p>
+<p>其影响是调度问题节点的容器变得无法响应，我们的监控系统开始大量发送 SLO 和错误预算消费的告警邮件。想更多的了解什么是 SLO 和错误预算告警，以及我们是如何监控的，请查看我之前的一篇<a href="https://medium.com/kudos-engineering/managing-reliability-with-slos-and-error-budgets-37346665abf6">博文</a>。</p>
+<p>通过运行 <code>gcloud container operations list</code> 检查命令，我们发现节点会每隔几小时就尝试<a href="https://cloud.google.com/kubernetes-engine/docs/how-to/node-auto-repair">自动修复</a>。</p>
+<p><img src="/images/blog/1_uLTkpy6Hv_nuyHNESB6XWg.png" alt=""></p>
+<p>然而当我们查看 Stackdriver 日志，我们发现了大量的日志，这使得定位问题变得如同海底捞针。</p>
+<p>因此我们申请了 Google 的支持，希望可以帮助我们找到问题的根本原因。</p>
+<p>不幸的是由于时区差异和我们的账号使用的是遗留支持包的原因，我们每隔24小时才能看到一条 Google 反馈的信息。</p>
+<p>最终这个问题耗尽了我们 Kubernetes 中一系列服务的错误预算，因此在真正的 <a href="https://landing.google.com/sre/sre-book/chapters/embracing-risk/#xref_risk-management_unreliability-budgets">SRE 风格</a>中，我们致力于提高 Kubernetes 集群和 Istio 服务网格的弹性。</p>
+<h4 id="增加-kubernetes-服务的弹性">增加 kubernetes 服务的弹性</h4>
+<p>我们首先深入研究了 Kubernetes 集群的设置及运行在它之上的服务，然后确定我们可以增加弹性的范围，主要目的是减少当单个节点无法响应时产生的影响。</p>
+<ul>
+<li>副本数量和 pod 在不同节点的分布</li>
+</ul>
+<p>我们能够改进提升的第一个方面就是增加 Kubernetes <a href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/">Deployment</a> 的副本数量。我们在 Kudos 上部署了采用微服务架构的服务，这些服务都特别微小，没有状态，特别适合水平扩展。</p>
+<p>然而有些 Deployment 只运行一个 pod 上，如果这个 pod 刚巧运行在发生问题的节点上，我们的服务就会中断。因此我们修改了 Deployment，运行至少3个副本以提高弹性。</p>
+<p>当时我们只有3个节点（现在14个），这导致了另外一个问题：有时 Kubernetes 会调度所有 pod 到同一个节点上。</p>
+<p>因此我们使用了 Kubernetes 的一个名为 <a href="https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity">Pod AntiAffinity</a> 的功能特性：如果某个节点已经包含具有相同标签（例如：<code>app=&lt;service-name&gt;</code>）的 pod，该特性将指示调度程序把该节点标记为不可调度。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">affinity</span>:
+    <span style="color:#66d9ef">podAntiAffinity</span>:
+      <span style="color:#66d9ef">preferredDuringSchedulingIgnoredDuringExecution</span>:
+      - <span style="color:#66d9ef">weight</span>: <span style="color:#ae81ff">100</span>
+        <span style="color:#66d9ef">podAffinityTerm</span>:
+          <span style="color:#66d9ef">labelSelector</span>:
+            <span style="color:#66d9ef">matchExpressions</span>:
+            - <span style="color:#66d9ef">key</span>: app
+              <span style="color:#66d9ef">operator</span>: In
+              <span style="color:#66d9ef">values</span>:
+              - &lt;service-name<span style="color:#e6db74">&gt;
+</span><span style="color:#e6db74">          topologyKey: &#34;kubernetes.io/hostname&#34;</span>
+</code></pre></div><p>添加了这些内容并重新部署了所有服务之后，我通过运行 <code>kubectl	get	pods	-o customcolumns=’NAME:.metadata.name,NODENAME:.spec.nodeName</code> 命令验证了 pod 被调度到不同的节点上。</p>
+<p>现在如果我们的一个节点再次宕机，我们也只损失了部署的3个 pod 中的一个，我们的服务仍然可用。</p>
+<ul>
+<li>就绪探针与预停命令</li>
+</ul>
+<p>我们注意到另一个问题是当节点被修复时，Kubernetes 会在节点准备就绪之前就开始发送流量。在升级 Kubernetes 节点池的时候也遇到过类似问题，但我们从未深究其因。</p>
+<p>经过 Google 一番之后，我们发现一篇关于<a href="https://blog.sebastian-daschner.com/entries/zero-downtime-updates-kubernetes">零停机滚动更新</a>的博客。这篇博客的主要内容之一是关于把 pod 标记为终止，并从负载均衡中将其删除的异步特性。</p>
+<blockquote>
+<p>这种重新配置是异步进行的，因此不能保证其按照正确的顺序，从而导致不少请求被分发到终止的 pod 上，进而致使请求崩溃。</p>
+</blockquote>
+<p>从此以后，我们在所有的服务上都增加了<a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/#define-readiness-probes">Readiness probes</a>(就绪探针)，并增加<a href="https://kubernetes.io/docs/tasks/configure-pod-container/attach-handler-lifecycle-event/#define-poststart-and-prestop-handlers">preStop</a>(预停)命令：该命令会等待10秒后终止，以允许这些少数连接仍然可用。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">readinessProbe</span>:
+  <span style="color:#66d9ef">httpGet</span>:
+    <span style="color:#66d9ef">path</span>: /readiness
+    <span style="color:#66d9ef">port</span>: <span style="color:#ae81ff">8080</span>
+  <span style="color:#66d9ef">initialDelaySeconds</span>: <span style="color:#ae81ff">15</span>
+<span style="color:#66d9ef">lifecycle</span>:
+  <span style="color:#66d9ef">preStop</span>:
+    <span style="color:#66d9ef">exec</span>:
+      <span style="color:#66d9ef">command</span>: [<span style="color:#e6db74">&#34;/bin/sh&#34;</span>,<span style="color:#e6db74">&#34;-c&#34;</span>,<span style="color:#e6db74">&#34;sleep 10&#34;</span>]
+</code></pre></div><ul>
+<li>Istio 水平自动伸缩</li>
+</ul>
+<p>随着 Kubernetes 的进一步稳定，我们注意到集群中另一个单点故障：Istio。</p>
+<p>我们把 Istio 当做谷歌 Kubernetes 引擎（GKE）的<a href="https://cloud.google.com/istio/docs/istio-on-gke/overview">附加组件</a>使用，这使得我们可以使用 Istio，并且不需要额外的操作开销来管理 Istio 的控制面板。</p>
+<p>Istio 使我们能够按路线分发流量到网络中的任意服务中去，而不需要每个服务都有一个公共的 IP 地址。</p>
+<p>它通过入口网关（Ingressgateway）来实现这一点，该网关是一个位于网络边缘的代理（Envoy）网关，并且连接到 Google 的负载均衡器上，以便获取访问外部网络的权限。</p>
+<p>我们遇到的问题是谷歌 Kubernetes 引擎（GKE）附加组件默认的 Istio 只在一个 pod 中部署入口网关（Ingressgateway）。这就意味着一旦该节点忽然宕机，我们就无法访问网络中的所有服务。</p>
+<p>这肯定不是理想方案，因此我们研究了下 Istio 的设置，结果发现 Google 早就意识到这一点，可以通过<a href="https://cloud.google.com/istio/docs/istio-on-gke/overview#modifying_control_plane_settings">部署 HorizontalPodAutoscaler</a> 来修改 Istio 的控制面板。为此，我们需要用这个命令 <code>kubectl edit -n istio-system Deployments/istio-telemetry</code> 向 Istio 控制面板组件添加资源请求，之后在容器中添加以下内容：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">resources</span>:
+   <span style="color:#66d9ef">requests</span>:
+     <span style="color:#66d9ef">cpu</span>: 100m
+</code></pre></div><p>这使得 <a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/">HorizontalPodAutoscaler</a> 可以检测 Pod 的 CPU 利用率，并相应的进行伸缩或扩展。就如同我们之前为其他服务所做的一样，我们还编辑了 HorizontalPodAutoscaler，使其至少有3个副本在运行。</p>
+<p><img src="/images/blog/1_2Trt6VFzq_sy8oCCugVj5Q.png" alt=""></p>
+<h4 id="根源分析">根源分析</h4>
+<p>在解决弹性问题的期间，我们一直和 Google 的支持团队保持联系。</p>
+<p>支持团队建议我们深入查看下 Kubernetes 的节点，并怀疑这是一个资源耗尽的问题。</p>
+<p>在对节点进行了一些故障排除之后，我们发现一些节点上的进程 ID 中出现了泄露，<code>&lt;defunct&gt;</code> 进程树中数以千计的进程没有被正确终止。</p>
+<p><img src="/images/blog/1_QhWh1fkOTFRVHj4yKxEAsw.png" alt=""></p>
+<p>检查了父进程 ID 之后，我们发现了问题所在。</p>
+<p><img src="/images/blog/1_eR1MBSDzzgu4HGdNbDX6jQ.png" alt=""></p>
+<p>该<code>3491355</code> 进程是我们其中的一个容器，它用来转换 HTML 页面到 PDF，使用的是 Google 的 Chrome 实例来实现这一点。</p>
+<p>这个无头服务有一个名为 <code>/readiness</code> 用来检查 Google Chrome 版本的程序，但是该程序只抓取了版本信息文件，<code>cat</code>进程并没有被正确的结束。</p>
+<p>我们之后修改了程序 readiness，并重新部署了 pdfgenerator 服务，然后我们看到运行该服务的节点中 PID 数量大幅减少。</p>
+<p>Kubernetes 开发团队预见了这个问题，并在1.14 版本中引入了 PID 限制。可惜的是我们生产环境运行的1.13版本，没能够赶上这个变化。</p>
+<h4 id="结论">结论</h4>
+<p>在这些问题背后，我们学到了大量关于 Kubernetes 和 Istio 的知识。我们更新了自己的微服务模板，使部署到我们集群中的默认微服务更有弹性，而且扩展了集群以帮助支持新服务。</p>
+<p>如果你对这些都感兴趣，为什么不考虑<a href="https://www.growkudos.com/about/careers">加入Kudos</a>？</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/kubernetes">kubernetes</a>,</li>
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/ha">HA</a>,</li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/p01l7z3c.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/">
+          <h5 class="mt-0">产品经理和产品负责人如何能有效地合作</h5>
+        </a>
+        27 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/user_interface_futuristic_digital_transformation_thinkstock_826567492-100740667-large.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/">
+          <h5 class="mt-0">成功实施数字化转型的7个秘诀</h5>
+        </a>
+        23 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/top-8-trends-shaping-digital-transformation-in-2021-000.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/">
+          <h5 class="mt-0">2021年塑造数字化转型的8大趋势</h5>
+        </a>
+        10 Apr 2021
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/aiops" class="text-color d-block pb-3 mt-3 text-decoration-none">Aiops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/devops" class="text-color d-block pb-3 mt-3 text-decoration-none">Devops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%96%87%e6%a1%a3" class="text-color d-block pb-3 mt-3 text-decoration-none">文档</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%bc%94%e8%ae%b2" class="text-color d-block pb-3 mt-3 text-decoration-none">演讲</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%a4%be%e5%8c%ba" class="text-color d-block pb-3 mt-3 text-decoration-none">社区</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%bf%bb%e8%af%91" class="text-color d-block pb-3 mt-3 text-decoration-none">翻译</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e8%b0%83%e6%9f%a5" class="text-color d-block pb-3 mt-3 text-decoration-none">调查</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">TAGS</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agile">Agile</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agril">Agril</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aiops">Aiops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analysis">Analysis</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/containers">Containers</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cre">Cre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devcloud">Devcloud</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops">Devops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops-trend">Devops trend</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devsecops">Devsecops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/digital-transformation">Digital transformation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/docker">Docker</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/git">Git</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/google">Google</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ha">Ha</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/hack">Hack</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/infrastructure">Infrastructure</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interview">Interview</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-leadership">It leadership</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-strategy">It strategy</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e6%88%98%e7%95%a5">It 战略</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e9%a2%86%e5%af%bc%e5%8a%9b">It 领导力</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/prodmgmt">Prodmgmt</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/react">React</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rust">Rust</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/security">Security</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/service-meshes">Service meshes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/slo">Slo</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/software-development">Software development</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sre">Sre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tips">Tips</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ui">Ui</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ux">Ux</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86">产品管理</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bc%80%e5%8f%91">开发</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%be%ae%e6%9c%8d%e5%8a%a1">微服务</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bf%97%e6%84%bf%e8%80%85">志愿者</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%88%90%e9%95%bf">成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%8f%e6%8d%b7">敏捷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e5%ad%97%e5%8c%96%e8%bd%ac%e5%9e%8b">数字化转型</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8">数据驱动</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%96%87%e5%8c%96">文化</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a0%87%e5%87%86%e8%ae%a4%e8%af%81">标准认证</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a8%a1%e6%9d%bf">模板</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%af%94%e8%b5%9b">比赛</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%b5%81%e9%87%8f%e6%9f%93%e8%89%b2">流量染色</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e7%81%b0%e5%ba%a6%e5%8f%91%e5%b8%83">灰度发布</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%81%8c%e4%b8%9a%e6%88%90%e9%95%bf">职业成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b0%83%e6%9f%a5">调查</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b4%a1%e7%8c%ae">贡献</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%97%ae%e5%8d%b7">问卷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%9d%a2%e8%af%95">面试</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <h4 class="text-white mb-4">中国DevOps社区</h4>
+          <p class="text-light mb-5">中国 DevOps 社区在全国的18个城市定期举办 Meetup 活动，社区年会举办年度峰会，每个月举办两次线上技术分享交流活动。我们致力于通过打造最优的线下交流社区，推动 DevOps 运动在国内的发展。</p>
+          <h4 class="text-white mb-4">关注我们</h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://weibo.cn/awsfaq/"><i class="fa fa-weibo"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/devopscn"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/devops-china/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.meetup.com/china-devops/"><i class="fa fa-meetup"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://gitlab.com/devopschina/"><i class="fa fa-gitlab"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">导航</h4>
+              <ul class="list-styled">
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/index.html">首页</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/about/index.html">关于</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/blog/index.html">博客</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="http://pipeline.devopsmeetup.com">Pipeline Craft</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://space.bilibili.com/370989874">社区B站</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">联系信息</h4>
+              <ul class="list-unstyled">
+                
+                <li class="text-light mb-3">微信订阅号: DevOpsMeetup</li>
+                
+                <li class="text-light mb-3">微信服务号: DevOpsChina</li>
+                
+                <li class="text-light mb-3">邮件：info@devopsChina.org</li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white"><span class="text-primary">Copyright</span> &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 中国 DevOps 社区  | 京ICP备20023228号-1</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+<script type="text/javascript">
+  
+  
+  
+  var css1 = document.createElement('link');
+  css1.rel = 'stylesheet';
+  css1.href = 'https://devopschina.org/plugins/bootstrap/bootstrap.min.css';
+  css1.type = 'text/css';
+  var fastCSS1 = document.getElementsByTagName('link')[0];
+  fastCSS1.parentNode.insertBefore(css1, fastCSS1);
+  
+  
+  var css2 = document.createElement('link');
+  css2.rel = 'stylesheet';
+  css2.href = 'https://devopschina.org/plugins/slick/slick.css';
+  css2.type = 'text/css';
+  var fastCSS2 = document.getElementsByTagName('link')[0];
+  fastCSS2.parentNode.insertBefore(css2, fastCSS2);
+  
+  
+  var css3 = document.createElement('link');
+  css3.rel = 'stylesheet';
+  css3.href = 'https://devopschina.org/plugins/fontawesome/font-awesome.min.css';
+  css3.type = 'text/css';
+  var fastCSS3 = document.getElementsByTagName('link')[0];
+  fastCSS3.parentNode.insertBefore(css3, fastCSS3);
+  
+  
+  var css4 = document.createElement('link');
+  css4.rel = 'stylesheet';
+  css4.href = 'https://devopschina.org/plugins/animate/animate.css';
+  css4.type = 'text/css';
+  var fastCSS4 = document.getElementsByTagName('link')[0];
+  fastCSS4.parentNode.insertBefore(css4, fastCSS4);
+  
+  
+  var css5 = document.createElement('link');
+  css5.rel = 'stylesheet';
+  css5.href = 'https://devopschina.org/plugins/venobox/venobox.css';
+  css5.type = 'text/css';
+  var fastCSS5 = document.getElementsByTagName('link')[0];
+  fastCSS5.parentNode.insertBefore(css5, fastCSS5);
+  
+</script>
+
+  
+
+<!-- JS Plugins -->
+
+<script src="https://devopschina.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://devopschina.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://devopschina.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://devopschina.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://devopschina.org/plugins/modernizer/modernizr.min.js"></script>
+
+<script src="https://devopschina.org/plugins/mixitup/mixitup.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/mark.js"></script>
+
+<script src="https://devopschina.org/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://devopschina.org/js/script.min.js"></script>
+</body>
+</html>

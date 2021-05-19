@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>社区 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/categories/%E7%A4%BE%E5%8C%BA/</link>
+    <description>Recent content in 社区 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 06 Nov 2020 22:16:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/categories/%E7%A4%BE%E5%8C%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020年首届DevOps流水线大赛总结</title>
+      <link>https://devopschina.org/blog/recap-2020-pipeline-craft/</link>
+      <pubDate>Fri, 06 Nov 2020 22:16:53 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/recap-2020-pipeline-craft/</guid>
+      <description>首次近数近百人参与的DevOps流水线比赛胜利闭幕了，优秀代码和分享请大家细细品。</description>
+    </item>
+    
+    <item>
+      <title>首批社区自媒体合伙人名单</title>
+      <link>https://devopschina.org/blog/2020-community-wechat-partners/</link>
+      <pubDate>Thu, 20 Aug 2020 23:25:40 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/2020-community-wechat-partners/</guid>
+      <description>为了更广泛的传播社区产出的精彩文章和宣传重要活动信息。社区招募现在招募一批自媒体合伙人。</description>
+    </item>
+    
+    <item>
+      <title>2020 年第二季度-网站维护团队工作会议</title>
+      <link>https://devopschina.org/blog/web-team-meeting-1/</link>
+      <pubDate>Tue, 07 Jul 2020 23:29:06 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/web-team-meeting-1/</guid>
+      <description>网站团队的长期贡献者们的第一次线上会议。这是该团队的第一次线上见面会。一共有 7 人参加了本次会议。</description>
+    </item>
+    
+  </channel>
+</rss>

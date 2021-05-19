@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/</link>
+    <description>Recent content in Tags on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 27 Apr 2021 22:46:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agile</title>
+      <link>https://devopschina.org/tags/agile/</link>
+      <pubDate>Tue, 27 Apr 2021 22:46:34 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ProdMgmt</title>
+      <link>https://devopschina.org/tags/prodmgmt/</link>
+      <pubDate>Tue, 27 Apr 2021 22:46:34 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/prodmgmt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>产品管理</title>
+      <link>https://devopschina.org/tags/%E4%BA%A7%E5%93%81%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Tue, 27 Apr 2021 22:46:34 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E4%BA%A7%E5%93%81%E7%AE%A1%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>敏捷</title>
+      <link>https://devopschina.org/tags/%E6%95%8F%E6%8D%B7/</link>
+      <pubDate>Tue, 27 Apr 2021 22:46:34 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%95%8F%E6%8D%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Digital Transformation</title>
+      <link>https://devopschina.org/tags/digital-transformation/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/digital-transformation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IT Leadership</title>
+      <link>https://devopschina.org/tags/it-leadership/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/it-leadership/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IT Strategy</title>
+      <link>https://devopschina.org/tags/it-strategy/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/it-strategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IT 战略</title>
+      <link>https://devopschina.org/tags/it-%E6%88%98%E7%95%A5/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/it-%E6%88%98%E7%95%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IT 领导力</title>
+      <link>https://devopschina.org/tags/it-%E9%A2%86%E5%AF%BC%E5%8A%9B/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/it-%E9%A2%86%E5%AF%BC%E5%8A%9B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数字化转型</title>
+      <link>https://devopschina.org/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%95%B0%E5%AD%97%E5%8C%96%E8%BD%AC%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>调查</title>
+      <link>https://devopschina.org/tags/%E8%B0%83%E6%9F%A5/</link>
+      <pubDate>Sat, 10 Apr 2021 11:10:58 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E8%B0%83%E6%9F%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>比赛</title>
+      <link>https://devopschina.org/tags/%E6%AF%94%E8%B5%9B/</link>
+      <pubDate>Fri, 06 Nov 2020 22:16:53 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%AF%94%E8%B5%9B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>贡献</title>
+      <link>https://devopschina.org/tags/%E8%B4%A1%E7%8C%AE/</link>
+      <pubDate>Thu, 20 Aug 2020 23:25:40 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E8%B4%A1%E7%8C%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevOps</title>
+      <link>https://devopschina.org/tags/devops/</link>
+      <pubDate>Thu, 23 Jul 2020 11:36:56 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agril</title>
+      <link>https://devopschina.org/tags/agril/</link>
+      <pubDate>Mon, 20 Jul 2020 17:53:10 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/agril/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>志愿者</title>
+      <link>https://devopschina.org/tags/%E5%BF%97%E6%84%BF%E8%80%85/</link>
+      <pubDate>Tue, 07 Jul 2020 23:29:06 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E5%BF%97%E6%84%BF%E8%80%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SRE</title>
+      <link>https://devopschina.org/tags/sre/</link>
+      <pubDate>Sun, 22 Mar 2020 22:28:10 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CRE</title>
+      <link>https://devopschina.org/tags/cre/</link>
+      <pubDate>Mon, 09 Mar 2020 08:15:40 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/cre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SLO</title>
+      <link>https://devopschina.org/tags/slo/</link>
+      <pubDate>Mon, 09 Mar 2020 08:15:40 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/slo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>containers</title>
+      <link>https://devopschina.org/tags/containers/</link>
+      <pubDate>Mon, 02 Mar 2020 21:05:12 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://devopschina.org/tags/docker/</link>
+      <pubDate>Mon, 02 Mar 2020 21:05:12 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://devopschina.org/tags/kubernetes/</link>
+      <pubDate>Mon, 02 Mar 2020 21:05:12 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevSecOps</title>
+      <link>https://devopschina.org/tags/devsecops/</link>
+      <pubDate>Tue, 18 Feb 2020 14:19:51 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/devsecops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Meshes&#34;</title>
+      <link>https://devopschina.org/tags/service-meshes/</link>
+      <pubDate>Tue, 18 Feb 2020 14:19:51 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/service-meshes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automation</title>
+      <link>https://devopschina.org/tags/automation/</link>
+      <pubDate>Thu, 13 Feb 2020 08:40:30 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops trend</title>
+      <link>https://devopschina.org/tags/devops-trend/</link>
+      <pubDate>Thu, 13 Feb 2020 08:40:30 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/devops-trend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://devopschina.org/tags/security/</link>
+      <pubDate>Thu, 13 Feb 2020 08:40:30 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SOFTWARE DEVELOPMENT</title>
+      <link>https://devopschina.org/tags/software-development/</link>
+      <pubDate>Mon, 10 Feb 2020 09:17:28 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/software-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure</title>
+      <link>https://devopschina.org/tags/infrastructure/</link>
+      <pubDate>Thu, 06 Feb 2020 14:56:39 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/infrastructure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips</title>
+      <link>https://devopschina.org/tags/tips/</link>
+      <pubDate>Mon, 20 Jan 2020 19:51:00 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微服务</title>
+      <link>https://devopschina.org/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Sun, 01 Dec 2019 09:14:00 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>流量染色</title>
+      <link>https://devopschina.org/tags/%E6%B5%81%E9%87%8F%E6%9F%93%E8%89%B2/</link>
+      <pubDate>Sun, 01 Dec 2019 09:14:00 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%B5%81%E9%87%8F%E6%9F%93%E8%89%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>灰度发布</title>
+      <link>https://devopschina.org/tags/%E7%81%B0%E5%BA%A6%E5%8F%91%E5%B8%83/</link>
+      <pubDate>Sun, 01 Dec 2019 09:14:00 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E7%81%B0%E5%BA%A6%E5%8F%91%E5%B8%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevCloud</title>
+      <link>https://devopschina.org/tags/devcloud/</link>
+      <pubDate>Thu, 21 Nov 2019 00:40:28 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/devcloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://devopschina.org/tags/git/</link>
+      <pubDate>Thu, 21 Nov 2019 00:40:28 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AIOps</title>
+      <link>https://devopschina.org/tags/aiops/</link>
+      <pubDate>Wed, 20 Nov 2019 23:59:18 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/aiops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI</title>
+      <link>https://devopschina.org/tags/ai/</link>
+      <pubDate>Wed, 20 Nov 2019 23:24:49 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据驱动</title>
+      <link>https://devopschina.org/tags/%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8/</link>
+      <pubDate>Wed, 20 Nov 2019 23:24:49 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>标准认证</title>
+      <link>https://devopschina.org/tags/%E6%A0%87%E5%87%86%E8%AE%A4%E8%AF%81/</link>
+      <pubDate>Fri, 15 Nov 2019 11:53:11 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%A0%87%E5%87%86%E8%AE%A4%E8%AF%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>文化</title>
+      <link>https://devopschina.org/tags/%E6%96%87%E5%8C%96/</link>
+      <pubDate>Thu, 14 Nov 2019 12:50:15 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%96%87%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UI</title>
+      <link>https://devopschina.org/tags/ui/</link>
+      <pubDate>Wed, 13 Nov 2019 10:14:50 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UX</title>
+      <link>https://devopschina.org/tags/ux/</link>
+      <pubDate>Wed, 13 Nov 2019 10:14:50 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/ux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis</title>
+      <link>https://devopschina.org/tags/analysis/</link>
+      <pubDate>Wed, 16 Oct 2019 10:04:21 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hack</title>
+      <link>https://devopschina.org/tags/hack/</link>
+      <pubDate>Wed, 16 Oct 2019 10:04:21 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/hack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>职业成长</title>
+      <link>https://devopschina.org/tags/%E8%81%8C%E4%B8%9A%E6%88%90%E9%95%BF/</link>
+      <pubDate>Thu, 26 Sep 2019 14:09:58 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E8%81%8C%E4%B8%9A%E6%88%90%E9%95%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://devopschina.org/tags/google/</link>
+      <pubDate>Sat, 21 Sep 2019 12:34:19 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>模板</title>
+      <link>https://devopschina.org/tags/%E6%A8%A1%E6%9D%BF/</link>
+      <pubDate>Sat, 21 Sep 2019 12:34:19 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%A8%A1%E6%9D%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://devopschina.org/tags/react/</link>
+      <pubDate>Wed, 18 Sep 2019 15:21:59 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://devopschina.org/tags/rust/</link>
+      <pubDate>Wed, 18 Sep 2019 15:21:59 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interview</title>
+      <link>https://devopschina.org/tags/interview/</link>
+      <pubDate>Tue, 03 Sep 2019 11:24:20 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>面试</title>
+      <link>https://devopschina.org/tags/%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Tue, 03 Sep 2019 11:24:20 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E9%9D%A2%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HA</title>
+      <link>https://devopschina.org/tags/ha/</link>
+      <pubDate>Tue, 27 Aug 2019 14:28:54 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/ha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开发</title>
+      <link>https://devopschina.org/tags/%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Wed, 21 Aug 2019 12:34:19 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>成长</title>
+      <link>https://devopschina.org/tags/%E6%88%90%E9%95%BF/</link>
+      <pubDate>Wed, 21 Aug 2019 12:34:19 +0800</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E6%88%90%E9%95%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>问卷</title>
+      <link>https://devopschina.org/tags/%E9%97%AE%E5%8D%B7/</link>
+      <pubDate>Tue, 07 May 2019 10:47:55 +0600</pubDate>
+      
+      <guid>https://devopschina.org/tags/%E9%97%AE%E5%8D%B7/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

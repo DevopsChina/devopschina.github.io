@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT 战略 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/it-%E6%88%98%E7%95%A5/</link>
+    <description>Recent content in IT 战略 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 23 Apr 2021 22:46:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/it-%E6%88%98%E7%95%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>成功实施数字化转型的7个秘诀</title>
+      <link>https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/</guid>
+      <description>技术优先的数字化转型策略奠定了失败的根基，首先要让你的组织时刻牢记以客户为中心的目标。</description>
+    </item>
+    
+  </channel>
+</rss>

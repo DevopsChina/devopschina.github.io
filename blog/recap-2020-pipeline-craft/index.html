@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta charset="utf-8" />
+  <title>2020年首届DevOps流水线大赛总结 - 中国 DevOps 社区官方网站</title>
+  <meta name="description" content="中国 DevOps 社区官方网站" />
+  <meta property="og:title" content="2020年首届DevOps流水线大赛总结" />
+  <meta name="twitter:title" content="2020年首届DevOps流水线大赛总结" /> 
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="首次近数近百人参与的DevOps流水线比赛胜利闭幕了，优秀代码和分享请大家细细品。"
+  />
+  
+  <meta name="author" content="中国 DevOps 社区" />
+   <meta name="generator" content="Hugo 0.73.0" /> 
+  <!-- plugins -->
+  <noscript>
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/bootstrap/bootstrap.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/slick/slick.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/fontawesome/font-awesome.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/animate/animate.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/venobox/venobox.css " />
+    
+  </noscript>
+
+  <!-- Main Stylesheet -->   
+  <link
+    rel="stylesheet"
+    href="https://devopschina.org/scss/style.min.29bbcd5accceea3cb5f9001b65e953f838644198a544e01bcb2c22e07e1671c7.css"
+    integrity="sha256-KbvNWszO6jy1&#43;QAbZelT&#43;DhkQZilROAbyywi4H4Wccc="
+    media="screen"
+  />
+
+  <!--Favicon--> 
+  
+  <link rel="shortcut icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon"> <link rel="icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon">
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-159133967-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-159133967-1");
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader"></div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="https://devopschina.org/"><img class="img-fluid pb-lg-3" src="https://devopschina.org/images/logo.png" alt="Bexar"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://devopschina.org/"> 首页 </a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event/index.html">活动</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/index.html">博客</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">团队</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about/index.html">关于</a>
+            </li>
+            
+            
+          </ul>
+          
+          
+          <!-- get start btn -->
+          <a href="https://www.hdb.com/u/bqaf3u.html" class="btn btn-primary hover-ripple">活动报名</a>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('https://devopschina.org/images/backgrounds/blog-bg.jpg'),url('https://devopschina.org/ALT-txt');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">2020年首届DevOps流水线大赛总结</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="https://devopschina.org/">首页</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">2020年首届DevOps流水线大赛总结</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="https://devopschina.org/images/blog/pipeline-craft-2020.png" alt="post thumb" class="img-fluid w-100">
+          <div class="card-type hover-ripple">活动</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">刘征</strong>/ on <strong class="text-dark">06 Nov 2020</strong></div>
+        <h2>2020年首届DevOps流水线大赛总结</h2>
+        <div class="content">
+          <h4 id="devops-流水线比赛-pipeline-craft-是什么比赛">DevOps 流水线比赛 Pipeline Craft 是什么比赛？</h4>
+<p>‘Pipeline’ 是 DevOps 的常用术语，多翻译为“流水线”，或者“管道”。‘Craft’是手工技艺，或者手艺的意思。在绝大大多数的社区活动中，口头的交流和讨论是主要的方式，当大家交流到了技术实现的深度时，也实在是无法解决“show me the code”的需求。而流水线是 DevOps 落地的一项基础设施过程工作，Pipeline as Code 也是大多数 CI/CD 工具广泛支持的功能，那么社区为什么不做一次流水线代码的较量呢？因此，‘盛夏DEVOPS流水线大比拼’、‘多说无益，“码”上较量！’、‘要么赢取冠军，要么持续加班!’等活动宣传口号呼之欲出。这就是本次比赛最初的想法和概念设计。CI/CD 是 DevOps 实战的基础，不同的团队的实践方式各不相同，Pipeline 打造的工艺也都不尽相同。参赛者选取最熟悉的开源软件和 SaaS 服务，注重展示流水线完整性的同时，在至少某个阶段上进行展示深度。</p>
+<h4 id="比赛过程回顾">比赛过程回顾</h4>
+<p>本次赛事的概要信息如下。</p>
+<ul>
+<li>活动名称：中国 DevOps 社区流水线大赛</li>
+<li>活动时间：从 8 月 18 日到 10 月 18 日</li>
+<li>活动官网：https://pipeline.devopsmeetup.com/</li>
+<li>类型：线上活动，项目代码比赛</li>
+<li>参赛说明文档：https://docs.qq.com/slide/DUG5iamZEZWFWYlZZ</li>
+</ul>
+<p>本次近百人报名的线上代码比赛活动经历了三个阶段：</p>
+<ol>
+<li>第一步-报名参与；</li>
+<li>第二步-打磨作品；</li>
+<li>第三步-演示和评分颁奖。</li>
+</ol>
+<p>回顾整个活动的过程，在赞助商云服务资源发放之后，参赛者们都陆续进入了作品打磨，微信群里的交流明显变得热闹起来，时间大概在十一前后，比赛进入了第一个小高潮。在最后的提交项目作品的过程中，参赛者们开始上线演示的那两周里，大家相互学习和请教的氛围逐渐到达了顶点，社区 B 站直播了所有线上演示；所有社区小伙伴不仅为参赛演示者的作品点赞，更赞赏他们的分享交流精神。大家不但赞叹工艺复杂全面的演示项目，还注重体会不同演示者关于常规流水线功能的独到见解；实现某个相同的流水线功能点背后的原因和动机是不尽相同的。</p>
+<p>至此，这次历时 3 个月的比赛终于胜利闭幕了，所有获奖的小伙伴们正在陆续收到奖品和获奖证书。</p>
+<p>再次感谢本次比赛活动的所有赞助商。</p>
+<p><img src="/images/blog/2020-11-07_10-11-40.jpeg" alt=""></p>
+<h5 id="参赛感言">参赛感言</h5>
+<p>参赛者们对本次中国 DevOps 社区流水线大赛整体的感言如下：</p>
+<blockquote>
+<p>王翱（代表百姓网团队）：非常荣幸参加这次中国DevOps社区所举办的流水线比赛，让我们有机会和社区内的同行进行了一次零距离的交流和学习。我们团队根据目前生产实践的经验，跟大家分享了一条可以落地的流水线，同时也看到大家使用了不同的工具链去解决流水线上的问题，也带给我们更多的视角去看待问题。最后感谢中国DevOps社区的各位评审给予我们流水线的高度评价。</p>
+</blockquote>
+<blockquote>
+<p>代江：感谢中国DevOps社区组织的这次活动，非常有意义，提供了各种环境产品，让我们能在此空间上尽情发挥，从无到有打造出一个属于自己的产品流水线。感谢鼓励，有所收获，但还很简陋，后面继续跟各位大佬学习。</p>
+</blockquote>
+<blockquote>
+<p>覃光辉：用工作之外的时间去重新思考和实现工作之内的内容，是不错的沉淀方式。感谢中国DevOps社区举办的这次活动，让我们有机会与同行互相切磋，学习，非常棒的体验！</p>
+</blockquote>
+<blockquote>
+<p>付彪：非常感谢社区提供的本次参赛机会；本次大赛不仅锤炼了自己的综合实力，还见识到其他小伙伴的DevOps流水线落地方案，也提高了我们对于DevOps实践的认知；最后祝贺 中国DevOps社区 越办越好 ！</p>
+</blockquote>
+<blockquote>
+<p>刘伟：感谢组织方，协调各种资源，大家都很优秀，希望这个行业能长久健康发展</p>
+</blockquote>
+<blockquote>
+<p>左国才：感谢中国DevOps社区，首先祝贺本次Pipeline交付流水线大赛圆满完成，从协调资源到代码演示，准备文案，准备会议，准备评审，准备颁奖，无时无刻都显示着你们的专业与热心。再次，感谢中国DevOps社区背后默默付出的工作者，你们是最可爱的人，为你们喝彩， 中国DevOps社区加油！</p>
+</blockquote>
+<blockquote>
+<p>哄哄：感谢中国DevOps社区提供的这次交流机会，让我在分享自己一点经验的同时，也从社区同行小伙伴哪里收获不少。和技术大会相比，我觉得这种形式挺新颖，也很有意义！感谢中国DevOps社区！！！</p>
+</blockquote>
+<blockquote>
+<p>葛新建：感谢组织方提供的平台，让我们有机会能与各路高手切磋。</p>
+</blockquote>
+<blockquote>
+<p>尹恒岳：感谢这次大赛给了我能够把工作上的一些想法和方法进行实践和分享。</p>
+</blockquote>
+<blockquote>
+<p>任传雷：工作比较忙，作品比较简陋，下次尽量做的更好，奖品很不错。</p>
+</blockquote>
+<blockquote>
+<p>余为国：能和行业内的大佬们一起交流学习，收获很多。</p>
+</blockquote>
+<h5 id="对赞助商产品的反馈">对赞助商产品的反馈</h5>
+<p>感谢 AWS 对本次活动赞助的云资源，为所有参赛者提供了 AWS 中国宁夏区的访问权限，提供了充足的资源用于搭建整个流水线演示环境。下面是大家对 AWS 使用体验的反馈。</p>
+<ul>
+<li>目前团队测试和生产使用的都是阿里云，使用aws上手会稍微别扭一些，需要一定的适应。后期使用非常流畅</li>
+<li>第一次使用AWS的云服务，根据指引，创建服务器还是比较容易。安装相应环境软件和在普通机器上差不多。开放端口这块，基础知识储备不够，花了些时间。后面还要继续学习。</li>
+<li>Aws的服务简单易用，提供完备的API和自动化能力，行业老大的地位真滴不一样。</li>
+<li>感谢AWS 慷慨地提供云计算资源，本次我体验了AWS 的EC2，EKS 等功能，网络带宽速率和稳定性都很好，EKS 部署省去繁琐的创建k8s的过程，解放和运维和开发，能让大家更好专注于业务本省，能更好的快速交付应用。</li>
+<li>第一次使用 AWS，深深感受到了 EKS 的傻瓜式使用体验，创建好之后后面几乎没有在 EKS 上花时间，给其他任务节省出不少时间！</li>
+<li>感谢aws提供的服务器，一直在用aws产品，会永远支持。</li>
+<li>我使用过很多云服务AWS、GCP、Azure、AliCloud，目前的体验来说AWS是第一的，精细的IAM权限控制，EKS的完善性，是可以在生产上使用的Kubernetes环境。</li>
+<li>几年没用了，体验还是很不错。</li>
+</ul>
+<p>JFrog 为本次大赛搭建了测试环境，部署了企业版产品供所有参赛者使用。JFrog 的技术专家为本次的参赛者进行了线上产品讲解和答疑。下面是大家对 JFrog 的部分使用反馈。</p>
+<ul>
+<li>操作手册比较清晰，Gitlab对接Jfrog的网络不太稳定</li>
+<li>我们公司用的就是杰蛙的产品，体验也非常好。</li>
+<li>JFrog 支持多种制品管理，支持分级授权，能很好的在团队中使用，在DevOps中是一把利器。</li>
+<li>(1) JFrog 的 Jenkins Plugin 无法自动生成 Pipeline，对插件的使用很不友好，示例代码有很多种配置方式，对初次接触者来说可能要花不少时间在调试上。(2) 功能很全，整体使用体验不错</li>
+<li>感谢JFrog提供的服务，虽然不太熟悉，以后有机会会慢慢了解的。</li>
+</ul>
+<p>Elastic Cloud 是一种云服务，Elastic 为本次的参赛者提供了超长的 45 天全功能试用账号，Elastic的社区技术布道师为本次的参赛者进行了线上 ELK 和 APM 产品讲解和答疑。</p>
+<ul>
+<li>实际体验非常好，企业版比开源版本管理更加方便，同时看到了新版本的Trace信息</li>
+<li>很遗憾本次未使用，后面会学习相关知识进行尝试。</li>
+<li>Elastic Cloud 创建集群快速方便，集成了APM，Kibana，能很好地和AWS云 结合起来，在日志分析和性能分析中能更好的助力DevOps的快速落地。</li>
+<li>之前只使用过 ELK 收集应用日志，原来还有 APM 和监控，见识了！</li>
+<li>感谢Elastic提供的服务，一直在用Elastic公司的产品。</li>
+<li>好用，使用方便。</li>
+</ul>
+<h4 id="参赛作品展示">参赛作品展示</h4>
+<p>本次比赛组工作小组成员来自社区的志愿者，他们是：大平、刘扬清、龚震天、宸星、刘征、墨香。工作小组严谨的设计了参数作品的打分规则和标准。我们在社区中邀请到了 4 位专家评委，他们是：范钢（独立咨询顾问）、Rick Jenkins（中文社区发起人）、李伟光 和 万金。评委们从 10 个单项对每个参赛作品打分，每个单项满分 10 分，对于上线演示的参赛项目，还可以获取最高 20 分的演示分，每个项目总计满分 120 分。</p>
+<h5 id="获奖者名单">获奖者名单</h5>
+<p>经过评委和社区比赛组委会一周的打分和评定工作，一下是获奖者名单。</p>
+<ul>
+<li>一等奖 ：百姓网团队 - 王翱，李如磊，高榕，王东兴，虞伟</li>
+<li>二等奖 ：左国才、哄哄、葛新建</li>
+<li>三等奖 ：代江、覃光辉、付彪（壹品仓）、刘伟、尹恒岳（funplus）、任传雷、余为国、厚德载物</li>
+</ul>
+<p>本次比赛活动的组委会在此感谢大家的参与和分享精神，相信在你们的带领下，下次一定会吸引更多的参数选手。</p>
+<p>比赛活动的最重要的特性就是“Show me the code”；这个基调既符合程序员的调性，又符合社区的 ‘少说多做’ 风格的分享。我们尊重每一份可以工作的代码，感谢和佩服线上演示参赛者的分享精神。下面是本次作品提交者的代码库清单。</p>
+<ul>
+<li>覃光辉	https://gitlab.com/tobyqin/pipeline2020</li>
+<li>厚德载物	https://github.com/hbstarjason/pipeline-craft</li>
+<li>代江	https://gitlab.com/jd83/DevOpsChinaStudy2020/</li>
+<li>王翱，李如磊，高榕，王东兴，虞伟	https://gitlab.com/baixingwang/devops-user-service</li>
+<li>尹恒岳	共享库： <a href="https://github.com/yehecarry/devops-demo.git">https://github.com/yehecarry/devops-demo.git</a>    项目地址：https://gitlab.com/yinhengyue/demo.git</li>
+<li>哄哄	https://gitlab.com/goooogs/jenkins-pipeline.git   <a href="https://gitlab.com/goooogs/spring-boot-example.git">https://gitlab.com/goooogs/spring-boot-example.git</a></li>
+<li>余为国，刘伟	http://gitlab.com/louiswei/eastlake</li>
+<li>付彪	https://github.com/fubiao/devops2020</li>
+<li>左国才	https://github.com/ZuoGuocai/DevOps2020</li>
+<li>任传雷	https://gitlab.com/leavot/rocketmq-console-devopschina</li>
+<li>葛新建	https://github.com/gxjluck/xxl-job-admin</li>
+</ul>
+<p>部分以上参赛者还为我们带来了线上项目演示，多场精彩的演示持续了好几天，在参赛者群里引发了热烈的讨论。社区在 B 站上直播的过程中，也回答了很多线上观众的疑问；下面是所有线上演示的录播视频，排名不分前后。</p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1dy4y1r7A4">https://www.bilibili.com/video/BV1dy4y1r7A4</a></li>
+<li><a href="https://www.bilibili.com/video/BV1up4y1k7eY">https://www.bilibili.com/video/BV1up4y1k7eY</a></li>
+<li><a href="https://www.bilibili.com/video/BV1pV411y79L">https://www.bilibili.com/video/BV1pV411y79L</a></li>
+<li><a href="https://www.bilibili.com/video/BV1vK411A7iq">https://www.bilibili.com/video/BV1vK411A7iq</a></li>
+<li><a href="https://www.bilibili.com/video/BV1KD4y197mJ">https://www.bilibili.com/video/BV1KD4y197mJ</a></li>
+<li><a href="https://www.bilibili.com/video/BV1wa4y1s7PZ">https://www.bilibili.com/video/BV1wa4y1s7PZ</a></li>
+<li><a href="https://www.bilibili.com/video/BV1pz4y1Z7NR">https://www.bilibili.com/video/BV1pz4y1Z7NR</a></li>
+</ul>
+<p>本次大赛的组委会再次感谢大家的分享精神和参与。</p>
+<h5 id="评分标准">评分标准</h5>
+<p>根据所有评委以及参赛者们的反馈，一下 10 个方面的评分标准还是比较全面细致，对于任何 DevOps 团队来说，这种需求标准都比较高。评分结果公布之后，还有个别参赛者在询问他们的得分情况，表示他们想知道，在那些方面还需要重点增强的。下面是本次比赛的评分标准。</p>
+<ul>
+<li>
+<p>需求管理
+1）有完整的项目说明
+2）采用SCRUM或kanban等方式来进行需求管理
+3）每个需求有工作量评估，定期更新工作量
+4）需求和代码库关联，可以关联到代码变更</p>
+</li>
+<li>
+<p>代码管理
+1）使用github或gitlab等源代码管理工具管理代码
+2）使用代码分支策略，分支短平快
+3）有code review
+4）所有都纳入版本管理，包括参数和基础环境等</p>
+</li>
+<li>
+<p>制品管理
+1）使用统一的制品库管理构建产物
+2）有清晰的存储结构，有唯一的版本号
+3）通过统一的制品库地址进行构建产物分发
+4）将依赖组件纳入制品库管理</p>
+</li>
+<li>
+<p>构建方式
+1）实现构建过程自动化，定义结构化构建脚本
+2）实现模块级共享复用
+3）实现定期自动执行构建和代码提交触发构建，
+4）构建环境配置实现标准化，实现构建资源动态弹性按需分配与回收</p>
+</li>
+<li>
+<p>持续集成
+1）研发人员具备每天多次向代码主干集成的能力，可按需集成
+2）任何变更（代码，配置，环境）都会触发完整的持续集成流程
+3）构建问题通过自动分析精准推送相关人员处理
+4）每次代码提交构建触发自动化测试和静态代码检查</p>
+</li>
+<li>
+<p>自动化测试</p>
+</li>
+</ul>
+<ol>
+<li>采用接口/服务级测试对模块/服务进行覆盖全面的接口测试；
+2) 采用代码级测试对核心模块的函数或类方法进行单元测试；
+3) 对系统进行基本的性能测试
+4）采用测试驱动开发的方式进行代码级、接口级测试</li>
+</ol>
+<ul>
+<li>
+<p>代码质量管控
+1）具有代码检查功能
+2）代码质量检查完全自动化，不需要手工干预
+3）对代码质量检查发现的部分问题自动提出修改建议，支持可视化</p>
+</li>
+<li>
+<p>部署流水线
+1）部署和发布全部实现自动化
+2）实现团队自助一键式多环境自动化部署
+3）应用和配置（的部署分离）进行分离
+4） 建立可视化部署流水线，覆盖整个软件交付过程
+5) 每次变更都会触发完整的自动化部署流水线</p>
+</li>
+<li>
+<p>环境管理
+1）建立全面的测试与灰度环境包括：开发环境，技术测试及业务测试环境以及灰度发布环境等等
+2）环境的构建可以通过容器化快速交付</p>
+</li>
+<li>
+<p>度量可视化
+1）持续收集度量数据
+2）通过可视化看板聚合报告内容多维度展示实时状态支持自动生成数据趋势图和趋势分析
+3）打造应用系统的可观测性，统一采集、分析、关联和展示日志、指标和 APM</p>
+</li>
+</ul>
+<p>以上打分标准从 10 个分项评价每个参赛项目。每个分项中还有若干条详细项目，这也可以作为所有 DevOps 实践者们的检查清单，在任何 DevOps 实践项目中，大家也可以用以上打分规则做为参考进行定期自查，查缺补漏持续改进。</p>
+<h4 id="总结">总结</h4>
+<p>中国 DevOps 社区再次感谢所有社区小伙伴对本次流水线比赛的关注，感谢所有参赛者的参与，感谢参赛者的线上分享；感谢赞助商 AWS、GitLab、Elastic 和 JFrog 的赞助支持。这是一次意犹未尽比赛，对于组织方和参赛者都是收获满满。希望有更多人能了解到我们所举办的 DevOps 流水线比赛 （DevOps Pipeline Craft），Pipeline as Code 的技术实现流水线工程技术工艺在社区里的顺畅分享，在社区里顺畅的分享和交流这种技能。中国 DevOps 社区在本次的赛事组织中也积累了大量经验，我们相信明年的大赛能办的更加成功。</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/%e6%af%94%e8%b5%9b">比赛</a>,</li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/p01l7z3c.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/">
+          <h5 class="mt-0">产品经理和产品负责人如何能有效地合作</h5>
+        </a>
+        27 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/user_interface_futuristic_digital_transformation_thinkstock_826567492-100740667-large.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/">
+          <h5 class="mt-0">成功实施数字化转型的7个秘诀</h5>
+        </a>
+        23 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/top-8-trends-shaping-digital-transformation-in-2021-000.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/">
+          <h5 class="mt-0">2021年塑造数字化转型的8大趋势</h5>
+        </a>
+        10 Apr 2021
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/aiops" class="text-color d-block pb-3 mt-3 text-decoration-none">Aiops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/devops" class="text-color d-block pb-3 mt-3 text-decoration-none">Devops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%96%87%e6%a1%a3" class="text-color d-block pb-3 mt-3 text-decoration-none">文档</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%bc%94%e8%ae%b2" class="text-color d-block pb-3 mt-3 text-decoration-none">演讲</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%a4%be%e5%8c%ba" class="text-color d-block pb-3 mt-3 text-decoration-none">社区</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%bf%bb%e8%af%91" class="text-color d-block pb-3 mt-3 text-decoration-none">翻译</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e8%b0%83%e6%9f%a5" class="text-color d-block pb-3 mt-3 text-decoration-none">调查</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">TAGS</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agile">Agile</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agril">Agril</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aiops">Aiops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analysis">Analysis</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/containers">Containers</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cre">Cre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devcloud">Devcloud</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops">Devops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops-trend">Devops trend</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devsecops">Devsecops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/digital-transformation">Digital transformation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/docker">Docker</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/git">Git</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/google">Google</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ha">Ha</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/hack">Hack</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/infrastructure">Infrastructure</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interview">Interview</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-leadership">It leadership</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-strategy">It strategy</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e6%88%98%e7%95%a5">It 战略</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e9%a2%86%e5%af%bc%e5%8a%9b">It 领导力</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/prodmgmt">Prodmgmt</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/react">React</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rust">Rust</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/security">Security</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/service-meshes">Service meshes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/slo">Slo</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/software-development">Software development</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sre">Sre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tips">Tips</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ui">Ui</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ux">Ux</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86">产品管理</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bc%80%e5%8f%91">开发</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%be%ae%e6%9c%8d%e5%8a%a1">微服务</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bf%97%e6%84%bf%e8%80%85">志愿者</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%88%90%e9%95%bf">成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%8f%e6%8d%b7">敏捷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e5%ad%97%e5%8c%96%e8%bd%ac%e5%9e%8b">数字化转型</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8">数据驱动</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%96%87%e5%8c%96">文化</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a0%87%e5%87%86%e8%ae%a4%e8%af%81">标准认证</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a8%a1%e6%9d%bf">模板</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%af%94%e8%b5%9b">比赛</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%b5%81%e9%87%8f%e6%9f%93%e8%89%b2">流量染色</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e7%81%b0%e5%ba%a6%e5%8f%91%e5%b8%83">灰度发布</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%81%8c%e4%b8%9a%e6%88%90%e9%95%bf">职业成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b0%83%e6%9f%a5">调查</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b4%a1%e7%8c%ae">贡献</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%97%ae%e5%8d%b7">问卷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%9d%a2%e8%af%95">面试</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <h4 class="text-white mb-4">中国DevOps社区</h4>
+          <p class="text-light mb-5">中国 DevOps 社区在全国的18个城市定期举办 Meetup 活动，社区年会举办年度峰会，每个月举办两次线上技术分享交流活动。我们致力于通过打造最优的线下交流社区，推动 DevOps 运动在国内的发展。</p>
+          <h4 class="text-white mb-4">关注我们</h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://weibo.cn/awsfaq/"><i class="fa fa-weibo"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/devopscn"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/devops-china/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.meetup.com/china-devops/"><i class="fa fa-meetup"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://gitlab.com/devopschina/"><i class="fa fa-gitlab"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">导航</h4>
+              <ul class="list-styled">
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/index.html">首页</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/about/index.html">关于</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/blog/index.html">博客</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="http://pipeline.devopsmeetup.com">Pipeline Craft</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://space.bilibili.com/370989874">社区B站</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">联系信息</h4>
+              <ul class="list-unstyled">
+                
+                <li class="text-light mb-3">微信订阅号: DevOpsMeetup</li>
+                
+                <li class="text-light mb-3">微信服务号: DevOpsChina</li>
+                
+                <li class="text-light mb-3">邮件：info@devopsChina.org</li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white"><span class="text-primary">Copyright</span> &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 中国 DevOps 社区  | 京ICP备20023228号-1</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+<script type="text/javascript">
+  
+  
+  
+  var css1 = document.createElement('link');
+  css1.rel = 'stylesheet';
+  css1.href = 'https://devopschina.org/plugins/bootstrap/bootstrap.min.css';
+  css1.type = 'text/css';
+  var fastCSS1 = document.getElementsByTagName('link')[0];
+  fastCSS1.parentNode.insertBefore(css1, fastCSS1);
+  
+  
+  var css2 = document.createElement('link');
+  css2.rel = 'stylesheet';
+  css2.href = 'https://devopschina.org/plugins/slick/slick.css';
+  css2.type = 'text/css';
+  var fastCSS2 = document.getElementsByTagName('link')[0];
+  fastCSS2.parentNode.insertBefore(css2, fastCSS2);
+  
+  
+  var css3 = document.createElement('link');
+  css3.rel = 'stylesheet';
+  css3.href = 'https://devopschina.org/plugins/fontawesome/font-awesome.min.css';
+  css3.type = 'text/css';
+  var fastCSS3 = document.getElementsByTagName('link')[0];
+  fastCSS3.parentNode.insertBefore(css3, fastCSS3);
+  
+  
+  var css4 = document.createElement('link');
+  css4.rel = 'stylesheet';
+  css4.href = 'https://devopschina.org/plugins/animate/animate.css';
+  css4.type = 'text/css';
+  var fastCSS4 = document.getElementsByTagName('link')[0];
+  fastCSS4.parentNode.insertBefore(css4, fastCSS4);
+  
+  
+  var css5 = document.createElement('link');
+  css5.rel = 'stylesheet';
+  css5.href = 'https://devopschina.org/plugins/venobox/venobox.css';
+  css5.type = 'text/css';
+  var fastCSS5 = document.getElementsByTagName('link')[0];
+  fastCSS5.parentNode.insertBefore(css5, fastCSS5);
+  
+</script>
+
+  
+
+<!-- JS Plugins -->
+
+<script src="https://devopschina.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://devopschina.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://devopschina.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://devopschina.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://devopschina.org/plugins/modernizer/modernizr.min.js"></script>
+
+<script src="https://devopschina.org/plugins/mixitup/mixitup.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/mark.js"></script>
+
+<script src="https://devopschina.org/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://devopschina.org/js/script.min.js"></script>
+</body>
+</html>

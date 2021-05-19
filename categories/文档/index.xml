@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文档 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/categories/%E6%96%87%E6%A1%A3/</link>
+    <description>Recent content in 文档 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 20 Dec 2019 14:22:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/categories/%E6%96%87%E6%A1%A3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>良方</title>
+      <link>https://devopschina.org/blog/liang_fang/</link>
+      <pubDate>Fri, 20 Dec 2019 14:22:35 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/liang_fang/</guid>
+      <description>飞兔做诗一首，谨以此诗献给中国 DevOps 社区，表达衷心的敬意和感谢，为所有社区的小伙伴们点赞，为社区的宣言点赞。</description>
+    </item>
+    
+    <item>
+      <title>Google 事后回顾检查清单【文档模板】</title>
+      <link>https://devopschina.org/blog/google-postmortem-checklist/</link>
+      <pubDate>Sat, 21 Sep 2019 12:34:19 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/google-postmortem-checklist/</guid>
+      <description>所谓吃一堑长一智，从哪里跌倒就从哪里排起了，看看谷歌是怎么做到的。</description>
+    </item>
+    
+  </channel>
+</rss>

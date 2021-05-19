@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta charset="utf-8" />
+  <title>重温经典：持续集成 - 中国 DevOps 社区官方网站</title>
+  <meta name="description" content="中国 DevOps 社区官方网站" />
+  <meta property="og:title" content="重温经典：持续集成" />
+  <meta name="twitter:title" content="重温经典：持续集成" /> 
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="持续集成是一种软件开发实践，本文简要介绍了持续集成技术及其应用现状。"
+  />
+  
+  <meta name="author" content="中国 DevOps 社区" />
+   <meta name="generator" content="Hugo 0.73.0" /> 
+  <!-- plugins -->
+  <noscript>
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/bootstrap/bootstrap.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/slick/slick.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/fontawesome/font-awesome.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/animate/animate.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/venobox/venobox.css " />
+    
+  </noscript>
+
+  <!-- Main Stylesheet -->   
+  <link
+    rel="stylesheet"
+    href="https://devopschina.org/scss/style.min.29bbcd5accceea3cb5f9001b65e953f838644198a544e01bcb2c22e07e1671c7.css"
+    integrity="sha256-KbvNWszO6jy1&#43;QAbZelT&#43;DhkQZilROAbyywi4H4Wccc="
+    media="screen"
+  />
+
+  <!--Favicon--> 
+  
+  <link rel="shortcut icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon"> <link rel="icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon">
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-159133967-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-159133967-1");
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader"></div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="https://devopschina.org/"><img class="img-fluid pb-lg-3" src="https://devopschina.org/images/logo.png" alt="Bexar"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://devopschina.org/"> 首页 </a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event/index.html">活动</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/index.html">博客</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">团队</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about/index.html">关于</a>
+            </li>
+            
+            
+          </ul>
+          
+          
+          <!-- get start btn -->
+          <a href="https://www.hdb.com/u/bqaf3u.html" class="btn btn-primary hover-ripple">活动报名</a>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('https://devopschina.org/images/backgrounds/blog-bg.jpg'),url('https://devopschina.org/ALT-txt');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">重温经典：持续集成</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="https://devopschina.org/">首页</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">重温经典：持续集成</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="https://devopschina.org/images/blog/continuous-integration-000.png" alt="post thumb" class="img-fluid w-100">
+          <div class="card-type hover-ripple">翻译</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">尚君领 朱露露 刘海燕 周一行</strong>/ on <strong class="text-dark">21 Jul 2020</strong></div>
+        <h2>重温经典：持续集成</h2>
+        <div class="content">
+          <blockquote>
+<p>社区译者：尚君领 朱露露 刘海燕 周一行<br>
+审校：王立杰 王英伟 高俊宁 陈文峰<br>
+原作者：Martin Fowler        <br>
+原文地址：<a href="https://martinfowler.com/articles/continuousIntegration.html">https://martinfowler.com/articles/continuousIntegration.html</a></p>
+</blockquote>
+<h3 id="摘要">摘要</h3>
+<p>持续集成是一种软件开发实践，团队成员频繁地将他们的工作成果集成在一起，通常每人每天至少提交一次，这样每天就会有多次集成。每次集成都通过自动构建(包括测试)进行验证，以便尽可能快地检测集成错误。许多团队发现这种方法可以显著减少集成问题，并允许团队更快地开发内聚软件。本文简要介绍了持续集成技术及其应用现状。</p>
+<h3 id="引言">引言</h3>
+<p>我清楚地记得我第一次看到一个大型软件项目。那时我在英国一家大型电子公司做暑期实习。我的经理，QA小组的一员，带我参观了一个地方，我们进入了一个令人沮丧的大仓库，里面堆满了立方体。我被告知这个项目已经开发了几年，目前正在集成，并且已经集成了几个月。他告诉我，没有人真正知道完成集成需要多长时间。从中我学到了软件项目的一个共同的故事：集成是一个漫长而不可预测的过程。</p>
+<p>其实不需要这样。我在ThoughtWorks的同事和世界上许多其他人所做的大多数项目都不把集成当成一个很严重的事儿。任何单个开发人员的工作都离共享的项目状态只有几个小时，并且可以在几分钟内集成回去。任何集成错误都能被快速发现并得到迅速修正。</p>
+<p>这种鲜明的对比并不是昂贵复杂工具的结果。它的本质在于一个简单的实践，也就是团队里的每个人都在频繁的集成，通常是每天对于一个受控的源代码存储库进行集成。</p>
+<p>当我向人们描述这一做法时，我通常会发现两种反应：“这里不行”和“这样做不会有多大区别”。人们在尝试的过程中发现，这比听起来容易得多，而且对开发有着巨大的影响。因此，第三种常见的反应是“是的，我们这样做了——没有它你怎么活？”</p>
+<p>术语“持续集成”起源于Kent Beck的极限编程开发过程，是最初的12个实践之一。当我开始在ThoughtWorks工作时，作为一名顾问，我鼓励在我工作的项目中使用这种技术。Matthew Foemmel把我模糊的建议变成了实际行动，我们看到了这个项目从罕见而复杂的集成，变为我描述的不是那么严重的事情。Matthew和我在这篇论文的原始版本中写下了我们的经验，这篇论文一直是我网站上最受欢迎的论文之一。</p>
+<p>尽管持续集成是一种不需要特殊工具来部署的实践，但我们发现使用持续集成服务器是很有用的。最著名的此类服务器是CruiseControl，这是一个开源工具，最初由ThoughtWorks的几个人构建，现在由一个很大的社区维护。从那时起，出现了其他一些CI服务器，有开源的，也有商用的——包括ThoughtWorks工作室的Cruise。</p>
+<h3 id="使用持续集成构建功能">使用持续集成构建功能</h3>
+<p>对于我来说，解释什么是CI以及它是如何工作的最简单的方法是展示一个快速的例子，说明它如何与一个小特性的开发一起工作。假设我必须对一个软件添加一点功能，任务是什么并不重要，因为现在我假设它很小，可以在几个小时内完成。（稍后我们将探讨更长的任务和其他问题。）</p>
+<p>首先，我将当前集成源代码的副本复制到本地开发机器上。我通过使用源代码管理系统，从主干签出一个工作副本来实现这一点。</p>
+<p>上面那段话对于使用源代码控制系统的人来说是有意义的，但是对于不使用源代码控制系统的人来说是胡言乱语。所以让我快速地为后者解释一下。源代码控制系统将项目的所有源代码保存在存储库中。系统的当前状态通常称为“主干”。开发人员可以随时在自己的机器上生成主干的受控副本，这称为“签出”。开发人员机器上的副本称为“工作副本”。（大多数情况下，你实际上是把你的工作副本更新到主干上——实际上和签出也是一样的。）</p>
+<p>现在我拿着我的工作副本，做任何我需要做的事情来完成我的任务。这将包括修改产品代码，以及添加或更改自动化测试。持续集成假定软件中有高度自动化的测试：我称之为自测试代码的工具。它们通常使用流行的XUnit测试框架的一个版本。</p>
+<p>当我完成之后（通常在我工作的不同阶段），我就在我的开发机器上执行一个自动化的构建。这将获取工作副本中的源代码，将其编译并链接到可执行文件中，然后运行自动测试。只有在所有的构建和测试都没有错误的情况下，整个构建才被认为是正确的。</p>
+<p>有了正确的构建，我就可以考虑将更改提交到存储库中。当然，问题是，在我有机会提交我的更改之前，其他人可能，而且通常已经对主干进行了更改。因此，首先我用他们的更改来更新我的工作副本，并重新构建。如果他们的更改与我的更改冲突，在编译或测试中将显示为失败。在这种情况下，我的责任是修复这个问题，并重复构建，直到我可以建立一个与主干正确同步的工作副本。</p>
+<p>一旦我自己构建了一个正确同步的工作副本，最终我就可以将我的更改提交到主干中，之后会更新存储库。</p>
+<p>然而，我的提交并没有完成我的工作。此时，我们再次构建，但这次是在基于主干代码的集成服务器上。只有当这个构建成功时，我们才能说我的更改已经完成。因为总有万一，我可能会遗漏了我的机器上的东西，存储库没有得到适当的更新。只有当我提交的更改在集成服务器上成功构建时，我的工作才能完成。这个集成构建可以由我手动执行，也可以由Cruise自动完成。</p>
+<p>如果两个开发人员之间发生冲突，通常会在第二个提交的开发人员构建其更新的工作副本时捕获冲突。否则，集成构建将失败。无论哪种方式，错误都会被快速检测到。此时，最重要的任务是修复它，并使构建重新正常工作。在持续集成环境中，不应该让失败的集成构建保持在失败状态太久。一个好的团队一天应该有很多正确的构建。不好的构建时有发生，但应该迅速被修复。</p>
+<p>这样做的结果是，有一个稳定的软件，工作正常，包含很少的错误。每个人都是从这个共享的稳定的基础上开发的，从来没有离开这个基础太远，以至于需要很长时间才能集成回来。寻找错误会花更少的时间，因为错误很快就会显现出来。</p>
+<h3 id="持续集成的实践">持续集成的实践</h3>
+<p>上面的故事是关于CI的概述，以及它在日常生活中是如何工作的。显然，让所有这些工作顺利进行并不仅仅是这些。我现在将重点介绍构成有效CI的关键实践。</p>
+<h4 id="维护单一的源代码存储库">维护单一的源代码存储库</h4>
+<p>软件项目涉及许多需要组合在一起才能构建产品的文件。跟踪所有这些文件，是一项重要的工作，特别是当有多人参与时。因此，我们毫不意外的看到，多年来，软件开发团队已经构建了管理所有这些文件的工具。这些工具称为源代码管理工具、配置管理、版本控制系统、存储库或各种其他名称，是大多数开发项目不可分割的一部分。令人悲哀和惊讶的是，它们并不是所有项目的一部分。尽管很少见，但我确实遇到不使用这样的系统的项目，项目使用一些混乱的本地和共享存储器的组合。</p>
+<p>因此，作为一个简单的基础，确保你要有一个像样的源代码管理系统。成本不是问题，因为有高质量的开源工具。当前选择的开源存储库是Subversion。（较老的开源工具CVS仍然被广泛使用，虽然比什么都没有要好得多，但是Subversion是更时髦的选择。）有趣的是，当我与开发人员交谈时，我了解到大多数商业源代码管理工具比Subversion更受欢迎。我一直听到人们说唯一值得花钱的工具就是Perforce。（译者注：本文写于2006年，时至今日，Git更为流行）</p>
+<p>一旦你得到一个源代码管理系统，确保它位于众所周知的地方，每个人都去获取源代码。没有人会问“foo-whiffle文件在哪里？”所有的东西都应该在存储库里。</p>
+<p>尽管许多团队都会使用存储库，但我发现一个常见的错误是，他们没有将所有内容都放在存储库中。如果人们使用它，他们会把代码放在那里，但你的构建需要做的一切都应该在那里，包括：测试脚本，属性文件，数据库架构，安装脚本和第三方库。我知道一些项目，将编译器检入到存储库（对于早期的大量的C++编译器很重要）。基本的经验法则是，你应该能够用一台空白的机器开始项目，做一个签出，并且能够完整的构建系统。只有少量的东西应该放在空白的机器上，通常是大的、安装复杂的和稳定的东西。操作系统、Java开发环境或基础数据库系统是典型的例子。</p>
+<p>你必须将构建所需的所有内容都放在源代码管理系统中，但是你也可以将人们通常使用的其他内容放在其中。IDE配置很适合放在那里，因为这样人们就可以很容易地共享相同的IDE设置。</p>
+<p>版本控制系统的一个特点是，它们允许你能创建多个分支，以处理不同的开发流。这是一个有用的，但不必要的功能，但它经常被过度使用，并使人们陷入麻烦。尽量少用分支。特别是在有一条主干的情况：目前正在开发的项目的唯一分支。几乎每个人大部分时间都应该在这条主干上工作。（合理的分支是修复先前生产版本的错误和临时的实验。）</p>
+<p>一般来说，你应该在源代码管理中存储构建所需的所有内容，但不存储实际构建出的内容。有些人确实将构建的产品放在源代码管理中，但我认为这是一种坏味道——这意味着更深层次的问题，通常是无法可靠地重新创建构建。</p>
+<h4 id="构建自动化">构建自动化</h4>
+<p>将源代码转换为可以运行的系统，通常是一个复杂的过程，它包括编译、移动文件、把数据库模式加载到数据库等等。然而，与软件开发中的大多数任务一样，它是可以被自动化的。它也应该是自动化的。让人们输入奇怪的命令或点击对话框是浪费时间，也最容易产生错误。</p>
+<p>构建自动化环境是系统中一个共同的特性。Unix世界使用make作为工具已经几十年了，Java社区发展了ANT（译者注：后来JAVA的构建工具发展为Maven和Gradle），并且. net社区已经有了Nant，现在又有了MSBuild。确保你可以使用单个命令使用这些脚本构建和运行启统。</p>
+<p>一个常见的错误是没有在自动化构建中包含所有内容。构建应该包括从存储库中获取数据库模式，并在执行环境中启动它。我将详细阐述我先前的经验法则：任何人都应该能够引入一台空白机器，签出存储库中的源代码，发出一个命令，之后在自己的机器上就拥有了一个正在运行的系统。</p>
+<p>构建脚本通常有不同的风格，通常是特定于平台或社区的，但他们大可不必如此。尽管我们的大多数Java项目都使用Ant，有一些在使用Ruby（Ruby Rake是一个非常好用的构建脚本的工具）。我们通过使用Ant自动化在早期的微软 COM项目中获得了某些价值。</p>
+<p>一个大的构建通常需要花费很多精力，如果你仅仅做了一个小小的更改，那么你不会想要执行所有的步骤。所以，一个好的构建工具会分析在流程中需要更改的内容。通常的做法是检查源文件和目标文件的日期，只有在源文件的日期较晚时才进行编译。依赖关系会变得更加棘手：如果一个对象文件改变了那些依赖于它的对象文件，那么这些对象文件可能也需要重新构建。编译器能够处理这类事情，也可能不处理。</p>
+<p>根据你的需要，你可以构建不同类型的东西。你可以通过是否使用测试代码或者使用不同的测试集来构建系统。有些组件可以独立构建。构建脚本应该允许你为不同的情况构建可选目标。</p>
+<p>我们普遍使用IDE，而且在使用IDE时，大多数的公司内部都有一些构建管理的过程。然而，这些文件总是IDE专有的，而且它们非常脆弱。不过，他们这些公司需要通过IDE进行工作。用户通过IDE设置自己的项目文件并将其用于单独的开发是完全没有问题的。然而，有一个在服务器上可用并且可以从其他脚本运行的主干是非常重要的。所以在Java项目中，我们可以让研发人员在IDE中构建，但是主干需要使用Ant来保证它可以在开发服务器上运行。</p>
+<h4 id="如何构建自动化测试">如何构建自动化测试</h4>
+<p>从传统意义上来讲，构建意味着编译，链接以及执行程序所需的所有其他过程。一个项目可能会运行，但是，这并不意味着它在做正确的事情。现代静态类型语言可以发现许多bug，但是更多的bug会成为“漏网之鱼”。</p>
+<p>在构建过程中包含自动化测试是更快、更有效地发现bug的比较好的方法。当然，测试并不是完美的，但它能够发现很多Bug，这就足够有用了。特别是极限编程(XP)和测试驱动开发(TDD)的兴起为自动化测试的普及做了大量工作，因此许多人已经看到了这种技术的价值。</p>
+<p>经常阅读我作品的读者会发现我是XP和TDD的忠实粉丝。然而，我想要强调的是，这两种方式都不是构建自动化测试的最佳途径。这两种方式都强调在使测试通过之前你要先编写测试——在这种模式下，测试不仅能够用于发现错误，而且还涉及探索系统的设计。这是一件好事情，但是，对持续集成而言，这并不是必需的。因为我们通常对自动化测试代码的需求比较少。（尽管TDD是我进行自动化测试的首选）</p>
+<p>对于自测试代码而言，你需要一套自动化测试体系它可以检查大部分代码库中的Bug。测试可以从一个简单的指令中启动并进行自动检测。运行测试套件的结果应该可以指出是否有任何测试失败。对于具备自测试的构建，测试的失败应该会导致构建失败。</p>
+<p>在过去的几年时间里，TDD的兴起普及了XUnit开源工具家族，这些工具对于这类测试非常理想。Xunit 工具对我们 ThoughtWorks 来说非常有价值，我也总是建议人们使用这些工具。这些由Kent Beck首创的工具，能够帮你非常容易的构建一个自动化测试环境。</p>
+<p>XUnit工具当然是让代码进行自动化测试的起点。你也应该寻找其他专注于更多端到端测试的工具。目前有很多这样的工具，包括FIT、Selenium、Sahi、Watir、FITnesse，还有很多其他工具，我在这里不打算都列出来。</p>
+<p>当然，你不能指望测试能发现一切错误。正如人们常说的那样:测试并不能证明没有缺陷。虽然你从自动化测试的构建中得到的反馈并不一定是完美的，经常运行的不完美的测试也比根本不写的完美测试要好得多。</p>
+<h4 id="每人每天都向主干提交代码">每人每天都向主干提交代码</h4>
+<p>集成主要是关于沟通的。集成允许开发人员将他们所做的更改告知其他开发人员。频繁的交流能让人们在变化发生时迅速了解情况。</p>
+<p>开发人员遵守主干的一个先决条件是，他们可以正确地构建自己的代码。当然，这包括通过构建测试。与任何提交周期一样，开发人员首先更新其工作分支以匹配主干，解决与主干的任何冲突，然后在其本地上构建。如果构建通过，那么他们可以自由地提交到主干上。</p>
+<p>通过经常这样做，开发人员可以快速发现两个开发人员之间是否存在冲突。快速修复问题的关键是快速找到它们。由于开发人员每隔几小时就提交一次冲突，所以在冲突生后的几小时内就可以检测到，此刻没有发生太多代码修改，所以容易解决。持续数周不被发现的冲突，可能很难解决。</p>
+<p>在更新工作分支时进行构建，这一事实意味着可以同时检测到编译冲突和文本冲突。由于构建是自测试的，所以你还可以检测代码运行中的冲突，如果后一种Bug在代码中存在了很长时间而没有被发现，那么它们是特别难以发现的错误。由于两次提交之间只有几个小时的更改，所以问题隐藏的地方也就只有那么多了。此外，由于没有太大的变化，你可以使用差异调试来帮助你找到错误。</p>
+<p>我的一般经验法则是，每个开发人员每天都应该提交到代码库。在实践中，如果开发人员更频繁地提交，通常是有用的。提交的频率越高，寻找冲突错误的地方就越少，解决冲突的速度也就越快。</p>
+<p>频繁的提交会鼓励开发人员将他们的工作分解成几个小时的小块。这有助于跟踪进度，并提供一种进度感。通常人们一开始觉得他们不能在几个小时内做一些有意义的事情，但是我们发现指导和练习可以帮助他们学习。</p>
+<h4 id="每次提交都应该在集成机器上构建主线">每次提交都应该在集成机器上构建主线</h4>
+<p>通过使用每日构建，团队可以得到频繁的测试构建。这应该意味着主干保持在健康的状态。然而，在实践中，依然有出错的情况。一个原因是纪律，人们没有在提交之前进行更新和构建。另一个原因是开发人员使用的机器之间的环境差异。</p>
+<p>因此，你应该确保常规构建发生在集成机器上，并且只有在此集成构建成功时，才应该认为提交已经完成。由于开发人员对提交的代码负责，所以该开发人员需要监视主干构建，以便在它崩溃时进行修复。这样做的一个推论是，你如果在当天晚些时候提交了一些改动，那么在主干构建通过之前你不能回家。</p>
+<p>我见过两种主要的方法来确保这一点：使用手动构建或持续集成服务器。</p>
+<p>手工构建方法是描述起来最简单的方法。本质上，它类似于开发人员在提交到存储库前进行的本地构建。开发人员走到集成计算机，签出主线的头部(现在存放他的最后提交)，并开始集成构建。他会密切关注构建的进展，如果构建成功，他就完成了提交。(参见Jim Shore的描述。)</p>
+<p>持续集成服务器充当存储库的监视器。每次完成对代码库的提交时，服务器都会自动将源签出到集成机器上，启动构建并将构建的结果通知提交者。直到提交者收到通知——通常是一封电子邮件——它才算完成。</p>
+<p>在ThoughtWorks，我们是持续集成服务器的忠实粉丝——事实上，我们领导了CruiseControl和CruiseControl.NET的起初的开发，他们是被广泛使用的开源CI服务器。从那时起，我们还建立了商业版的Cruise CI服务器。我们几乎在每个项目上都使用CI服务器，并且对结果非常满意。</p>
+<p>并不是所有人都喜欢使用CI服务器。吉姆·肖尔(Jim Shore)对他为什么更喜欢手工方法给出了一个颇有争议的描述。我同意他的观点，CI不仅仅是安装一些软件。这里的所有实践都需要有效地进行持续集成。但是，同样有许多优秀的CI团队发现CI服务器是一个有用的工具。</p>
+<p>许多组织按照定时计划进行定期构建，比如每天晚上。这与持续构建不同，对于持续集成来说还不够。持续集成的全部意义在于尽快发现问题。夜间构建意味着bug在被发现之前一整天都没有被发现。一旦它们在系统中存在了那么长时间，就需要花费很长时间才能找到并修复它们。</p>
+<h4 id="立即修复失败的构建">立即修复失败的构建</h4>
+<p>做持续构建非常关键的一点就是一旦主线构建失败就要立即修改它。使用CI的意义就在于，你总是能在已知稳定基础上进行开发。主线构建失败是常有的事，且也并不是什么坏事，但这却能够表明人们在提交代码之前对本地的更新和构建不够小心。然而，当主线构建确实中断时，快速修复它就变得极为重要。</p>
+<p>我记得Kent Beck说过一句话：“没有人拥有比修复失败的构建更高的优先级任务”。但也不必团队中的每个人都必须停止他们手头的工作来修改失败的构建，通常只需要几个人就可以成功修复。我们要有意识的将修复构建作为一个紧急的、高优先级的任务进行优先排序。</p>
+<p>通常，修复构建的最快方法是从主线还原到最新一次已知的、良好的构建提交状态。当然，团队不应该在构建失败的主线上进行任何调试。除非失败的原因很明显，否则只需恢复主线然后在开发工作站上调试问题。</p>
+<p>为了避免破坏主线，你可以考虑使用pending head。</p>
+<p>当团队引入CI时，这通常是最难解决的问题之一。在早期，团队很难养成处理主线构建的常规习惯，特别是在处理现有代码库时。耐心和坚持不懈的努力看起来确实经常起作用，，所以不要气馁。</p>
+<h4 id="保持快速构建">保持快速构建</h4>
+<p>持续集成的关键是提供快速的反馈。没有什么比一个需要很长时间的构建更能危害CI的活动了。在这里我必须承认有一些古怪的老员工把长时间的构建当成娱乐。我的大多数同事认为一个需要一个小时的构建是完全不合理的。我记得一些团队梦想着他们能以如此之快的速度完成任务——但是有时候我们仍然会遇到这样的情况：很难以这样的速度完成任务。</p>
+<p>然而，对于大多数项目来说，十分钟构建的XP指导方针是完全合理的。现在我们的大多数项目都实现了这一点。这值得我们集中精力来实现它，因为每减少一分钟的构建时间，那么对于每个开发人员的每次提交都会节省一分钟的时间。由于CI需要频繁提交，这就会增加很多的时间。</p>
+<p>如果你一开始就需要一个小时的构建时间，那么获得更快的构建可能会让人畏惧。甚至在一个新的项目上工作，并思考如何让事情保持快速也会让人畏惧。至少对于企业应用程序，我们发现通常的瓶颈是测试——特别是涉及外部服务（如数据库）的测试。</p>
+<p>最关键的一步是开始建立部署流水线。部署流水线（也称为构建流水线或分阶段构建）背后的思想是，实际上有多个按顺序完成的构建。对主线的提交触发了第一个构建——我称之为提交构建。提交构建是当有人需要提交到主线时所需的构建。提交构建是必须快速完成的构建，因此它将采用许多快捷方式，这将降低检测错误的能力。关键在于平衡发现bug的能力和速度的需求，这样一个好的提交构建就足够稳定，可以供其他人工作使用</p>
+<p>一旦有良好的提交构建，其他人就可以满怀信心地处理代码。不过，你可以开始做更多、更漫长的测试。其他机器可以在构建上运行需要更长时间的测试程序。</p>
+<p>这是一个简单的两阶段部署流水线例子。第一阶段将进行编译并运行更本地化的单元测试，数据库通过“打桩”的方式完全被隔离掉。这样测试可以运行得非常快，保持在10分钟的范围内。但是，任何涉及大规模交互的bug，特别是涉及真实数据库的bug，都很难被发现。第二阶段构建运行一组不同的测试，这些测试确实会测试真实的数据库，并涉及更多的端到端行为。这一次运行可能需要几个小时的时间。</p>
+<p>在这个场景中，人们使用第一个阶段作为提交构建，并使用它作为主CI周期。第二阶段构建在可能的情况下运行，从最近的良好提交构建中获取可执行文件以进行进一步的测试。如果这个二次构建失败，那么它可能没有 “停止一切”的质量目标，但是团队的目标是在保持提交构建运行的同时，尽快修复此类错误。在这个例子中，后面的构建通常是纯测试，因为现在通常是测试导致了缓慢。</p>
+<p>如果第二级构建检测到一个bug，这表明提交构建可能使用另一套测试。尽可能地确保任何后期阶段的失败，都会触发在提交构建中引入新的测试，这样在提交构建中就能捕获bug，从而在提交构建中就能解决掉这些bug。这样，每当有错误漏过提交时，提交测试就会加强。在某些情况下，没有一种快速运行的测试来暴露bug，因此你可能决定只在第二级构建中测试该条件。幸运的是，大多数情况下，你可以向提交构建添加适当的测试。</p>
+<p>这个例子是一个两级流水线，但是基本原理可以扩展到任何后期阶段。提交构建之后的构建也可以并行完成，因此如果有两个小时的第二阶段测试，则可以通过让两台机器分别运行一半的测试来提高响应速度。通过使用类似这样的并行第二阶段构建，你可以将进一步的自动化测试（包括性能测试）引入到常规构建过程中。</p>
+<h4 id="在生产环境的克隆中测试">在生产环境的克隆中测试</h4>
+<p>测试的重点是在受控条件下，清除系统在生产中可能出现的任何问题。其中很重要的一部分是生产系统运行的环境。如果你在不同的环境中进行测试，每一个差异都会导致风险，即在测试中发生的事情不会在生产中发生。</p>
+<p>因此，你希望将测试环境设置为尽可能精确地模拟生产环境。使用相同版本的数据库软件，使用相同版本的操作系统。将生产环境中的所有适用的库放入测试环境中，即使系统实际上没有使用它们。使用相同的IP地址和端口，在相同的硬件上运行它。</p>
+<p>事实上，这是有限度的。如果你正在编写桌面软件，使用不同人员运行的、并安装了所有的第三方软件的桌面克隆中，进行测试那是不现实的。类似地，有些生产环境的复制成本可能高得令人望而却步（尽管我经常遇到不复制中等成本的环境而产生的浪费成本）。尽管存在这些限制，你的目标仍然应该是尽可能多地复制生产环境，并理解测试和生产之间的每一个差异所带来的风险。</p>
+<p>如果你有一个非常简单的设置，而没有许多笨拙的通信，那么你可以在模拟的环境中运行提交构建。但是，通常需要使用测试替身(test double)，因为系统响应缓慢或不够稳定。因此，通常都有一个非常人工的环境来进行提交测试，以提高速度，并使用生产克隆进行辅助测试。</p>
+<p>我注意到越来越多的人对使用虚拟化来简化测试环境的组合越来越感兴趣。虚拟化的机器可以保存在虚拟化中的所有必要元素中。安装最新的构建和运行测试相对简单。此外，这还允许你在一台计算机上运行多个测试，或者在一台计算机上模拟网络中的多台计算机。随着虚拟化的性能损失降低，这个选项变得越来越有意义。</p>
+<h4 id="使任何人都能轻松获得最新的可执行文件">使任何人都能轻松获得最新的可执行文件</h4>
+<p>软件开发中最困难的部分之一是确保你构建了正确的软件。我们发现，很难事先明确自己想要什么，也很难做到正确；人们更容易看到不太正确的东西，并说出需要如何改变。敏捷开发过程明确地期望并利用人类行为的这一部分。</p>
+<p>为了帮助实现这一点，任何参与软件项目的人都应该能够获得最新的可执行文件并能够运行它：用于演示、探索性测试，或者只是看看本周发生了什么变化。.</p>
+<p>这样做非常简单：确保有一个众所周知的地方，人们可以找到最新的可执行文件。在这样的存储中放置几个可执行文件可能是有用的。对于最新的可执行文件，你应该放置最新的可执行文件以通过提交测试—如果提交套件相当强大，那么这样的可执行文件应该相当稳定。</p>
+<p>如果你正在使用定义良好的迭代来跟踪一个流程，那么通常明智的做法是将迭代构建的结束也放在流程里。特别是演示，需要的是让人熟悉功能的软件，因此通常为演示者知道如何操作的，而牺牲最新的一些事是值得的。</p>
+<h4 id="每个人都可以看到正在发生什么">每个人都可以看到正在发生什么</h4>
+<p>持续集成就是为了沟通，所以你希望保证每个人都能很方便的看到系统当前的状态以及在系统上所做的改变。</p>
+<p>其中用于沟通的最重要的一个途径是主线构建的状态。如果你使用 Cruise(现改名为GoCD)，那么有一个网站可以展示给你看是否有个构建正在进行，以及最后一次主线构建的状态。很多团队喜欢将持续显示和构建系统连接起来，从而使它更显而易见。通常用灯来表示：绿灯表示构建成功，当失败的时候则亮红灯。常见的一个设计是红色和绿色的熔岩灯—不仅仅给出这些构建状态的指示，而且还指示已经处于该种状态多久了。红色熔岩灯上的气泡表明此次构建已经失败很久了。每个团队都可以自己选择构建传感器—当然你的选择也可以是很好玩的（最近我看到有人在用一只跳舞的兔子）。</p>
+<p>即使你使用手动的持续集成，可视化依然很重要。物理构建机器的监视器可以展现主线构建的状态。通常可以给正在构建的人的桌子上放一个构建令牌（再说一次，像橡胶鸡这样的蠢东西也是一个很好的选择）。人们常常喜欢给构建成功加上一点简单的噪音，比如说铃声。</p>
+<p>当然，持续集成服务器的网页可以承载更多的信息。Cruise 不仅能提供谁正在构建，而且还能提供他们做了什么改变。Cruise还可以提供改变的历史，以使得团队成员可以对当前项目中最近的行为有更好的了解。我知道团队的领导喜欢用这些信息来了解团队成员在做什么以及保持对系统改变的感知。</p>
+<p>使用网站的另外一个优势是那些异地办公的成员可以获知项目状态。一般来说，我倾向于积极紧密工作在同一个项目上的成员坐在一起，但是经常还会有一些其他人员关心项目的相关事宜。同时对于组织将多个项目的构建信息聚合在一起也是很有用的—可以为不同的项目提供一个简单并且自动的状态。</p>
+<p>好的信息展示不仅仅是电脑屏幕上那些。我最喜欢的一个信息展示来自一个使用持续集成的项目上。它在一个很长的时间里不能稳定构建。我们把一整年的日历放到墙上，用一个方框表示一年中的一天。如果QA团队得到一个通过了提交测试的稳定的构建，他们会把一个绿色的贴纸放到这一天的方框里，反之则放一个红的贴纸。随着时间过去，日历揭示了构建过程持续改善的情况，直到绿色的方框越来越多的时候，日历就消失了—因为达到了它的目的。</p>
+<h4 id="自动化部署">自动化部署</h4>
+<p>为了做持续集成，你需要多个环境，一个用来运行提交测试，一个或者多个用来运行第二阶段测试。因为你每天都要在这些环境之间移动可执行文件很多次，所以你希望能自动的做这些事儿。很重要的是你要有一些脚本可以很容易的把应用部署到任意环境中去。</p>
+<p>这么做很自然的结果就是你还应该有脚本，以使得你可以同样简单的部署到生产环境。你可能不会每天都部署到生产环境（虽然我曾经参与过这样的项目），但是自动化部署可以帮助你提高速度并且减少错误。这同样是一个便宜的选项，因为这只是使用了你用于部署到测试环境的相同资源。</p>
+<p>如果你在生产环境自动部署，那么你需要考虑的一个额外的功能是自动回滚。糟糕的事情随时会发生，如果发臭的棕色物质撞到旋转的金属上（情况不妙），最好能够很快的回到最后一个已知的好的状态。能够自动回滚，可以大大减少部署产生的紧张感，鼓励人们更频繁的部署，因此我们可以更快的把新特性提供给用户。（Ruby on Rails社区开发了一款名为Capistrano的工具，是做此类事情的工具的一个好例子）</p>
+<p>在集群环境中我看到滚动部署，新的软件会一次部署到一个节点，然后在几个小时内慢慢将整个应用替换掉。</p>
+<p>对于面向大众的网站应用，我接触到的一个很有趣的部署方式是：将一个试用版本部署给部分用户。接着团队可以观察该试用版本是如何被使用的，然后决定是否将其部署给全量用户。这使得你可以在做出最终选择之前测试新特性和用户接口。自动化部署结合良好的持续集成原则，是此工作的重要基础。</p>
+<h3 id="持续集成的好处">持续集成的好处</h3>
+<p>总起来说我认为持续集成最显著也是最宽泛的好处在于减少了风险。我又想起了在本文第一段中提到的软件项目。团队已经处于一个漫长项目的末期（起码他们是这么认为的），但是还没法判断距离项目真正做完还有多久。</p>
+<p>推迟集成的麻烦在于很难预测到底需要多久来做这件事儿，并且更糟糕的是甚至很难看到你在这个过程中的进展。结果就是，即使你是少数几个还没延迟的案例之一，你也会在项目最紧张的部分陷入完全的盲区。</p>
+<p>持续集成完全可以解决这个问题。没有了长期的集成，你就可以完全的消除盲区。在所有的时间点上你都会知道你身处何处，什么可以工作，什么不能工作，你的系统里有什么最大的bug。</p>
+<p>Bug—也就是那些讨厌的东西，会摧毁我们的信心，破坏我们的计划和声誉。如果已经发布的软件中有缺陷，用户就会对你很生气。而正在进行的工作中有bug，则会挡住你的道路，会使得接下来的工作变得更加困难。</p>
+<p>持续集成不会避免bug，但是它可以让你非常容易找到并消除 bug。从这个角度看它很像自测代码。如果你引入了一个bug后能很快检测到它，那么就能很容易改正它。因为你只是对系统做了一个很小的改变，你不用往回追溯太远。因为系统的那一部分正是你刚刚工作过的那一部分，它还很清楚的存在于你的记忆里—这使得查找bug很容易。你还可以使用diff debugging，来对系统的当前版本和没有bug的更早的版本作比较。</p>
+<p>Bug也是累积的。你的bug越多，消除每一个bug也就越不容易。一定程度上是因为bug互相影响，表现出来的失败可能是很多错误共同叠加的结果—这就导致很难找到每一个错误。这也是心理上的，当有很多bug的时候，人们自然就缺少激情去找到并解决这些bug—这是一种在《Pragmatic Programmer》一书中被称为“破窗效应”的现象。</p>
+<p>因此，使用了持续集成的项目，无论是在生产环境里，还是在开发过程中，其bug的数量将会极大的减少。但是需要强调的是，受益的程度直接取决于你的测试套件的好坏。你应该可以看到，构建一个带来显著差异的测试套件并不是那么困难。当然，通常一个团队真正达到他们可能达成的较低水平的bug程度，需要一定的时间。要达到这个水平意味着需要持续的改善你的工作。</p>
+<p>如果你使用了持续集成，它会消除掉频繁部署的一个最大障碍。对于能够为新特性更快的获得反馈来说，频繁部署是有价值的，因为它可以使你的用户很快用上这些新的特性，而且频繁部署可以使他们（开发团队和用户）在开发周期中更加协作。这将有利于打破客户和开发之间的障碍—我认为该障碍是成功的软件开发中最大的障碍。</p>
+<h3 id="引入持续集成">引入持续集成</h3>
+<p>所以如果你想要尝试下持续集成的话，从哪儿开始呢？上面我提到的所有的实践可以带给你全部的收益，但是你并不需要一开始就把它们都用上。</p>
+<p>这儿其实并没有固定的套路，而是很大程度上依赖于你的配置和团队的现状。但是我们也学到下面的一些经验可以帮助我们把接下来要做的事情搞清楚。</p>
+<ol>
+<li>
+<p>第一步就是把构建自动化。把你所有需要用到的东西都放到源码控制系统中，从而你可以用一条指令来构建整个系统。对于很多项目来说，这并不是一件小事——但是它是其他所有的事情的基础。一开始的时候你可能只是偶尔按需构建，或者只是做自动的每夜构建。当还不是持续集成的时候，自动的每夜构建也是一个很好的开始。</p>
+</li>
+<li>
+<p>在你的构建中引入一些自动化测试。尝试着识别出问题最多的部分，并且加入自动化测试以暴露这些问题。需要特别指出，在一个现存的项目上非常快的实现一个真正好的测试套件是很困难的—因为需要时间来构建测试。你必须从某个地方开始—毕竟罗马不是一天建成的。</p>
+</li>
+<li>
+<p>尽量加速提交的构建。构建需要几个小时的持续集成也比没有持续集成要强，但是如果能将这个时间降到10分钟那就太好了。这通常需要对你的代码基础做一些相当大的手术，因为你需要打破对于系统中较慢部分的依赖。</p>
+</li>
+<li>
+<p>如果你开始一个新的项目，那么从一开始就用持续集成。一直关注构建时间，一旦构建速度变慢，超过10分钟的时候，马上采取行动。通过很快的采取行动，你可以在代码变得太大以至于成为主要的痛点之前进行必要的重构。</p>
+</li>
+</ol>
+<p>上面所有的这些都可以给我们提供一些帮助。找到一个以前做过持续集成的人来帮助你。和任何新技术一样，当你还不知道最终结果会是什么样子的时候，很难引入该技术。找一个导师来可能会花一些钱，但是如果不这样做，你将不得不付出大量的时间和生产效率。（免责声明/广告—是的，我们ThoughtWorks在该领域提供顾问工作，毕竟我们已经犯过大多数你们将要犯的错误。）</p>
+<h3 id="最后的思考">最后的思考</h3>
+<p>在 Matt 和我写完这个网站上最初的论文后的几年中，持续集成变成了软件开发的一个主流技术。ThoughtWorks 的项目中很少有不用它的—并且我们可以看到遍布全球的很多人也在使用持续集成。不像一些有争议的极限编程实践一样，我很少听到关于持续集成的负面反馈。</p>
+<p>如果你没有正在使用持续集成，那么我强烈建议你尝试一下。如果你正在使用持续集成，那么这篇文章里的一些想法可以帮助你做得更有效率。在过去的几年里，关于持续集成我们已经学习了很多，我希望依然有更多的东西可以学习和改善。</p>
+<h3 id="延伸阅读">延伸阅读</h3>
+<p>一篇像这样的短文只能覆盖这些基础，但是这是一个很重要的主题，所以我在我的网站上创建了一个导航页面，可以给你更多的信息。</p>
+<p>如果想更多的了解持续集成，我建议看看 Paul Duvall 的书《Continuous Integration: Improving Software Quality and Reducing Risk》（该书获得了 Jolt 大奖—比我想象的还要厉害）。关于更广泛的持续交付过程的更多信息，可以看看 Jez Humble 和 Dave Farley 的书，该书也获得了 Jolt 大奖。</p>
+<p>你也可以在 ThoughtWorks 的网站上找到更多关于持续集成的信息。</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/devops">DevOps</a>,</li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/p01l7z3c.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/">
+          <h5 class="mt-0">产品经理和产品负责人如何能有效地合作</h5>
+        </a>
+        27 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/user_interface_futuristic_digital_transformation_thinkstock_826567492-100740667-large.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/">
+          <h5 class="mt-0">成功实施数字化转型的7个秘诀</h5>
+        </a>
+        23 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/top-8-trends-shaping-digital-transformation-in-2021-000.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/">
+          <h5 class="mt-0">2021年塑造数字化转型的8大趋势</h5>
+        </a>
+        10 Apr 2021
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/aiops" class="text-color d-block pb-3 mt-3 text-decoration-none">Aiops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/devops" class="text-color d-block pb-3 mt-3 text-decoration-none">Devops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%96%87%e6%a1%a3" class="text-color d-block pb-3 mt-3 text-decoration-none">文档</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%bc%94%e8%ae%b2" class="text-color d-block pb-3 mt-3 text-decoration-none">演讲</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%a4%be%e5%8c%ba" class="text-color d-block pb-3 mt-3 text-decoration-none">社区</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%bf%bb%e8%af%91" class="text-color d-block pb-3 mt-3 text-decoration-none">翻译</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e8%b0%83%e6%9f%a5" class="text-color d-block pb-3 mt-3 text-decoration-none">调查</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">TAGS</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agile">Agile</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agril">Agril</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aiops">Aiops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analysis">Analysis</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/containers">Containers</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cre">Cre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devcloud">Devcloud</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops">Devops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops-trend">Devops trend</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devsecops">Devsecops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/digital-transformation">Digital transformation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/docker">Docker</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/git">Git</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/google">Google</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ha">Ha</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/hack">Hack</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/infrastructure">Infrastructure</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interview">Interview</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-leadership">It leadership</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-strategy">It strategy</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e6%88%98%e7%95%a5">It 战略</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e9%a2%86%e5%af%bc%e5%8a%9b">It 领导力</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/prodmgmt">Prodmgmt</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/react">React</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rust">Rust</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/security">Security</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/service-meshes">Service meshes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/slo">Slo</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/software-development">Software development</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sre">Sre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tips">Tips</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ui">Ui</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ux">Ux</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86">产品管理</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bc%80%e5%8f%91">开发</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%be%ae%e6%9c%8d%e5%8a%a1">微服务</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bf%97%e6%84%bf%e8%80%85">志愿者</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%88%90%e9%95%bf">成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%8f%e6%8d%b7">敏捷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e5%ad%97%e5%8c%96%e8%bd%ac%e5%9e%8b">数字化转型</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8">数据驱动</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%96%87%e5%8c%96">文化</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a0%87%e5%87%86%e8%ae%a4%e8%af%81">标准认证</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a8%a1%e6%9d%bf">模板</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%af%94%e8%b5%9b">比赛</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%b5%81%e9%87%8f%e6%9f%93%e8%89%b2">流量染色</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e7%81%b0%e5%ba%a6%e5%8f%91%e5%b8%83">灰度发布</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%81%8c%e4%b8%9a%e6%88%90%e9%95%bf">职业成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b0%83%e6%9f%a5">调查</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b4%a1%e7%8c%ae">贡献</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%97%ae%e5%8d%b7">问卷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%9d%a2%e8%af%95">面试</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <h4 class="text-white mb-4">中国DevOps社区</h4>
+          <p class="text-light mb-5">中国 DevOps 社区在全国的18个城市定期举办 Meetup 活动，社区年会举办年度峰会，每个月举办两次线上技术分享交流活动。我们致力于通过打造最优的线下交流社区，推动 DevOps 运动在国内的发展。</p>
+          <h4 class="text-white mb-4">关注我们</h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://weibo.cn/awsfaq/"><i class="fa fa-weibo"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/devopscn"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/devops-china/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.meetup.com/china-devops/"><i class="fa fa-meetup"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://gitlab.com/devopschina/"><i class="fa fa-gitlab"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">导航</h4>
+              <ul class="list-styled">
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/index.html">首页</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/about/index.html">关于</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/blog/index.html">博客</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="http://pipeline.devopsmeetup.com">Pipeline Craft</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://space.bilibili.com/370989874">社区B站</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">联系信息</h4>
+              <ul class="list-unstyled">
+                
+                <li class="text-light mb-3">微信订阅号: DevOpsMeetup</li>
+                
+                <li class="text-light mb-3">微信服务号: DevOpsChina</li>
+                
+                <li class="text-light mb-3">邮件：info@devopsChina.org</li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white"><span class="text-primary">Copyright</span> &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 中国 DevOps 社区  | 京ICP备20023228号-1</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+<script type="text/javascript">
+  
+  
+  
+  var css1 = document.createElement('link');
+  css1.rel = 'stylesheet';
+  css1.href = 'https://devopschina.org/plugins/bootstrap/bootstrap.min.css';
+  css1.type = 'text/css';
+  var fastCSS1 = document.getElementsByTagName('link')[0];
+  fastCSS1.parentNode.insertBefore(css1, fastCSS1);
+  
+  
+  var css2 = document.createElement('link');
+  css2.rel = 'stylesheet';
+  css2.href = 'https://devopschina.org/plugins/slick/slick.css';
+  css2.type = 'text/css';
+  var fastCSS2 = document.getElementsByTagName('link')[0];
+  fastCSS2.parentNode.insertBefore(css2, fastCSS2);
+  
+  
+  var css3 = document.createElement('link');
+  css3.rel = 'stylesheet';
+  css3.href = 'https://devopschina.org/plugins/fontawesome/font-awesome.min.css';
+  css3.type = 'text/css';
+  var fastCSS3 = document.getElementsByTagName('link')[0];
+  fastCSS3.parentNode.insertBefore(css3, fastCSS3);
+  
+  
+  var css4 = document.createElement('link');
+  css4.rel = 'stylesheet';
+  css4.href = 'https://devopschina.org/plugins/animate/animate.css';
+  css4.type = 'text/css';
+  var fastCSS4 = document.getElementsByTagName('link')[0];
+  fastCSS4.parentNode.insertBefore(css4, fastCSS4);
+  
+  
+  var css5 = document.createElement('link');
+  css5.rel = 'stylesheet';
+  css5.href = 'https://devopschina.org/plugins/venobox/venobox.css';
+  css5.type = 'text/css';
+  var fastCSS5 = document.getElementsByTagName('link')[0];
+  fastCSS5.parentNode.insertBefore(css5, fastCSS5);
+  
+</script>
+
+  
+
+<!-- JS Plugins -->
+
+<script src="https://devopschina.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://devopschina.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://devopschina.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://devopschina.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://devopschina.org/plugins/modernizer/modernizr.min.js"></script>
+
+<script src="https://devopschina.org/plugins/mixitup/mixitup.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/mark.js"></script>
+
+<script src="https://devopschina.org/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://devopschina.org/js/script.min.js"></script>
+</body>
+</html>

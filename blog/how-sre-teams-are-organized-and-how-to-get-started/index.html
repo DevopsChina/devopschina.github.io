@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta charset="utf-8" />
+  <title>SRE 团队的组织方式以及入门方法 - 中国 DevOps 社区官方网站</title>
+  <meta name="description" content="中国 DevOps 社区官方网站" />
+  <meta property="og:title" content="SRE 团队的组织方式以及入门方法" />
+  <meta name="twitter:title" content="SRE 团队的组织方式以及入门方法" /> 
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="在 Google，站点可靠性工程（SRE）是我们不断定义可靠性目标，衡量这些目标，并根据需要努力改善我们的服务的做法。我们最近指导您浏览了 SRE 工作手册。您可以将这些指导视为 SRE 团队通常会做的事情，并结合团队的成熟度，确定何时团队倾向于执行这些任务。我们相信，许多公司都可以按照该指导来启动和发展新的 SRE 团队。"
+  />
+  
+  <meta name="author" content="中国 DevOps 社区" />
+   <meta name="generator" content="Hugo 0.73.0" /> 
+  <!-- plugins -->
+  <noscript>
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/bootstrap/bootstrap.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/slick/slick.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/fontawesome/font-awesome.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/animate/animate.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/venobox/venobox.css " />
+    
+  </noscript>
+
+  <!-- Main Stylesheet -->   
+  <link
+    rel="stylesheet"
+    href="https://devopschina.org/scss/style.min.29bbcd5accceea3cb5f9001b65e953f838644198a544e01bcb2c22e07e1671c7.css"
+    integrity="sha256-KbvNWszO6jy1&#43;QAbZelT&#43;DhkQZilROAbyywi4H4Wccc="
+    media="screen"
+  />
+
+  <!--Favicon--> 
+  
+  <link rel="shortcut icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon"> <link rel="icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon">
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-159133967-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-159133967-1");
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader"></div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="https://devopschina.org/"><img class="img-fluid pb-lg-3" src="https://devopschina.org/images/logo.png" alt="Bexar"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://devopschina.org/"> 首页 </a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event/index.html">活动</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/index.html">博客</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">团队</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about/index.html">关于</a>
+            </li>
+            
+            
+          </ul>
+          
+          
+          <!-- get start btn -->
+          <a href="https://www.hdb.com/u/bqaf3u.html" class="btn btn-primary hover-ripple">活动报名</a>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('https://devopschina.org/images/backgrounds/blog-bg.jpg'),url('https://devopschina.org/ALT-txt');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">SRE 团队的组织方式以及入门方法</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="https://devopschina.org/">首页</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">SRE 团队的组织方式以及入门方法</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="https://devopschina.org/images/blog/how-sre-teams-are-organized-and-how-to-get-started.png" alt="post thumb" class="img-fluid w-100">
+          <div class="card-type hover-ripple">翻译</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">周一行</strong>/ on <strong class="text-dark">22 Mar 2020</strong></div>
+        <h2>SRE 团队的组织方式以及入门方法</h2>
+        <div class="content">
+          <blockquote>
+<p>社区译者：周一行<br>
+审校：吕益行<br>
+原作者：Gustavo Franco, Matt Brown<br>
+原文地址：<a href="https://cloud.google.com/blog/products/devops-sre/how-sre-teams-are-organized-and-how-to-get-started">https://cloud.google.com/blog/products/devops-sre/how-sre-teams-are-organized-and-how-to-get-started</a></p>
+</blockquote>
+<p>在 Google，站点可靠性工程（SRE）是我们不断定义可靠性目标，衡量这些目标，并根据需要努力改善我们的服务的做法。我们<a href="https://cloud.google.com/blog/products/devops-sre/how-to-start-and-assess-your-sre-journey">最近指导您浏览</a>了 <a href="https://landing.google.com/sre/books/">SRE 工作手册</a>。您可以将这些指导视为 SRE 团队通常会做的事情，并结合团队的成熟度，确定何时团队倾向于执行这些任务。我们相信，许多公司都可以按照该指导来启动和发展新的 SRE 团队。</p>
+<p>从那时起，我们听说人们了解 SRE 在 Google 上通常会做什么，并了解应该在 SRE 成熟度的各个级别上实施哪些最佳实践。我们也从很多人那里听到了您如何定义自己的团队成熟度水平。但是，对于接下来的“SRE 团队的实际组织方式”，直到现在为止，基本上尚未记录在案！</p>
+<p>在这篇文章中，我们将介绍 SRE 团队的不同实现，是如何为实现目标建立界限的。我们描述了我们经历的六个不同的实现，以及我们观察到的最重要的优缺点。请记住，您对 SRE 的实现可以有所不同，这不是详尽的清单。近年来，我们在 Google SRE 组织中看到了所有这些类型的团队（即一组 SRE 团队），除了“Kitchen Sink”类型的团队。随着 SRE 团队积累经验，此处的实现顺序是相当普遍的发展路径。</p>
+<h4 id="在开始实施-sre-之前">在开始实施 SRE 之前</h4>
+<p>在选择此处讨论的任何实现之前，请与您的团队做一些准备工作。我们建议分配一些人的工程时间，并在公司内找到至少一名兼职的 SRE 相关实践的倡导者。这种类型的初始，非正式形式的组织方式有一些优点和缺点：</p>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>无需组织更改即可轻松开始 SRE 旅程。</li>
+<li>使您能够低成本地测试和适应您的环境的 SRE 实践。</li>
+</ul>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>日常工作需求与采用 SRE 实践之间的时间管理。</li>
+</ul>
+<p><strong>推荐给</strong>：没有规模来采用 SRE 团队专门人员的组织，和/或在广泛采用之前尝试 SRE 实践的组织。</p>
+<h4 id="sre-团队实施的类型">SRE 团队实施的类型</h4>
+<h5 id="1-kitchen-sink又名everything-sre">1. Kitchen Sink，又名“Everything SRE”</h5>
+<p>这描述了一个 SRE 团队，其中所涵盖的服务或工作流的范围通常是不受限制的。它通常是现有的第一个（或唯一的）SRE 团队，并且可能会像 Google SRE 刚开始时那样自然发展。此后，我们采用了混合模型，包括下面列出的实现。</p>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>假设只有一个团队，SRE 团队之间没有覆盖差距。</li>
+<li>易于发现的模式，并在服务和项目之间有相似之处。</li>
+<li>SRE 倾向于充当不同开发团队之间的粘合剂，利用不同的软件来创建解决方案。</li>
+</ul>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>通常缺乏 SRE 团队章程，或章程规定公司中的一切都可能在范围之内，冒着使团队超负荷的风险。</li>
+<li>随着公司和系统复杂性的增长，这样的团队倾向于从能够对所有事物产生深远的积极影响，转向做出更多浅薄的贡献。有一些方法可以缓解这种现象，而无需完全更改实施，或启动另一个团队（请参阅下面的服务层）。</li>
+<li>涉及此类团队的问题可能会对您的整个业务产生负面影响。</li>
+</ul>
+<p><strong>推荐给</strong>：一家只有几个应用程序和用户流程的公司，在没有专门的 SRE 团队的情况下，采用 SRE 做法和对角色的需求已经超出了可以配备的人员，但是范围很小，以至于无法拥有多个 SRE 团队。</p>
+<h5 id="2-基础设施">2. 基础设施</h5>
+<p>这些团队倾向于专注于幕后工作，这些工作有助于使其他团队的工作更快，更轻松。常见的实现包括维护共享服务（例如 Kubernetes 集群），或维护在“公共云”的提供商，例如，Google Cloud Platform（GCP），之上构建的公共组件（例如，CI/CD，监控，IAM ​​或 VPC 配置）。这不同于从事与产品相关的服务的 SREs，即内部编写的面向客户的代码。</p>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>允许产品开发人员使用 DevOps 实践来维护面向用户的产品，而在整个企业中的实践上没有分歧。</li>
+<li>SRE 可以专注于提供高度可靠的基础架构。他们通常将生产标准定义为代码，并努力消除任何尖锐的边缘，以大大简化产品开发人员运行自己的服务的过程。</li>
+</ul>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>根据基础架构的范围，涉及此类团队的问题可能会对您的整个业务产生负面影响，类似于 Kitchen Sink 实施。</li>
+<li>缺乏与公司客户的直接联系，可能导致人们将重点放在不一定与客户体验相关的基础架构改进上。</li>
+<li>随着公司和系统复杂性的增加，可能需要拆分基础架构团队，因此适用与产品/应用程序团队相关的弊端（请参见下文）。</li>
+</ul>
+<p><strong>推荐给</strong>：具有多个开发团队的任何公司，因为您可能必须配备基础架构团队（或考虑配备基础架构团队）来定义通用标准和实践。对于大型公司来说，同时拥有基础架构DevOps 团队和 SRE 团队是很常见的。DevOps 团队将专注于客户化 FLOSS，并为应用程序团队编写自己的软件（功能），而 SRE 团队则专注于可靠性。</p>
+<h5 id="3-工具">3. 工具</h5>
+<p>仅有工具的 SRE 团队倾向于专注于构建软件，以帮助开发人员评估，维护和提高系统可靠性或SRE工作的任何其他方面，例如，容量规划。</p>
+<p>可以认为工具是基础架构的一部分，因此 SRE 团队的实现是相同的。的确，这两种类型的团队相当相似。实际上，通常与基础架构团队相关联的服务路径上的共享后端相反，工具团队倾向于将更多的精力放在具有面向可靠性功能集的支持和计划系统上。</p>
+<p>副作用是，通常会有更多直接反馈给基础架构 SRE 团队。工具 SRE 团队冒着为业务解决错误问题的风险，因此需要努力始终了解团队解决前线可靠性的实际问题。
+基础架构和工具团队的利弊往往相似。此外，对于工具团队：</p>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>您需要确保工具团队不会无意间变成基础架构团队，反之亦然。</li>
+<li>长期辛劳和整体工作量增加的风险很高。这通常包含在由您的业务主管批准建立的团队章程中。</li>
+</ul>
+<p><strong>推荐用于</strong>：任何需要高度专业化的和可靠性相关的工具公司，而这些工具目前尚无可用的FLOSS或SaaS。</p>
+<h5 id="4-产品应用程序">4. 产品/应用程序</h5>
+<p>在这种情况下，SRE 团队将努力提高关键应用程序或业务领域的可靠性，但是诸如批处理程序之类的辅助服务的可靠性，是另一个团队的责任，通常情况下，开发人员同时涵盖 dev 和 ops 功能。</p>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>为团队的工作提供明确的重点，并允许从业务优先级到团队努力的地方之间，明确联系起来。</li>
+</ul>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>随着公司和系统复杂性的增长，将需要新的产品/应用程序团队。每个团队的产品重点，可能导致基础架构的重复，或团队之间实践的差异，这样效率低下，并限制了知识共享和流动。</li>
+</ul>
+<p><strong>推荐用于</strong>：对于这样的公司，作为第二个或第n个团队，以 Kitchen Sink，基础设施或工具团队为起点，并且具有关键的面向用户的应用程序，并且具有很高的可靠性需求，这证明专用的 SREs 的费用相对较高。</p>
+<h5 id="5-嵌入式">5. 嵌入式</h5>
+<p>这些 SRE 团队，让 SREs 嵌入了他们的对应的开发团队，通常是每个开发团队一个。嵌入的 SREs 通常与开发人员共享一个办公室，但是嵌入式安排可以是远程的。</p>
+<p>嵌入式 SRE 与开发人员之间的工作关系，往往受到项目或时间的限制。在嵌入式安排期间，SREs 通常是非常操作性的，执行诸如更改代码和服务配置之类的工作。</p>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>使专注的 SRE 专业知识可以导向特定的问题或团队。</li>
+<li>可以同步演示 SRE 实践，这可以是一种非常有效的教学方法。</li>
+</ul>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>这可能导致团队之间缺乏标准化，和/或实践中的分歧。</li>
+<li>SRE 可能没有机会与同伴花费很多时间来指导他们。</li>
+</ul>
+<p><strong>推荐用于</strong>：此实现可以很好地启动 SRE 功能，或进一步扩展另一个实现。当您的项目或团队需要一段时间的 SRE 时，这可能是一个很好的模型。这种类型的团队，还可以通过推动采用本方式，来增强工具或基础架构团队的影响力。</p>
+<h5 id="6-咨询">6. 咨询</h5>
+<p>该实现与上述嵌入式实现非常相似。不同之处在于，咨询 SRE 团队倾向于避免更改客户代码和服务配置。</p>
+<p>咨询 SRE 团队可能会编写代码和配置，以便为自己或开发人员构建和维护工具。如果他们执行后者，则可以说他们是咨询和工具实现的混合体。</p>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>通过与直接更改代码和配置解耦，它可以帮助进一步扩展现有 SRE 组织的积极影响（另请参见下面对可靠性标准和实践的影响）。</li>
+</ul>
+<p><strong>缺点</strong>：</p>
+<ul>
+<li>顾问可能缺乏足够的背景来提供有用的建议。</li>
+<li>鉴于他们通常不会更改代码和配置，即使他们能够间接产生技术影响，咨询 SRE 团队的常见风险被认为是非操作性的（即几乎不会产生风险）。</li>
+</ul>
+<p><strong>推荐给</strong>：直到您的公司或复杂性被认为很大，并且当需求超出了其他各种实现的现有 SRE 团队所能提供的支持时，我们才建议您配备一个专门的 SRE 顾问团队。请记住，在您为第一个 SRE 团队配备人员之前，我们建议配备一个或几个兼职顾问（请参见上文）。</p>
+<h4 id="sre-团队实施的常见修改">SRE 团队实施的常见修改</h4>
+<p>我们已经看到了对于上述大多数实现的两个常见修改。</p>
+<h5 id="1-可靠性标准和实践">1. 可靠性标准和实践</h5>
+<p>SRE 团队还可以充当整个公司的“可靠性标准和实践”小组。</p>
+<p>标准和实践的范围可能有所不同，但是通常涵盖更改生产系统、事件管理、错误预算等的可接受方式和时间。换句话说，尽管这样的 SRE 团队可能不会直接与每个服务或开发团队进行互动，通常是团队在其专业领域内的其他地方，确定可接受的条件。</p>
+<p>我们已经看到以两种不同的方式采用这些标准和实践：</p>
+<ul>
+<li>影响力主要依靠有机采用，并向团队展示这些标准和实践如何帮助他们实现目标。</li>
+<li>任务依赖于组织结构、流程和层次结构来推动可靠性标准和实践的采用。</li>
+</ul>
+<p>任务的有效性取决于组织文化，以及 SRE 团队的经验、资历和声誉。任务的方法在其他领域中普遍地采用严格流程的组织中可能是有效的，但是在个人具有高度自治权的组织中，成功的可能性很小。在这两种情况下，即使由经验丰富的人员组成的新团队，也可能比具有通过良好实践获得高可靠性的历史和声誉的团队，更难以建立公司范围的标准。</p>
+<p>我们还观察到软件开发是平衡这些方法的有效工具。在这种情况下，SRE 团队开发一种零配置方法，如果服务或目标团队恰巧使用预先确定的系统，则可以采用一种或多种可靠性标准和实践，并增加零设置成本。一旦他们看到使用该系统可以实现的好处（通常可以节省时间），就会影响开发团队通过提供的工具来采用这些实践。随着采用这样的系统的增加，该方法可以转向针对 SREs 的目标改进，并通过与可靠性相关的一致性测试来设定任务。</p>
+<h5 id="2-服务层级">2. 服务层级</h5>
+<p>无论哪种 SRE 团队模型定义了团队的范围，任何 SRE 团队都有权决定他们与所在区域内的软件和服务的互动深度。当开发团队、应用程序或基础架构的数量超过 SRE 团队能完全支持的能力时，尤其如此。
+解决这个挑战的常用方法是提供 SRE 参与的层次。这样做通过在这两个选项之间添加至少一层以上的内容，扩展了“对我们而言尚不存在或尚未被 SRE 看到”和“由 SRE 完全支持”的二元方法。</p>
+<p>二元方法的一个共同特征是，“由 SRE 完全支持”通常是指在一些上线流程后，给定的服务或工作流程由 SRE 和开发人员共同拥有，包括及时响应的职责。</p>
+<p>不幸的是，SRE 团队或任何其他团队，在他们可以完全上线多少服务的方面，往往达到极限。随着架构的多样性和服务复杂性的增加，认知负荷和记忆回忆会很痛苦。</p>
+<p>这是 SRE 分层方法的示例：</p>
+<ul>
+<li>第0层：零散的咨询工作，没有专门的 SRE 人员。</li>
+<li>第1层：项目工作，需要一些专用的 SRE 时间。</li>
+<li>第2层：该服务已上线（或上线中）以及时响应，并获得更多的专用 SRE 时间。</li>
+</ul>
+<p>这些层的实现细节根据实际的 SRE 实现本身而有所不同。例如，通常不希望咨询和嵌入式 SRE 团队在第2层上提供服务（如及时响应），但可能在第1层提供专门的人员（而不是共享人员）。我们建议定义经 SRE 和开发人员领导批准的服务层级文档。此签署与记录您的团队章程（如上所述）有关但不相同。</p>
+<p>曾经有一个 SRE 团队采用多种实现方式的特征，而不是采用服务层的例子。例如，一个单独的 Kitchen Sink 的 SRE 团队，也可以由两名 SRE 顾问扮演双重角色。</p>
+<h4 id="常见的-sre-路径">常见的 SRE 路径</h4>
+<p>您的 SRE 组织可以按照上面的顺序实施。另一个常见的途径是实施在“开始之前”中所述的内容，然后为一个 Kitchen Sink 的 SRE 团队配备人员，但是在需要成立第二个 SRE 团队时，将基础结构的顺序按产品/应用程序交换。在这种情况下，结果是两个专门的产品/应用程序 SRE 团队。当托管的解决方案，例如，Google Cloud 提供的解决方案，以外的产品/应用程序具有足够的广度，但两个团队之间几乎没有共享基础架构时，这才有意义。</p>
+<p>第三种常见的方法是从“开始之前”过渡到基础架构（或甚至工具）团队，跳过“Kitchen Sink”和产品/应用程序阶段。当应用程序团队有能力并且愿意定义和维护SLO时，这种方法最有意义。</p>
+<p>我们强烈建议您尽早在SRE流程中同时评估“可靠性标准和实践”和“服务层级”，但这只有在您建立了第一个 SRE 团队之后才可行。</p>
+<h4 id="接下来我该怎么办">接下来我该怎么办？</h4>
+<p>如果您只是开始进行 SRE 练习，我们建议您阅读<a href="https://cloud.google.com/blog/products/devops-sre/how-to-start-and-assess-your-sre-journey">您有 SRE 团队吗？如何开始和评估您的旅程</a>，然后根据我们上面共享的信息，评估最适合您需求的 SRE 实施。</p>
+<p>如果您领导一个或多个 SRE 团队，建议您以通用的术语描述它们的实现（类似于我们上面讨论团队实现的方式），根据您自己的经验评估优缺点，并确保 SRE 团队的目标和范围是通过<a href="https://queue.acm.org/detail.cfm?id=3283589">团队章程</a>文档定义的。此练习可以帮助您避免过载和过早的重组。</p>
+<p>如果您是 GCP 客户，并希望提出要求<a href="https://cloud.google.com/blog/products/gcp/introducing-a-new-era-of-customer-support-google-customer-reliability-engineering">CRE 参与</a>，请与您的客户经理联系以申请此计划。当然，SRE是一种可与多种基础架构配合使用的方法，使用 Google Cloud 并不是追求这套工程实践的前提。祝您 SRE 旅途愉快！</p>
+<p>感谢 Adrian Hilton，Betsy Beyer，Christine Cignoli，Jamie Wilkinson，Shylaja Nukala 等对这篇文章的贡献。</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/devops">DevOps</a>,</li>
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/sre">SRE</a>,</li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/p01l7z3c.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/">
+          <h5 class="mt-0">产品经理和产品负责人如何能有效地合作</h5>
+        </a>
+        27 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/user_interface_futuristic_digital_transformation_thinkstock_826567492-100740667-large.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/">
+          <h5 class="mt-0">成功实施数字化转型的7个秘诀</h5>
+        </a>
+        23 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/top-8-trends-shaping-digital-transformation-in-2021-000.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/">
+          <h5 class="mt-0">2021年塑造数字化转型的8大趋势</h5>
+        </a>
+        10 Apr 2021
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/aiops" class="text-color d-block pb-3 mt-3 text-decoration-none">Aiops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/devops" class="text-color d-block pb-3 mt-3 text-decoration-none">Devops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%96%87%e6%a1%a3" class="text-color d-block pb-3 mt-3 text-decoration-none">文档</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%bc%94%e8%ae%b2" class="text-color d-block pb-3 mt-3 text-decoration-none">演讲</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%a4%be%e5%8c%ba" class="text-color d-block pb-3 mt-3 text-decoration-none">社区</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%bf%bb%e8%af%91" class="text-color d-block pb-3 mt-3 text-decoration-none">翻译</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e8%b0%83%e6%9f%a5" class="text-color d-block pb-3 mt-3 text-decoration-none">调查</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">TAGS</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agile">Agile</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agril">Agril</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aiops">Aiops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analysis">Analysis</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/containers">Containers</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cre">Cre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devcloud">Devcloud</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops">Devops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops-trend">Devops trend</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devsecops">Devsecops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/digital-transformation">Digital transformation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/docker">Docker</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/git">Git</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/google">Google</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ha">Ha</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/hack">Hack</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/infrastructure">Infrastructure</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interview">Interview</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-leadership">It leadership</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-strategy">It strategy</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e6%88%98%e7%95%a5">It 战略</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e9%a2%86%e5%af%bc%e5%8a%9b">It 领导力</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/prodmgmt">Prodmgmt</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/react">React</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rust">Rust</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/security">Security</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/service-meshes">Service meshes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/slo">Slo</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/software-development">Software development</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sre">Sre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tips">Tips</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ui">Ui</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ux">Ux</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86">产品管理</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bc%80%e5%8f%91">开发</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%be%ae%e6%9c%8d%e5%8a%a1">微服务</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bf%97%e6%84%bf%e8%80%85">志愿者</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%88%90%e9%95%bf">成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%8f%e6%8d%b7">敏捷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e5%ad%97%e5%8c%96%e8%bd%ac%e5%9e%8b">数字化转型</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8">数据驱动</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%96%87%e5%8c%96">文化</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a0%87%e5%87%86%e8%ae%a4%e8%af%81">标准认证</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a8%a1%e6%9d%bf">模板</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%af%94%e8%b5%9b">比赛</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%b5%81%e9%87%8f%e6%9f%93%e8%89%b2">流量染色</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e7%81%b0%e5%ba%a6%e5%8f%91%e5%b8%83">灰度发布</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%81%8c%e4%b8%9a%e6%88%90%e9%95%bf">职业成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b0%83%e6%9f%a5">调查</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b4%a1%e7%8c%ae">贡献</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%97%ae%e5%8d%b7">问卷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%9d%a2%e8%af%95">面试</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <h4 class="text-white mb-4">中国DevOps社区</h4>
+          <p class="text-light mb-5">中国 DevOps 社区在全国的18个城市定期举办 Meetup 活动，社区年会举办年度峰会，每个月举办两次线上技术分享交流活动。我们致力于通过打造最优的线下交流社区，推动 DevOps 运动在国内的发展。</p>
+          <h4 class="text-white mb-4">关注我们</h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://weibo.cn/awsfaq/"><i class="fa fa-weibo"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/devopscn"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/devops-china/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.meetup.com/china-devops/"><i class="fa fa-meetup"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://gitlab.com/devopschina/"><i class="fa fa-gitlab"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">导航</h4>
+              <ul class="list-styled">
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/index.html">首页</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/about/index.html">关于</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/blog/index.html">博客</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="http://pipeline.devopsmeetup.com">Pipeline Craft</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://space.bilibili.com/370989874">社区B站</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">联系信息</h4>
+              <ul class="list-unstyled">
+                
+                <li class="text-light mb-3">微信订阅号: DevOpsMeetup</li>
+                
+                <li class="text-light mb-3">微信服务号: DevOpsChina</li>
+                
+                <li class="text-light mb-3">邮件：info@devopsChina.org</li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white"><span class="text-primary">Copyright</span> &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 中国 DevOps 社区  | 京ICP备20023228号-1</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+<script type="text/javascript">
+  
+  
+  
+  var css1 = document.createElement('link');
+  css1.rel = 'stylesheet';
+  css1.href = 'https://devopschina.org/plugins/bootstrap/bootstrap.min.css';
+  css1.type = 'text/css';
+  var fastCSS1 = document.getElementsByTagName('link')[0];
+  fastCSS1.parentNode.insertBefore(css1, fastCSS1);
+  
+  
+  var css2 = document.createElement('link');
+  css2.rel = 'stylesheet';
+  css2.href = 'https://devopschina.org/plugins/slick/slick.css';
+  css2.type = 'text/css';
+  var fastCSS2 = document.getElementsByTagName('link')[0];
+  fastCSS2.parentNode.insertBefore(css2, fastCSS2);
+  
+  
+  var css3 = document.createElement('link');
+  css3.rel = 'stylesheet';
+  css3.href = 'https://devopschina.org/plugins/fontawesome/font-awesome.min.css';
+  css3.type = 'text/css';
+  var fastCSS3 = document.getElementsByTagName('link')[0];
+  fastCSS3.parentNode.insertBefore(css3, fastCSS3);
+  
+  
+  var css4 = document.createElement('link');
+  css4.rel = 'stylesheet';
+  css4.href = 'https://devopschina.org/plugins/animate/animate.css';
+  css4.type = 'text/css';
+  var fastCSS4 = document.getElementsByTagName('link')[0];
+  fastCSS4.parentNode.insertBefore(css4, fastCSS4);
+  
+  
+  var css5 = document.createElement('link');
+  css5.rel = 'stylesheet';
+  css5.href = 'https://devopschina.org/plugins/venobox/venobox.css';
+  css5.type = 'text/css';
+  var fastCSS5 = document.getElementsByTagName('link')[0];
+  fastCSS5.parentNode.insertBefore(css5, fastCSS5);
+  
+</script>
+
+  
+
+<!-- JS Plugins -->
+
+<script src="https://devopschina.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://devopschina.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://devopschina.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://devopschina.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://devopschina.org/plugins/modernizer/modernizr.min.js"></script>
+
+<script src="https://devopschina.org/plugins/mixitup/mixitup.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/mark.js"></script>
+
+<script src="https://devopschina.org/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://devopschina.org/js/script.min.js"></script>
+</body>
+</html>

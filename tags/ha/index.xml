@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HA on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/ha/</link>
+    <description>Recent content in HA on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 27 Aug 2019 14:28:54 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/ha/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何提高Kubernetes的弹性</title>
+      <link>https://devopschina.org/blog/increasing-resilience-in-kubernetes/</link>
+      <pubDate>Tue, 27 Aug 2019 14:28:54 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/increasing-resilience-in-kubernetes/</guid>
+      <description>Kubernetes 系统的优点是高可用性和弹性，但是在实际使用过程中，由于海量的日志信息给迅速找到 Kubernetes 的故障点造成了困难，从而造成了故障恢复的延误，无法充分发挥 Kubernetes 的优点。本文作者提供了一种容易实现和已经验证了的方法让读者能迅速掌握，从而充分体现和发挥出Kubernetes真正的高可恢复性的能力。</description>
+    </item>
+    
+  </channel>
+</rss>

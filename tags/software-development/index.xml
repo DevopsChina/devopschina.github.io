@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SOFTWARE DEVELOPMENT on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/software-development/</link>
+    <description>Recent content in SOFTWARE DEVELOPMENT on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Feb 2020 09:17:28 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DevOps 2020年的趋势------5个最佳预测</title>
+      <link>https://devopschina.org/blog/devops-trends-2020-5-best-predictions-of-the-year/</link>
+      <pubDate>Mon, 10 Feb 2020 09:17:28 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/devops-trends-2020-5-best-predictions-of-the-year/</guid>
+      <description>在DevOps的宇宙中，未来将有一个激动人心的时刻。</description>
+    </item>
+    
+  </channel>
+</rss>

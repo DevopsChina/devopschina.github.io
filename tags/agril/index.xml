@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agril on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/agril/</link>
+    <description>Recent content in Agril on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Jul 2020 17:53:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/agril/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>第十四届敏捷开发状态报告</title>
+      <link>https://devopschina.org/blog/14th-annual-state-of-agile-report/</link>
+      <pubDate>Mon, 20 Jul 2020 17:53:10 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/14th-annual-state-of-agile-report/</guid>
+      <description>第14届年度敏捷状态报告为敏捷在企业不同领域的应用以及关于价值流管理提供了深刻的见解。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta charset="utf-8" />
+  <title>大规模微服务场景下灰度发布与流量染色实践 - 中国 DevOps 社区官方网站</title>
+  <meta name="description" content="中国 DevOps 社区官方网站" />
+  <meta property="og:title" content="大规模微服务场景下灰度发布与流量染色实践" />
+  <meta name="twitter:title" content="大规模微服务场景下灰度发布与流量染色实践" /> 
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="本文内容选自中国DevOps社区年会 · 2019年会，刘超老师分享的《大规模微服务场景下灰度发布与流量染色实践》实录。"
+  />
+  
+  <meta name="author" content="中国 DevOps 社区" />
+   <meta name="generator" content="Hugo 0.73.0" /> 
+  <!-- plugins -->
+  <noscript>
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/bootstrap/bootstrap.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/slick/slick.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/fontawesome/font-awesome.min.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/animate/animate.css " />
+    
+    <link rel="stylesheet" href="https://devopschina.org/plugins/venobox/venobox.css " />
+    
+  </noscript>
+
+  <!-- Main Stylesheet -->   
+  <link
+    rel="stylesheet"
+    href="https://devopschina.org/scss/style.min.29bbcd5accceea3cb5f9001b65e953f838644198a544e01bcb2c22e07e1671c7.css"
+    integrity="sha256-KbvNWszO6jy1&#43;QAbZelT&#43;DhkQZilROAbyywi4H4Wccc="
+    media="screen"
+  />
+
+  <!--Favicon--> 
+  
+  <link rel="shortcut icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon"> <link rel="icon" href="https://devopschina.org/images/favicon.png " type="image/x-icon">
+
+  
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-159133967-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-159133967-1");
+  </script>
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader"></div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="https://devopschina.org/"><img class="img-fluid pb-lg-3" src="https://devopschina.org/images/logo.png" alt="Bexar"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://devopschina.org/"> 首页 </a>
+            </li>
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event/index.html">活动</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/blog/index.html">博客</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/team/index.html">团队</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/about/index.html">关于</a>
+            </li>
+            
+            
+          </ul>
+          
+          
+          <!-- get start btn -->
+          <a href="https://www.hdb.com/u/bqaf3u.html" class="btn btn-primary hover-ripple">活动报名</a>
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay" style="background-image: url('https://devopschina.org/images/backgrounds/blog-bg.jpg'),url('https://devopschina.org/ALT-txt');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">大规模微服务场景下灰度发布与流量染色实践</h2>
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="https://devopschina.org/">首页</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">大规模微服务场景下灰度发布与流量染色实践</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        <div class="position-relative mb-5">
+          <img src="https://devopschina.org/images/blog/nsf-01.jpg" alt="post thumb" class="img-fluid w-100">
+          <div class="card-type hover-ripple">演讲</div>
+        </div>
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">刘超</strong>/ on <strong class="text-dark">01 Dec 2019</strong></div>
+        <h2>大规模微服务场景下灰度发布与流量染色实践</h2>
+        <div class="content">
+          <blockquote>
+<p>本文内容选自中国DevOps社区年会 · 2019年会，刘超老师分享的《大规模微服务场景下灰度发布与流量染色实践》实录。</p>
+</blockquote>
+<p><img src="/images/blog/nsf-01.jpg" alt=""></p>
+<p>大家好，我的题目叫《大规模微服务场景下的灰度发布与流量染色实践》。最近微服务很热，与微服务相关的架构、流程、DevOps都很热。</p>
+<p><img src="/images/blog/nsf-02.jpg" alt=""></p>
+<p>很多公司，包括传统企业，到互联网公司做交流的时候，会问道，你们互联网公司号称能够加速业务创新、快速迭代，那我们是否也可以引入类似这样的机制。</p>
+<p>我们做微服务，主要分为两个方面，一个是业务方面，另一个是技术方面。最下面是运维部，不过现在我们的运维部已经拓展成云计算，DBA里的数据管理部门，已经发展成大数据，于是就有了技术中台和数据中台，另外还有共享用户中心的业务中台，总体构成了下层的中台部门，在上层业务一定要做微服务化。业务和技术互相合作，做到加速创新的效果。</p>
+<p><img src="/images/blog/nsf-03.jpg" alt=""></p>
+<p>有很多人说，我们也上了微服务，但是会发现上微服务以后，看起来很好的东西，为什么用起来一团乱麻。</p>
+<p>我们拜访过很多业界同仁，发现实施微服务之后，有以下痛点：</p>
+<p>服务依赖管理：服务间直接调用，<strong>依赖混乱</strong>（微服务越来越多，自己理不清楚，不知道上线时会影响谁，上线后谁影响我，到底该什么时候上线，依赖混乱的时候，没办法解决这些问题。）</p>
+<p>服务调用统计：<strong>调用记录</strong>无迹可寻，调用统计与分析无从谈起</p>
+<p>服务接口规范：环境与接口<strong>规范缺失</strong>，维护困难</p>
+<p>服务安全管理：安全靠白名单各自为战</p>
+<p>服务治理能力：大量<strong>重复代码</strong> 实现路由，分流，熔断，降级</p>
+<p>服务接口测试：拆分过程中接口<strong>行为不一致</strong>，隐藏Bug</p>
+<p>服务灰度发布：上线功能实现灰度借助大量<strong>if-else</strong></p>
+<p>服务压力测试：对于峰值压力<strong>无历史数据</strong>，靠运气</p>
+<p>服务调用链分析：当服务请求缓慢，<strong>难以定位</strong>问题点</p>
+<p>测试环境治理：测试<strong>环境多，难管理</strong>，不可能100个容器每组一套</p>
+<p><img src="/images/blog/nsf-04.jpg" alt=""></p>
+<p>我们发现大家对微服务有很多误解。比如，一般做微服务的时候，很多人都会问微服务怎么拆，告诉我一个拆的最佳的实践，但是其实，根据我们的实践来讲，微服务不仅仅是微服务拆分，微服务拆分只是十二个要点的其中之一。</p>
+<p><strong>十二个要点分别是：</strong></p>
+<ol>
+<li>
+<p>微服务化的基石：持续集成</p>
+</li>
+<li>
+<p>静态资源分离与接入层设计</p>
+</li>
+<li>
+<p>应用层设计之无状态化与容器化</p>
+</li>
+<li>
+<p>应用层设计之服务的拆分，发现与编排</p>
+</li>
+<li>
+<p>性能优化之数据库设计与横向扩展</p>
+</li>
+<li>
+<p>性能优化之缓存的设计与横向扩展</p>
+</li>
+<li>
+<p>性能优化之消息队列与异步化设计</p>
+</li>
+<li>
+<p>服务的熔断，降级，限流设计</p>
+</li>
+<li>
+<p>配置中心的设计与实践</p>
+</li>
+<li>
+<p>统一日志中心的设计与实践</p>
+</li>
+<li>
+<p>全链路应用监控实践</p>
+</li>
+<li>
+<p>服务的全链路压测实践</p>
+</li>
+</ol>
+<p>我们建议，先把前三个基础打好，再进行拆分，而不是什么技术、平台、工具都没有，直接把自己的传统应用拆得七零八落。**同时，值得再强调的是第一条，微服务化的基石：持续集成。微服务绝不是让大家关起门来用三个月的时间拆出来，就直接上线。而是应该不断地集成、迭代，是渐进式的模式。**另外，微服务也不仅仅是个技术问题，它还涉及到IT架构、应用架构、组织架构的改变。</p>
+<p><img src="/images/blog/nsf-05.jpg" alt=""></p>
+<p>接下来给大家讲一下网易微服务和DevOps的实践过程。</p>
+<p><strong>我们整个DevOps，也是经历了几个过程。第一个和大家都一样，当服务比较少的时候，开始手工化的方式，后来手工不行了就变成了脚本化的方式，再后来因为开源有很多的工具可以用，变成了工具，而后变成一个平台，最后变成一个统一的DevOps的平台。</strong></p>
+<p><img src="/images/blog/nsf-06.jpg" alt=""></p>
+<p>首先，第一个阶段就是手工化。可能很多企业一开始都会存在这样的阶段，开发和运维之间的隔阂比较严重，老死不相往来。开发负责写代码，线上的运维、发布，以及SLA的保障，都是运维进行管理的。由于服务相对比较少，用物理机部署，基本上是一个单机应用加一个Oracle就可以搞定。</p>
+<p><img src="/images/blog/nsf-07.jpg" alt=""></p>
+<p>后来，随着业务的发展，服务越来越多。这个模式和原来还是没有变，开发和运维部的隔阂依旧存在。但是，运维发现接的需求越来越多，需要部署越来越多，需要一个环境隔离的方式，因此一般会上一个虚拟化系统，业内主流是用Vmware。这时候的部署方式一般是，Oracle部署在物理机上，其他业务系统都是部署在VMware上。部署东西多了，运维开始使用批量脚本试图解放人力，这属于第二个阶段-脚本化的阶段。虚拟化带来很多的优点，比如，粒度灵活，隔离性得到一定保证，不会在一台服务器上部署很多东西。</p>
+<p>但是这个阶段也有非常多的问题。比如说发布脚本、逻辑相对复杂，时间长了以后，逻辑是难以掌握的。而且，如果你想把一个脚本交给另外一个人，也很难交代清楚。</p>
+<p>另外，并且脚本多样，不成体系，难以维护。线上系统会有Bug，其实发布脚本也会有Bug。</p>
+<p>虚拟机大量地依赖于人工的调度，需要运维人员非常清楚，要部署在什么地方。另外VMware还有一个问题，它使用共享存储，会限制整个集群的规模，因为此时的应用不多，这个程度的规模还可以接受。</p>
+<p>线上的高可用性，业务层的开发人员不会做任何事情，他认为是线上一旦出事，应该由运维集中处理，迫使运维服务的发布人员依赖虚拟化机制，来提供高可用机制。我们都知道VMware有非常著名的简化运维的高可用机制，比如FT、HA、DR等类似的机制。如果我们是从IT层来做高可用，有一个缺点，作为基础设施层来讲，它看上层没有任何的区别，所以没有办法区分业务优先级。比如说FT的模式，跑CPU指令，它不知道这是最核心支付的指令、还是日志的指令，再如数据中心之间的同步，存储层是无法区分交易数据和日志数据的。</p>
+<p>另外网络、虚拟化、存储等基础设施，没有抽象化的概念，复杂度非常高，开发接不了这个工作，必须依赖运维，就要审批。由统一的一帮人来做，而且他们要考证书，比如，网络要有思科的证书，虚拟化要有VMware的证书，要特别专业才能做这件事情，因此会极大地降低迭代速度。业务方无论做什么事，都要走审批，运维部的人根本忙不过来，这是第二阶段的问题。</p>
+<p><img src="/images/blog/nsf-08.jpg" alt=""></p>
+<p>后来是怎么改变了这个问题？首先是业务层，业务层接的需求越来越复杂，迭代速度要求越来越快，这个时候单体应用跟不上了，需要进入服务化的架构，工程要拆分，要开始基本的注册发现，要实现自己的RPC。</p>
+<p><img src="/images/blog/nsf-09.jpg" alt=""></p>
+<p>应用层的改进会带来应用层的问题。比如，服务雪崩的问题。大量的请求堆积，一个进程慢了，把整个链路也都变慢了，所有人都在等着它缓过来。我们要进行熔断，快速尝试另外的服务。原来依赖很多内网负载均衡以及硬件负载均衡的维护代价比较大，一旦出现任何问题，就会引来抖动的问题。所以相应的要有快速恢复、快速熔断的机制，一旦发现错误以后，我们要能够尽快的重试。</p>
+<p><img src="/images/blog/nsf-10.jpg" alt=""></p>
+<p>以上就是应用层的问题，经过了一段时间的解决，又引入了新的问题。**我把它称为“云原生怪圈”，应用向云原生的（Cloud Native）。**它包含两个层次，第一个层次是应用层的服务数目会增多。第二个层次是资源层申请速度的灵活性会相对增加，这两个层次形成了一个圈。每家公司可能都存在这个圈，无论是从哪个起点开始，这个圈都可能会被激活。</p>
+<p>一个起点是，很多公司的上面是单体应用，但下面先采购了容器，资源申请灵活性大幅度提高了。一旦灵活性提高了以后，会给应用层释放很多动力。原来申请一百个机器需要一个星期的审批流程，这时能不拆分就不拆分。而现在有了容器，他会认为我有了这么好的工具，我可以进行拆分了，反正不费劲，任何一个小部门创建一个小的环境都不费劲。</p>
+<p>另外一个起点，先是应用层服务数目增多，给资源层越来越大的压力，然后会使得你原来七八点下班，现在变成十点多下班，然后十二点下班，压力越来越大，就会想办法增加资源层的灵活性。这个圈在整个DevOps的过程中会一直产生的。</p>
+<p><strong>微服务化了以后，我们会发现存在以下几个现象。</strong></p>
+<p>第一个是服务器的机型非常的碎片化，一开始采购机器的时候，有大规格、小规格的，硬盘比例各不一致，导致服务器非常难以管理，也无法进行批量化的安装。</p>
+<p>第二是很多的进程，不管是虚拟化以后，还是不虚拟化，在不在一台机器上，QoS无法保证。</p>
+<p>第三是测试环境的需求量大大增加，下层的基础设施根本忙不过来。</p>
+<p><img src="/images/blog/nsf-11.jpg" alt=""></p>
+<p>接下来进入到云计算的平台。有很多人不理解云计算和虚拟化都是运用了虚拟化的技术，两者之间到底有什么不同。其实云计算带来了非常大的不同，甚至是本质上的不同。如果你们内部上了一个云平台，或者上了公有云，但是你没有感受到资源申请的灵活性，那肯定是有些姿势用得不对。</p>
+<p>这里，**我总结了一下云计算带来的改变，主要有三大方面，分别是统一接口、抽象概念，租户自助。**正是因为这三大方面，使开发和运维不像原来那样，有那么深的隔阂，而是开始逐渐互相靠近，开发部或者业务部开始进行一定的自助。</p>
+<p>OpenStack实现接口统一，大部分部署工具支持其接口，可基于开源工具实现发布的工具化和平台化</p>
+<p>Flavor抽象资源配比（4G 8G 计算优化型，网络优化型，存储优化型），统一硬件配置，提升利用率，硬件上线效率提升</p>
+<p>自动调度代替人工调度，区域可用区抽象对机房机架交换机的感知</p>
+<p>云提供租户概念，有账号子账号体系，有quota，可以让租户在管理员许可的范围内自助操作，加快环境部署速度</p>
+<p>VPC屏蔽物理网络复杂性，冲突问题和安全问题，使得租户可自行配置网络</p>
+<p>基于虚拟机分层镜像发布和回滚机制，构建发布平台，可实现大规模批量部署和弹性伸缩</p>
+<p>基于虚拟机的PaaS托管中间件，简化租户创建，运维，调优中间件的难度</p>
+<p>发布平台提供基于虚拟机镜像+PaaS中间件的统一编排</p>
+<p>要求业务对于高可用性设计要在应用层完成</p>
+<p><img src="/images/blog/nsf-12.jpg" alt=""></p>
+<p>在这个阶段，要实现微服务框架与开源技术栈的统一。一开始微服务做的比较混乱，有用Spring Cloud，有用Dubbo的，需要一个统一的开源技术栈。另外，还要构建一个持续集成的平台，通过Agent和虚拟镜像部署软件包。</p>
+<p><img src="/images/blog/nsf-13.jpg" alt=""></p>
+<p>统一微服务框架之前，我们情况是这样的，一开始用服务注册服务发现，还是比较简单的。后来发现，我们还需要分流、需要降级、配置中心、认证鉴权、监控统计等，在业务代码之外加的越来越多，大家的代码写得到处都是，而且依赖于不同人的水平不一样，有的人写得好，有的人写得差，这就是一个当时遇到的问题。</p>
+<p><img src="/images/blog/nsf-14.jpg" alt=""></p>
+<p>后来我们就把它抽象成为了一个Agent，这个Agent在程序启动的过程中，通过jar直接带起来，使得统一的服务框架组件在Agent里面实现，并且提供统一的界面进行配置，这样业务方可以只写业务代码，基本上就搞定了这件事。</p>
+<p><img src="/images/blog/nsf-15.jpg" alt=""></p>
+<p>这样就形成了一个统一的微服务治理平台，并且后期会和service mesh做一定的融合。</p>
+<p><img src="/images/blog/nsf-16.jpg" alt=""></p>
+<p>因此解决了这些问题：</p>
+<p><strong>应用减负</strong>：使用Agent和Sidecar技术，对应用无成本增强。</p>
+<p><strong>开发减负</strong>：以微服务治理框架为设计目标、大幅减少重复框架代码、避免重复造轮子。</p>
+<p><strong>版本控制</strong>：统一组件版本配置，避免隐性问题。</p>
+<p><strong>兼容性</strong>：兼容的HTTP、RPC调用，兼容非java应用。</p>
+<p><strong>服务治理</strong>：根据业务线场景选择治理支持方法级别治理粒度。</p>
+<p><strong>高性能</strong>：更低的性能损耗，并提供更细粒度的服务治理。</p>
+<p><img src="/images/blog/nsf-17.jpg" alt=""></p>
+<p>这时就有了发布平台。我们会把包放统一的对象存储上，通过Agent以镜像的方式进行下发。</p>
+<p><img src="/images/blog/nsf-18.jpg" alt=""></p>
+<p>这是我们的成果，内部都在用这款基于虚拟镜像的发布平台。</p>
+<p><img src="/images/blog/nsf-19.jpg" alt=""></p>
+<p>接下来又引入了新的问题，比如难以发现故障点、要引入故障注入服务，API版本混乱，这时需要引入API网关。</p>
+<p><img src="/images/blog/nsf-20.jpg" alt=""></p>
+<p>基于虚拟镜像的发布也很混乱，因为部署的应用越来越多，我们发现虚拟镜像的模板越来越多，会出现上千个无法复用的模板，好像每个小组织都有自己的一个东西，毕竟它还不是一个标准，所以接下来我们就拥抱了容器的标准。并且Auto Scaling原来是基于虚拟镜像的，现在使用Kubernetes来做，同时实现了分布式事务。</p>
+<p><img src="/images/blog/nsf-21.jpg" alt=""></p>
+<p>到了这个阶段，中间加了Kubernetes这一层。这里的更新包括，OpenStack可以做物理机的下发，Kubernetes作为统一的对接资源的编排平台，无论是Vmware上，还是KVM机器上，还是物理机上，公有云上，上面都可以有Kubernetes统一平台。这个时候只需要对Kubernetes下发一个编排，就可以实现跨多个地方进行部署。</p>
+<p>在基于虚拟机的运行环境和PaaS中间件之外，基于Kubernetes也可以有自己的容器镜像和运行环境，以及基于容器镜像PaaS中间件。发布平台原来是对接API的，现在有了Kubernetes以后，它可以非常平滑的通过统一的平台切换到Kubernetes上，所以，做一个发布平台，后面的对接还是比较标准的。</p>
+<p>应用层也会越来越多，比如说有基于容器镜像的弹性伸缩，服务网格，分布式事务，故障注入等。</p>
+<p><img src="/images/blog/nsf-22.jpg" alt=""></p>
+<p>有了Kubernetes以后，就进入了Dev和Ops的融合阶段。这时我们发现，当服务数目再增多的时候，运维的压力也更大，如果所有的东西都要运维来做，其实是实现不了的。因此，我们建议环境交付提前，比如说一个容器镜像里面的子环境让开发自己去把控。他知道自己改了哪些内容、哪些配置，不需要通过文档的方式交给运维来做。容器镜像还可以做一个很好的事，它是非常好的中介，是一个标准，不论在那儿都可以，所以就产生了左边的太极图。运维会帮开发部做一些事情，开发帮运维做一些事情，这个时候进入了开发和运维融合的机制。</p>
+<p><img src="/images/blog/nsf-23.jpg" alt=""></p>
+<p>因为容器有非常好的分层的机制，如果开发不想写，可以让开发写大部分的基础环境。</p>
+<p><img src="/images/blog/nsf-24.jpg" alt=""></p>
+<p>另外一个建议叫不可改变的基础设施。当规模大了以后，任何一个节点出现了问题，都很难排查，所以我们建议对任何环境的修改，都要在代码的级别上修改。在部署平台之前，代码是代码，配置是代码，单实例运行环境Dockerfile是代码，多实例的运行环境编排文件也是代码。</p>
+<p><img src="/images/blog/nsf-25.jpg" alt=""></p>
+<p>持续交付流水线，是以Master和线上对应的，自己分支开发的模式。按需自动化构建及部署，线上环境还是需要人工触发的，但基本上是通过流水线代码处理的方式来做的。</p>
+<p><img src="/images/blog/nsf-26.jpg" alt=""></p>
+<p>容器化带来的另外一个问题，就是“云原生怪圈”再次起作用。服务规模越来越大，增加速度越来越快，需求指数性增加，大家都需要一个环境。比如一个集群一千个容器，如果三个小组各开发一个项目，想并行开发，每个人都需要一个环境，一下子需要三千个容器。<strong>这时候就需要中间件的灰度发布和流量染色的能力。</strong></p>
+<p><img src="/images/blog/nsf-27.jpg" alt="">
+<img src="/images/blog/nsf-28.jpg" alt=""></p>
+<p>在最外层的网关上，可以做两个环境之间流量的分发，以及在微服务的Agent里面也可以做一个分发。最终，我们会有一个基准环境，就是Master对应的环境。</p>
+<p><img src="/images/blog/nsf-29.jpg" alt=""></p>
+<p>两个小组，一组开发了五个服务，另外一组开发了六个服务，他们部署的时候不需要一千个全部布一遍，只需要布五个，布六个。在请求调用的时候，从这五个里面互相调，不在这五个里面，在基准环境调，另外六个也是。这样就把三千个变成一千零十几个，环境大幅度减少。</p>
+<p><img src="/images/blog/nsf-30.jpg" alt=""></p>
+<p>这个时候环境的合并怎么办？环境合并和代码合并逻辑一致，统一在发布平台管理，谁后合并谁负责Merge。这是我们的一个效果，我们节省了非常多的机器。</p>
+<p><img src="/images/blog/nsf-31.jpg" alt=""></p>
+<p><strong>有了流量染色功能，就可以做线上的灰度发布。这里我们会有几个环境，一个是预发类的环境，一个是小流量环境，还有一个主流的环境，测试的时候是可以进行染色。</strong></p>
+<p><img src="/images/blog/nsf-32.jpg" alt=""></p>
+<p>我们以一天的整个开发周期举例子，每天早上初始化预发环境和小流量环境＞＞开启引流，进入持续发布周期＞＞代码发布到预发环境进行回归，预发环境为单节点部署＞＞预发通过后发布到小流量环境，小流量环境三节点部署，滚动发布＞＞小流量环境，开发测试及时跟进，观察异常情况，一旦碰到问题，第一时间关闭流量入口。相关问题定位debug可以在预发环境上进行＞＞所有发布到小流量环境的版本合集，通过一个晚高峰的检测后，发布到线上环境。第二天同样是做此循环，每天都是这样的发布模式。</p>
+<p><img src="/images/blog/nsf-33.jpg" alt=""></p>
+<p>有了流量染色以后，还可以得到单元化和多机房的染色。如果我们做高可用，至少需要两个机房，那么就存在一个问题，当一个机房完全挂了怎么办？微服务框架可以把它引流到另外一个机房。服务请求之后，还应该回来，因为应该本机房优先，毕竟本机房的容量大得多。<strong>所以我们建议整个部署模式，总分总的部署模式。</strong></p>
+<p>首先第一个总，要有统一的发布平台，无论发布到哪个Kubernetes，都应该通过一个平台。其次，你应该有一个多Kubernetes统一的管理，有多个机房，就有多个Kubernetes，我们并不建议跨机房。然后，我们建议应用层要有统一的视图，即使Kubernetes出现了问题，应用层可以把流量切到另外一个环境。就是这样一个总分总的模式。</p>
+<p>另外Kubernetes也面临升级的问题，它更新比较快，经常升级。虽然业界有各种平滑的最佳实践，但是很难保证它升级的时候不出事。一旦Kubernetes出现状况，你也不想停里面的应用，可以采用分流的方式。</p>
+<p><img src="/images/blog/nsf-34.jpg" alt=""></p>
+<p><strong>最终形成了云原生架构的技术栈，包括CICD、测试平台、容器平台、APM、分布式事务、微服务框架、API网关一栈式工具链。</strong></p>
+<h4 id="作者">作者</h4>
+<!-- raw HTML omitted -->
+<p><strong>刘 超</strong></p>
+<p><strong>网易</strong></p>
+<p><strong>杭州研究院</strong></p>
+<p><strong>云计算技术部首席架构师</strong></p>
+<!-- raw HTML omitted -->
+<p>长期致力于云计算开源技术的分享，布道和落地，将网易内部最佳实践服务客户与行业。
+曾出版《Lucene应用开发解密》，极客时间专栏《趣谈网络协议》《趣谈操作系统》。</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/%e5%be%ae%e6%9c%8d%e5%8a%a1">微服务</a>,</li>
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/%e7%81%b0%e5%ba%a6%e5%8f%91%e5%b8%83">灰度发布</a>,</li>
+            
+            <li class="list-inline-item"><a class="text-color" href="https://devopschina.org/tags/%e6%b5%81%e9%87%8f%e6%9f%93%e8%89%b2">流量染色</a>,</li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest Article</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/p01l7z3c.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/">
+          <h5 class="mt-0">产品经理和产品负责人如何能有效地合作</h5>
+        </a>
+        27 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/user_interface_futuristic_digital_transformation_thinkstock_826567492-100740667-large.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/">
+          <h5 class="mt-0">成功实施数字化转型的7个秘诀</h5>
+        </a>
+        23 Apr 2021
+      </div>
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/"><img class="mr-3 post-thumb-sm" src="https://devopschina.org/images/blog/top-8-trends-shaping-digital-transformation-in-2021-000.jpg"></a>
+      <div class="media-body">
+        <a href="https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/">
+          <h5 class="mt-0">2021年塑造数字化转型的8大趋势</h5>
+        </a>
+        10 Apr 2021
+      </div>
+    </div>
+    
+  </div>
+  <!-- categories -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Category</h4>
+    <ul class="list-styled style-circle">
+      <li class="border-bottom border-color"><a href="/categories/aiops" class="text-color d-block pb-3 mt-3 text-decoration-none">Aiops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/devops" class="text-color d-block pb-3 mt-3 text-decoration-none">Devops</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%96%87%e6%a1%a3" class="text-color d-block pb-3 mt-3 text-decoration-none">文档</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e6%bc%94%e8%ae%b2" class="text-color d-block pb-3 mt-3 text-decoration-none">演讲</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%a4%be%e5%8c%ba" class="text-color d-block pb-3 mt-3 text-decoration-none">社区</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e7%bf%bb%e8%af%91" class="text-color d-block pb-3 mt-3 text-decoration-none">翻译</a></li>
+      <li class="border-bottom border-color"><a href="/categories/%e8%b0%83%e6%9f%a5" class="text-color d-block pb-3 mt-3 text-decoration-none">调查</a></li>
+    </ul>
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">TAGS</h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agile">Agile</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/agril">Agril</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ai">Ai</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aiops">Aiops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analysis">Analysis</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/automation">Automation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/containers">Containers</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cre">Cre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devcloud">Devcloud</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops">Devops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devops-trend">Devops trend</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/devsecops">Devsecops</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/digital-transformation">Digital transformation</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/docker">Docker</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/git">Git</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/google">Google</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ha">Ha</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/hack">Hack</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/infrastructure">Infrastructure</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interview">Interview</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-leadership">It leadership</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-strategy">It strategy</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e6%88%98%e7%95%a5">It 战略</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/it-%e9%a2%86%e5%af%bc%e5%8a%9b">It 领导力</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/kubernetes">Kubernetes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/prodmgmt">Prodmgmt</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/react">React</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rust">Rust</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/security">Security</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/service-meshes">Service meshes</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/slo">Slo</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/software-development">Software development</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sre">Sre</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tips">Tips</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ui">Ui</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ux">Ux</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e4%ba%a7%e5%93%81%e7%ae%a1%e7%90%86">产品管理</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bc%80%e5%8f%91">开发</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%be%ae%e6%9c%8d%e5%8a%a1">微服务</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e5%bf%97%e6%84%bf%e8%80%85">志愿者</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%88%90%e9%95%bf">成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%8f%e6%8d%b7">敏捷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e5%ad%97%e5%8c%96%e8%bd%ac%e5%9e%8b">数字化转型</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%95%b0%e6%8d%ae%e9%a9%b1%e5%8a%a8">数据驱动</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%96%87%e5%8c%96">文化</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a0%87%e5%87%86%e8%ae%a4%e8%af%81">标准认证</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%a8%a1%e6%9d%bf">模板</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%af%94%e8%b5%9b">比赛</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e6%b5%81%e9%87%8f%e6%9f%93%e8%89%b2">流量染色</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e7%81%b0%e5%ba%a6%e5%8f%91%e5%b8%83">灰度发布</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%81%8c%e4%b8%9a%e6%88%90%e9%95%bf">职业成长</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b0%83%e6%9f%a5">调查</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e8%b4%a1%e7%8c%ae">贡献</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%97%ae%e5%8d%b7">问卷</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/%e9%9d%a2%e8%af%95">面试</a></li>
+    </ul>
+  </div>
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <h4 class="text-white mb-4">中国DevOps社区</h4>
+          <p class="text-light mb-5">中国 DevOps 社区在全国的18个城市定期举办 Meetup 活动，社区年会举办年度峰会，每个月举办两次线上技术分享交流活动。我们致力于通过打造最优的线下交流社区，推动 DevOps 运动在国内的发展。</p>
+          <h4 class="text-white mb-4">关注我们</h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://weibo.cn/awsfaq/"><i class="fa fa-weibo"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/devopscn"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/devops-china/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.meetup.com/china-devops/"><i class="fa fa-meetup"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://gitlab.com/devopschina/"><i class="fa fa-gitlab"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">导航</h4>
+              <ul class="list-styled">
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/index.html">首页</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/about/index.html">关于</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://devopschina.org/blog/index.html">博客</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="http://pipeline.devopsmeetup.com">Pipeline Craft</a></li>
+                
+                <li class="mb-3 text-light"><a class="text-light d-block" href="https://space.bilibili.com/370989874">社区B站</a></li>
+                
+              </ul>
+            </div>
+            
+            <div class="col-6 mb-5">
+              <h4 class="text-white mb-4">联系信息</h4>
+              <ul class="list-unstyled">
+                
+                <li class="text-light mb-3">微信订阅号: DevOpsMeetup</li>
+                
+                <li class="text-light mb-3">微信服务号: DevOpsChina</li>
+                
+                <li class="text-light mb-3">邮件：info@devopsChina.org</li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white"><span class="text-primary">Copyright</span> &copy; <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script> 中国 DevOps 社区  | 京ICP备20023228号-1</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+<script type="text/javascript">
+  
+  
+  
+  var css1 = document.createElement('link');
+  css1.rel = 'stylesheet';
+  css1.href = 'https://devopschina.org/plugins/bootstrap/bootstrap.min.css';
+  css1.type = 'text/css';
+  var fastCSS1 = document.getElementsByTagName('link')[0];
+  fastCSS1.parentNode.insertBefore(css1, fastCSS1);
+  
+  
+  var css2 = document.createElement('link');
+  css2.rel = 'stylesheet';
+  css2.href = 'https://devopschina.org/plugins/slick/slick.css';
+  css2.type = 'text/css';
+  var fastCSS2 = document.getElementsByTagName('link')[0];
+  fastCSS2.parentNode.insertBefore(css2, fastCSS2);
+  
+  
+  var css3 = document.createElement('link');
+  css3.rel = 'stylesheet';
+  css3.href = 'https://devopschina.org/plugins/fontawesome/font-awesome.min.css';
+  css3.type = 'text/css';
+  var fastCSS3 = document.getElementsByTagName('link')[0];
+  fastCSS3.parentNode.insertBefore(css3, fastCSS3);
+  
+  
+  var css4 = document.createElement('link');
+  css4.rel = 'stylesheet';
+  css4.href = 'https://devopschina.org/plugins/animate/animate.css';
+  css4.type = 'text/css';
+  var fastCSS4 = document.getElementsByTagName('link')[0];
+  fastCSS4.parentNode.insertBefore(css4, fastCSS4);
+  
+  
+  var css5 = document.createElement('link');
+  css5.rel = 'stylesheet';
+  css5.href = 'https://devopschina.org/plugins/venobox/venobox.css';
+  css5.type = 'text/css';
+  var fastCSS5 = document.getElementsByTagName('link')[0];
+  fastCSS5.parentNode.insertBefore(css5, fastCSS5);
+  
+</script>
+
+  
+
+<!-- JS Plugins -->
+
+<script src="https://devopschina.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://devopschina.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://devopschina.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://devopschina.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://devopschina.org/plugins/modernizer/modernizr.min.js"></script>
+
+<script src="https://devopschina.org/plugins/mixitup/mixitup.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://devopschina.org/plugins/search/mark.js"></script>
+
+<script src="https://devopschina.org/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://devopschina.org/js/script.min.js"></script>
+</body>
+</html>

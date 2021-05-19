@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>志愿者 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E5%BF%97%E6%84%BF%E8%80%85/</link>
+    <description>Recent content in 志愿者 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 07 Jul 2020 23:29:06 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E5%BF%97%E6%84%BF%E8%80%85/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020 年第二季度-网站维护团队工作会议</title>
+      <link>https://devopschina.org/blog/web-team-meeting-1/</link>
+      <pubDate>Tue, 07 Jul 2020 23:29:06 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/web-team-meeting-1/</guid>
+      <description>网站团队的长期贡献者们的第一次线上会议。这是该团队的第一次线上见面会。一共有 7 人参加了本次会议。</description>
+    </item>
+    
+  </channel>
+</rss>

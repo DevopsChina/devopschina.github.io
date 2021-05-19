@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>containers on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/containers/</link>
+    <description>Recent content in containers on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Mar 2020 21:05:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>探索容器安全性：运行你所信任的，其它的则隔离</title>
+      <link>https://devopschina.org/blog/-exploring-container-security/</link>
+      <pubDate>Mon, 02 Mar 2020 21:05:12 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/-exploring-container-security/</guid>
+      <description>从漏洞到加密劫持，再到更多的加密劫持，在整个2019年都有大量安全事件使容器用户保持警惕。随着Kubernetes被用于管理大多数基于容器的环境（以及越来越多的混合环境），对于Forrester研究人员来说不足为奇，在他们2020年的预测中指出，需要“在日益混杂的云世界中保护应用程序和数据的安全</description>
+    </item>
+    
+  </channel>
+</rss>

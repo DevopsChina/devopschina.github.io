@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>微服务 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
+    <description>Recent content in 微服务 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 01 Dec 2019 09:14:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>大规模微服务场景下灰度发布与流量染色实践</title>
+      <link>https://devopschina.org/blog/grayscale-publishing-and-flow-dyeing-in-large-scale-microservice-scenarios/</link>
+      <pubDate>Sun, 01 Dec 2019 09:14:00 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/grayscale-publishing-and-flow-dyeing-in-large-scale-microservice-scenarios/</guid>
+      <description>本文内容选自中国DevOps社区年会 · 2019年会，刘超老师分享的《大规模微服务场景下灰度发布与流量染色实践》实录。</description>
+    </item>
+    
+  </channel>
+</rss>

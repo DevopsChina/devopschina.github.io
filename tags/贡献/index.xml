@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>贡献 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E8%B4%A1%E7%8C%AE/</link>
+    <description>Recent content in 贡献 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 20 Aug 2020 23:25:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E8%B4%A1%E7%8C%AE/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>首批社区自媒体合伙人名单</title>
+      <link>https://devopschina.org/blog/2020-community-wechat-partners/</link>
+      <pubDate>Thu, 20 Aug 2020 23:25:40 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/2020-community-wechat-partners/</guid>
+      <description>为了更广泛的传播社区产出的精彩文章和宣传重要活动信息。社区招募现在招募一批自媒体合伙人。</description>
+    </item>
+    
+  </channel>
+</rss>

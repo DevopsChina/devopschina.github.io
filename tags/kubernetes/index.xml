@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubernetes on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/kubernetes/</link>
+    <description>Recent content in kubernetes on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Mar 2020 21:05:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>探索容器安全性：运行你所信任的，其它的则隔离</title>
+      <link>https://devopschina.org/blog/-exploring-container-security/</link>
+      <pubDate>Mon, 02 Mar 2020 21:05:12 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/-exploring-container-security/</guid>
+      <description>从漏洞到加密劫持，再到更多的加密劫持，在整个2019年都有大量安全事件使容器用户保持警惕。随着Kubernetes被用于管理大多数基于容器的环境（以及越来越多的混合环境），对于Forrester研究人员来说不足为奇，在他们2020年的预测中指出，需要“在日益混杂的云世界中保护应用程序和数据的安全</description>
+    </item>
+    
+    <item>
+      <title>2019年DevOps的十大趋势——专业人士的预测</title>
+      <link>https://devopschina.org/blog/the-top-10-devops-trends-of-2019-the-professionals-prediction/</link>
+      <pubDate>Tue, 18 Feb 2020 14:19:51 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/the-top-10-devops-trends-of-2019-the-professionals-prediction/</guid>
+      <description>在2019年DevOps世界的混乱中值得注意的趋势。</description>
+    </item>
+    
+    <item>
+      <title>2020 年预测：2020 年值得关注的基础设施和运营趋势</title>
+      <link>https://devopschina.org/blog/infrastructure-and-ops-trends-to-watch-in-2020/</link>
+      <pubDate>Thu, 06 Feb 2020 14:56:39 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/infrastructure-and-ops-trends-to-watch-in-2020/</guid>
+      <description>我们即将步入新的一年，让我们来看一下将影响我们如何开发和交付软件的八大趋势。</description>
+    </item>
+    
+    <item>
+      <title>如何提高Kubernetes的弹性</title>
+      <link>https://devopschina.org/blog/increasing-resilience-in-kubernetes/</link>
+      <pubDate>Tue, 27 Aug 2019 14:28:54 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/increasing-resilience-in-kubernetes/</guid>
+      <description>Kubernetes 系统的优点是高可用性和弹性，但是在实际使用过程中，由于海量的日志信息给迅速找到 Kubernetes 的故障点造成了困难，从而造成了故障恢复的延误，无法充分发挥 Kubernetes 的优点。本文作者提供了一种容易实现和已经验证了的方法让读者能迅速掌握，从而充分体现和发挥出Kubernetes真正的高可恢复性的能力。</description>
+    </item>
+    
+  </channel>
+</rss>

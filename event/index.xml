@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>社区活动 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/event/</link>
+    <description>Recent content in 社区活动 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 07 Feb 2019 10:47:55 +0600</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/event/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020中国DevOps社区流水线大赛</title>
+      <link>https://devopschina.org/event/2020-pipeline-craft-championship/</link>
+      <pubDate>Tue, 18 Aug 2020 10:47:55 +0600</pubDate>
+      
+      <guid>https://devopschina.org/event/2020-pipeline-craft-championship/</guid>
+      <description>2020 中国 DevOps 社区流水线大赛 活动名称： 中国 DevOps 社区夏季流水线大赛（Pipeline Craft Championship） 活动时间： 2020 年 8 月 18 日~ 2020 年 10 月 18 日 活</description>
+    </item>
+    
+    <item>
+      <title>2019中国DevOps社区年会</title>
+      <link>https://devopschina.org/event/2019-hangzhou-summit/</link>
+      <pubDate>Sun, 01 Sep 2019 10:47:55 +0600</pubDate>
+      
+      <guid>https://devopschina.org/event/2019-hangzhou-summit/</guid>
+      <description>2019中国DevOps社区年会 大会简介 会后总结和回顾 点此处查看会后总结和回顾文章。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 开发 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 21 Aug 2019 12:34:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>初、中和高级程序员究竟差在哪？</title>
+      <link>https://devopschina.org/blog/the-gap-between-programmers/</link>
+      <pubDate>Wed, 21 Aug 2019 12:34:19 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/the-gap-between-programmers/</guid>
+      <description>任何傻瓜都能写计算机能理解的代码，优秀的程序员编写人类能够理解的代码。</description>
+    </item>
+    
+  </channel>
+</rss>

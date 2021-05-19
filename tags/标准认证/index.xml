@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标准认证 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E6%A0%87%E5%87%86%E8%AE%A4%E8%AF%81/</link>
+    <description>Recent content in 标准认证 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 15 Nov 2019 11:53:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E6%A0%87%E5%87%86%E8%AE%A4%E8%AF%81/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>招商银行DevOps实践及DevOps标准认证评估分享</title>
+      <link>https://devopschina.org/blog/the-devops-practice-and-standrad-certification-assessment-sharing-of-cmb/</link>
+      <pubDate>Fri, 15 Nov 2019 11:53:11 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/the-devops-practice-and-standrad-certification-assessment-sharing-of-cmb/</guid>
+      <description>对于传统的金融行业的更新迭代，如何做才能更好？来看看招商银行是什么做的。</description>
+    </item>
+    
+  </channel>
+</rss>

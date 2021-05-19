@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>automation on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/automation/</link>
+    <description>Recent content in automation on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 13 Feb 2020 08:40:30 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2020年 DevOps 8大趋势</title>
+      <link>https://devopschina.org/blog/8-devops-trends-to-be-aware-of-in-2020/</link>
+      <pubDate>Thu, 13 Feb 2020 08:40:30 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/8-devops-trends-to-be-aware-of-in-2020/</guid>
+      <description>在 DevOps 的宇宙中，未来将有一个激动人心的时刻。</description>
+    </item>
+    
+  </channel>
+</rss>

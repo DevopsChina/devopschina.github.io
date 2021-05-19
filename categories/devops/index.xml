@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DevOps on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/categories/devops/</link>
+    <description>Recent content in DevOps on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Jan 2020 19:51:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DevOps在2020年取得成功的10个秘诀</title>
+      <link>https://devopschina.org/blog/10-tips-for-devops-success-in-2020/</link>
+      <pubDate>Mon, 20 Jan 2020 19:51:00 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/10-tips-for-devops-success-in-2020/</guid>
+      <description>来自 Gene Kim 和 XebiaLabs 的建议。</description>
+    </item>
+    
+  </channel>
+</rss>

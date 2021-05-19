@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://devopschina.org/sitemap.xml

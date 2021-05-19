@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据驱动 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8/</link>
+    <description>Recent content in 数据驱动 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 20 Nov 2019 23:24:49 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E6%95%B0%E6%8D%AE%E9%A9%B1%E5%8A%A8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AI 如何赋能 DevOps：数据驱动全栈工程师的实践</title>
+      <link>https://devopschina.org/blog/how-ai-empowers-devops-for-data-driven-full-stack-engineers/</link>
+      <pubDate>Wed, 20 Nov 2019 23:24:49 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-ai-empowers-devops-for-data-driven-full-stack-engineers/</guid>
+      <description>分享我们如何借助于数据中台解决我们面临的各种各样的挑战，最后通过一系列案例分享数据和AI智能驱动的 DevOps 实践。</description>
+    </item>
+    
+  </channel>
+</rss>

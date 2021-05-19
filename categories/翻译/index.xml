@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>翻译 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/categories/%E7%BF%BB%E8%AF%91/</link>
+    <description>Recent content in 翻译 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 27 Apr 2021 22:46:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/categories/%E7%BF%BB%E8%AF%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>产品经理和产品负责人如何能有效地合作</title>
+      <link>https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/</link>
+      <pubDate>Tue, 27 Apr 2021 22:46:34 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-product-managers-owners-can-should-effectively-work/</guid>
+      <description>产品负责人（PO）这一角色在实施敏捷（例如Scrum）的公司里存在各种挑战。如果按照Scrum字面的定义来诠释产品负责人的角色及职责，会遇到诸多实际问题。</description>
+    </item>
+    
+    <item>
+      <title>成功实施数字化转型的7个秘诀</title>
+      <link>https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/</link>
+      <pubDate>Fri, 23 Apr 2021 22:46:24 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/secrets-for-getting-digital-transformation-right/</guid>
+      <description>技术优先的数字化转型策略奠定了失败的根基，首先要让你的组织时刻牢记以客户为中心的目标。</description>
+    </item>
+    
+    <item>
+      <title>2021年塑造数字化转型的8大趋势</title>
+      <link>https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/</link>
+      <pubDate>Sat, 10 Apr 2021 11:10:58 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/top-8-trends-shaping-digital-transformation-in-2021/</guid>
+      <description>在本报告中，我们将重点介绍CIO、IT领导者和组织在数字化转型过程中面临的一些大趋势</description>
+    </item>
+    
+    <item>
+      <title>2020年DevOps工具报告</title>
+      <link>https://devopschina.org/blog/devops-tools-report-2020/</link>
+      <pubDate>Thu, 23 Jul 2020 11:36:56 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/devops-tools-report-2020/</guid>
+      <description>虽然在过去的几十年里，许多软件方法论已经渐渐落伍，但很显然，DevOps并不是一种趋势，它正在成为软件开发和运营的标准方式。如今，企业团队正处于DevOps转型的不同阶段，努力实现更快、更安全的技术交付，以获得竞争优势。</description>
+    </item>
+    
+    <item>
+      <title>DevOps：IT领导者指南</title>
+      <link>https://devopschina.org/blog/devops-it-leaders-guide/</link>
+      <pubDate>Thu, 23 Jul 2020 11:36:56 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/devops-it-leaders-guide/</guid>
+      <description>DevOps如何改变IT领导力？ 我们的综合指南分享了来自于CIO和专家对于以下方面的建议：DevOps文化改变，DevOps指标，DevOps工作前景等。</description>
+    </item>
+    
+    <item>
+      <title>重温经典：持续集成</title>
+      <link>https://devopschina.org/blog/continuous-integration/</link>
+      <pubDate>Tue, 21 Jul 2020 21:17:25 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/continuous-integration/</guid>
+      <description>持续集成是一种软件开发实践，本文简要介绍了持续集成技术及其应用现状。</description>
+    </item>
+    
+    <item>
+      <title>什么是 DevOps？DevOps 终极指南</title>
+      <link>https://devopschina.org/blog/what-is-devops/</link>
+      <pubDate>Tue, 21 Jul 2020 20:11:56 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/what-is-devops/</guid>
+      <description>DevOps 继承自敏捷软件开发，DevOps 的出现是为了应对敏捷方法所带来的软件开发速度和生产力增长。敏捷文化和敏捷方法在最近十年的发展，呼唤一个更适合端到端软件交付生命周期的整体方法。</description>
+    </item>
+    
+    <item>
+      <title>使用 SRE 原理识别和跟踪琐事</title>
+      <link>https://devopschina.org/blog/identifying-and-tracking-toil-using-sre-principles/</link>
+      <pubDate>Sun, 22 Mar 2020 22:28:10 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/identifying-and-tracking-toil-using-sre-principles/</guid>
+      <description>Google 站点可靠性工程师(SRE)用来验证有效性的关键指标之一就是衡量我们如何利用每一天的时间。我们希望有足够的时间来进行长期性项目的工作,但鉴于我们也负责 Google 服务的持续运营，有时候也需要做一些手工工作。我们的目标是将少于一半的时间花在所谓的“琐事”上。那什么是琐事，怎样才能阻止它干扰工程师的工作速度？我们将在这篇文章中讨论这些问题。</description>
+    </item>
+    
+    <item>
+      <title>SRE 团队的组织方式以及入门方法</title>
+      <link>https://devopschina.org/blog/how-sre-teams-are-organized-and-how-to-get-started/</link>
+      <pubDate>Sun, 22 Mar 2020 21:09:39 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-sre-teams-are-organized-and-how-to-get-started/</guid>
+      <description>在 Google，站点可靠性工程（SRE）是我们不断定义可靠性目标，衡量这些目标，并根据需要努力改善我们的服务的做法。我们最近指导您浏览了 SRE 工作手册。您可以将这些指导视为 SRE 团队通常会做的事情，并结合团队的成熟度，确定何时团队倾向于执行这些任务。我们相信，许多公司都可以按照该指导来启动和发展新的 SRE 团队。</description>
+    </item>
+    
+    <item>
+      <title>学习和传授服务水平/质量目标的技艺 ---- CRE课程</title>
+      <link>https://devopschina.org/blog/learn-how-to-set-slos-for-an-sre-or-cre-practice/</link>
+      <pubDate>Mon, 09 Mar 2020 08:15:40 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/learn-how-to-set-slos-for-an-sre-or-cre-practice/</guid>
+      <description>在理解 Art of SLO 的时候，我一直在考虑这里的art是理解为艺术么？带着这个问题，结合我自己的工作经验，开始在 cloud.google 网站中寻找答案。一般意义上，艺术往往带有很强的个人感悟能力，而对于做技术的IT人员来说，有故作玄虚之态，因此我理解这里的 Art 更多的是传递一种匠人的技艺精神，也就是可以通过不断的学习、思考、总结，达到更高的水平。这一篇文章应该算是抛砖引玉，希望能激发更多的IT人员，通过不断的学习、思考、总结，达到自己理想的水平和能力。</description>
+    </item>
+    
+    <item>
+      <title>探索容器安全性：运行你所信任的，其它的则隔离</title>
+      <link>https://devopschina.org/blog/-exploring-container-security/</link>
+      <pubDate>Mon, 02 Mar 2020 21:05:12 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/-exploring-container-security/</guid>
+      <description>从漏洞到加密劫持，再到更多的加密劫持，在整个2019年都有大量安全事件使容器用户保持警惕。随着Kubernetes被用于管理大多数基于容器的环境（以及越来越多的混合环境），对于Forrester研究人员来说不足为奇，在他们2020年的预测中指出，需要“在日益混杂的云世界中保护应用程序和数据的安全</description>
+    </item>
+    
+    <item>
+      <title>对2020年 DevOps 趋势更多的预测</title>
+      <link>https://devopschina.org/blog/yet-more-devops-trend-for-2020/</link>
+      <pubDate>Fri, 21 Feb 2020 16:41:16 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/yet-more-devops-trend-for-2020/</guid>
+      <description>我们之前发布了一些2020年的DevOps预测，但是囿于篇幅的限制，还有好多很棒的想法没有包含进去。在这里，我们补充一些由Forrester持续追踪的DevOps在2020年的趋势。</description>
+    </item>
+    
+    <item>
+      <title>2019年DevOps的十大趋势——专业人士的预测</title>
+      <link>https://devopschina.org/blog/the-top-10-devops-trends-of-2019-the-professionals-prediction/</link>
+      <pubDate>Tue, 18 Feb 2020 14:19:51 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/the-top-10-devops-trends-of-2019-the-professionals-prediction/</guid>
+      <description>在2019年DevOps世界的混乱中值得注意的趋势。</description>
+    </item>
+    
+    <item>
+      <title>2020年 DevOps 8大趋势</title>
+      <link>https://devopschina.org/blog/8-devops-trends-to-be-aware-of-in-2020/</link>
+      <pubDate>Thu, 13 Feb 2020 08:40:30 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/8-devops-trends-to-be-aware-of-in-2020/</guid>
+      <description>在 DevOps 的宇宙中，未来将有一个激动人心的时刻。</description>
+    </item>
+    
+    <item>
+      <title>DevOps 2020年的趋势------5个最佳预测</title>
+      <link>https://devopschina.org/blog/devops-trends-2020-5-best-predictions-of-the-year/</link>
+      <pubDate>Mon, 10 Feb 2020 09:17:28 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/devops-trends-2020-5-best-predictions-of-the-year/</guid>
+      <description>在DevOps的宇宙中，未来将有一个激动人心的时刻。</description>
+    </item>
+    
+    <item>
+      <title>2020 年预测：2020 年值得关注的基础设施和运营趋势</title>
+      <link>https://devopschina.org/blog/infrastructure-and-ops-trends-to-watch-in-2020/</link>
+      <pubDate>Thu, 06 Feb 2020 14:56:39 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/infrastructure-and-ops-trends-to-watch-in-2020/</guid>
+      <description>我们即将步入新的一年，让我们来看一下将影响我们如何开发和交付软件的八大趋势。</description>
+    </item>
+    
+    <item>
+      <title>DevOps 帮助数字化转型的10个最佳实践</title>
+      <link>https://devopschina.org/blog/devops-role-digital-transformation/</link>
+      <pubDate>Thu, 14 Nov 2019 01:22:14 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/devops-role-digital-transformation/</guid>
+      <description>DevOps 的威力越来越大，影响范围也越来越广。想了解 DevOps 影响数字化转型的方式都有哪些吗？赶紧阅读本文获取最佳实践吧！</description>
+    </item>
+    
+    <item>
+      <title>UI/UX 设计指南：术语、说明、技巧与趋势</title>
+      <link>https://devopschina.org/blog/ui-ux-design-guide-with-terms-explanations-tips-and-trends/</link>
+      <pubDate>Wed, 13 Nov 2019 10:14:50 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/ui-ux-design-guide-with-terms-explanations-tips-and-trends/</guid>
+      <description>完整的 UI/UX 设计指南，新人可以借之入门，老人可以借之梳理体系。</description>
+    </item>
+    
+    <item>
+      <title>DevOps和SRE工程师必需知道的检查清单</title>
+      <link>https://devopschina.org/blog/the-must-know-checklist-for-devops-site-reliability-engineers-update/</link>
+      <pubDate>Thu, 17 Oct 2019 11:14:50 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/the-must-know-checklist-for-devops-site-reliability-engineers-update/</guid>
+      <description>本文清晰列举成为一名合格的DevOps和SRE工程师所需的知识图谱，阅读本文对新入门的学习者将大有裨益。</description>
+    </item>
+    
+    <item>
+      <title>Capital One 事故的技术分析</title>
+      <link>https://devopschina.org/blog/a-technical-analysis-of-the-capital-one-hack/</link>
+      <pubDate>Wed, 16 Oct 2019 10:04:21 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/a-technical-analysis-of-the-capital-one-hack/</guid>
+      <description>云安全是极富挑战性的话题，但往往千里之堤毁于蚁穴。本文通过对 Capital One 事故的技术分析，对如何提高云服务器的安全提出建议，持续审核和监视这些问题对于维护安全的云环境至关重要。</description>
+    </item>
+    
+    <item>
+      <title>如何在六个月内成为一名合格的 DevOps 工程师</title>
+      <link>https://devopschina.org/blog/how-to-become-a-devops-engineer-in-six-months-or-less/</link>
+      <pubDate>Thu, 26 Sep 2019 14:09:58 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-to-become-a-devops-engineer-in-six-months-or-less/</guid>
+      <description>我们尝试将在六个月内指导你如何成为一名中级DevOps工程师！最后，如果你这么多年来一直从事DevOps工作，你可能仍然会发现这篇文章很有价值，因为它可以帮助你确认你现在在哪里，以及将要到哪里去。</description>
+    </item>
+    
+    <item>
+      <title>2020年及未来的软件编程趋势预测</title>
+      <link>https://devopschina.org/blog/2020-programming-trend-predictions/</link>
+      <pubDate>Wed, 18 Sep 2019 15:21:59 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/2020-programming-trend-predictions/</guid>
+      <description>如果您对未来可能给编程世界带来什么感到好奇，那么读这篇文章就对了。我也有可能错了，所以请不要盲目的相信我，但这就是我认为会发生的事情。我无法预测未来，但我可以做出有根据的猜测。</description>
+    </item>
+    
+    <item>
+      <title>职业生涯如何转变成DevOps工程师</title>
+      <link>https://devopschina.org/blog/how-transition-career-devops-engineer/</link>
+      <pubDate>Thu, 12 Sep 2019 11:24:20 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-transition-career-devops-engineer/</guid>
+      <description>无论您是最近刚毕业的大学生还是经验丰富的IT专业人士，如果正在寻找工作，期望职场得到提升，文中的建议能够帮助您成为一名DevOps工程师。</description>
+    </item>
+    
+    <item>
+      <title>10个最受欢迎的DevOps面试问题和答案</title>
+      <link>https://devopschina.org/blog/devops-interview-questions-answers-article/</link>
+      <pubDate>Tue, 03 Sep 2019 11:24:20 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/devops-interview-questions-answers-article/</guid>
+      <description>随着IT领域的快速增长和技术进步，大多数IT公司的传统方法已经发生了模式转变。DevOps文化虽然还处于起步阶段，但它作为IT开发和运维之间的完美桥梁，近年来已经成为软件开发的一种流行方法。</description>
+    </item>
+    
+    <item>
+      <title>如何提高Kubernetes的弹性</title>
+      <link>https://devopschina.org/blog/increasing-resilience-in-kubernetes/</link>
+      <pubDate>Tue, 27 Aug 2019 14:28:54 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/increasing-resilience-in-kubernetes/</guid>
+      <description>Kubernetes 系统的优点是高可用性和弹性，但是在实际使用过程中，由于海量的日志信息给迅速找到 Kubernetes 的故障点造成了困难，从而造成了故障恢复的延误，无法充分发挥 Kubernetes 的优点。本文作者提供了一种容易实现和已经验证了的方法让读者能迅速掌握，从而充分体现和发挥出Kubernetes真正的高可恢复性的能力。</description>
+    </item>
+    
+    <item>
+      <title>初、中和高级程序员究竟差在哪？</title>
+      <link>https://devopschina.org/blog/the-gap-between-programmers/</link>
+      <pubDate>Wed, 21 Aug 2019 12:34:19 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/the-gap-between-programmers/</guid>
+      <description>任何傻瓜都能写计算机能理解的代码，优秀的程序员编写人类能够理解的代码。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>职业成长 on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/%E8%81%8C%E4%B8%9A%E6%88%90%E9%95%BF/</link>
+    <description>Recent content in 职业成长 on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 26 Sep 2019 14:09:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/%E8%81%8C%E4%B8%9A%E6%88%90%E9%95%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何在六个月内成为一名合格的 DevOps 工程师</title>
+      <link>https://devopschina.org/blog/how-to-become-a-devops-engineer-in-six-months-or-less/</link>
+      <pubDate>Thu, 26 Sep 2019 14:09:58 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-to-become-a-devops-engineer-in-six-months-or-less/</guid>
+      <description>我们尝试将在六个月内指导你如何成为一名中级DevOps工程师！最后，如果你这么多年来一直从事DevOps工作，你可能仍然会发现这篇文章很有价值，因为它可以帮助你确认你现在在哪里，以及将要到哪里去。</description>
+    </item>
+    
+    <item>
+      <title>职业生涯如何转变成DevOps工程师</title>
+      <link>https://devopschina.org/blog/how-transition-career-devops-engineer/</link>
+      <pubDate>Thu, 12 Sep 2019 11:24:20 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/how-transition-career-devops-engineer/</guid>
+      <description>无论您是最近刚毕业的大学生还是经验丰富的IT专业人士，如果正在寻找工作，期望职场得到提升，文中的建议能够帮助您成为一名DevOps工程师。</description>
+    </item>
+    
+  </channel>
+</rss>

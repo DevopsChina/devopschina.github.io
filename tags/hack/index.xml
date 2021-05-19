@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hack on 中国 DevOps 社区</title>
+    <link>https://devopschina.org/tags/hack/</link>
+    <description>Recent content in Hack on 中国 DevOps 社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 16 Oct 2019 10:04:21 +0800</lastBuildDate>
+    
+	<atom:link href="https://devopschina.org/tags/hack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Capital One 事故的技术分析</title>
+      <link>https://devopschina.org/blog/a-technical-analysis-of-the-capital-one-hack/</link>
+      <pubDate>Wed, 16 Oct 2019 10:04:21 +0800</pubDate>
+      
+      <guid>https://devopschina.org/blog/a-technical-analysis-of-the-capital-one-hack/</guid>
+      <description>云安全是极富挑战性的话题，但往往千里之堤毁于蚁穴。本文通过对 Capital One 事故的技术分析，对如何提高云服务器的安全提出建议，持续审核和监视这些问题对于维护安全的云环境至关重要。</description>
+    </item>
+    
+  </channel>
+</rss>
